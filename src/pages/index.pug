@@ -1,0 +1,24 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "Log In"
+block content
+    main.theme(data-theme="dark")
+        .container-fluid
+            .row
+                .col-6
+                    .promoImage
+                .col-6
+                    .row.align-items-center.justify-content-center.entryForm.pt-5.pb-5
+                        .col-6
+                            p.h5.text-uppercase Sign In
+                            p.intro Enter your email address and password to access admin panel
+                            form.form(action="") 
+                                .formGroup
+                                .formGroup
+                                a.btn.btn-success(href="#") Log in
+                                .formAdditional 
+                                    p.text-small Don't have an account? 
+                                        a.text-bold(href="#") Sign Up
+                    
+block footer

@@ -1,0 +1,90 @@
+$black-100            : #14121D;
+$black-80             : #221E2D;
+$black-60             : #2F2A3D;
+$black-40             : #403A51;
+
+$white                : #ffffff;
+$black                : $black-100;
+
+// Dark
+$secondary-dark       : #CBCEFF;
+$primary-dark-100     : #00FFFF;
+$primary-dark-80      : #99FFFF;
+$primary-dark-60      : #CBFFFF;
+
+// Light
+
+$border-radius        : 4px;
+
+// $link-color           : $white !default;
+// $link-hover-color     : $primary !default;
+$link-decoration      : none !default;
+$link-hover-decoration: underline !default;
+
+$transition-base      : 0.3s;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$font-weight-light    : 300;
+$font-weight          : 400;
+$font-weight-bolder   : 500;
+$font-weight-bold     : 600;
+
+$font-family-heading  : "Montserrat", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,   "Liberation Mono",   "Courier New",    monospace !default;
+
+$line-height-smaller  : 1.4;
+$line-height          : 1.6;
+$line-height-heading  : 1.2;
+
+$font-family-base     : "Montserrat", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size-base       : 1rem;
+$line-height-base     : $line-height;
+$font-weight-base     : $font-weight;
+
+$font-size: (
+  xs: 10px,
+  sm: 12px,
+  md: 14px,
+  lg: 16px
+) !default;
+
+$heading: (
+  h1: 36px,
+  h2: 32px,
+  h3: 28px,
+  h4: 24px,
+  h5: 20px,
+  h6: 18px,
+) !default;
+
+$spacer : 24px!default;
+$spacers: ()  !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: 6px,
+    2: 12px,
+    3: 24px,
+    4: 36px,
+    5: 48px
+  ),
+  $spacers
+);
+
+$headings-margin-bottom   : 0;
+$paragraph-margin-bottom  : 0;
+$label-margin-bottom      : 0;
+
+$table-cell-padding       : map-get($map: $spacers, $key: 1);
+
+$enable-grid-classes              : true !default;
+$enable-pointer-cursor-for-buttons: true !default;
