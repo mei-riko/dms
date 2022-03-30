@@ -15,5 +15,9 @@
 
     &:focus{
         outline: 2px solid $secondary-dark;
+
+        &::placeholder{
+            opacity: 0.2;
+        }
     }
 }

@@ -65,6 +65,26 @@
   outline: 2px solid #CBCEFF;
 }
 
+.input:focus::-webkit-input-placeholder {
+  opacity: 0.2;
+}
+
+.input:focus::-moz-placeholder {
+  opacity: 0.2;
+}
+
+.input:focus:-ms-input-placeholder {
+  opacity: 0.2;
+}
+
+.input:focus::-ms-input-placeholder {
+  opacity: 0.2;
+}
+
+.input:focus::placeholder {
+  opacity: 0.2;
+}
+
 .input_success {
   border: 1px solid #ADFC04;
   color: #ADFC04;
