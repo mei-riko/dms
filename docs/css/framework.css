@@ -116,11 +116,13 @@ sup {
 }
 
 a {
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
+  color: #00FFFF;
   text-decoration: underline;
 }
 
@@ -343,6 +345,10 @@ html, body {
   font-size: 0.85rem;
 }
 
+.font-secondary {
+  color: #CBCEFF;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -378,50 +384,4 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 .h6, h6 {
   font-size: 18px;
-}
-
-.theme {
-  min-height: 100vh;
-}
-
-.theme .promoImage {
-  position: relative;
-  background: url("../img/@img.png") no-repeat center/cover;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-}
-
-.theme .promoImage:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #221E2D;
-  -webkit-filter: opacity(0.8);
-  filter: opacity(0.8);
-}
-
-.theme .entryForm {
-  height: 100%;
-  min-height: 100vh;
-}
-
-[data-theme="dark"] {
-  background-color: #14121D;
-  color: #ffffff;
-}
-
-[data-theme="dark"] a {
-  color: #ffffff;
-}
-
-[data-theme="dark"] a:hover {
-  color: #00FFFF;
-}
-
-[data-theme="dark"] .intro {
-  color: #CBCEFF;
 }

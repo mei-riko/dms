@@ -1,7 +1,7 @@
-.theme{
+.intro{
     min-height: 100vh;
 
-    .promoImage{
+    &__image{
         position: relative;
 
         background: url('../img/@img.png') no-repeat center / cover;
@@ -24,8 +24,11 @@
             filter: opacity(0.8);
         }
     }
-    .entryForm{
+    &__form{
         height: 100%;
         min-height: 100vh;
+
+        background-color: $black-80;
+        color: $white;
     }
 }

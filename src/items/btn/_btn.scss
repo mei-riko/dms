@@ -1,0 +1,10 @@
+.btn{
+    padding: 0.75rem;
+    
+    font-weight: $font-weight-bold;
+    border-radius: $border-radius;
+
+    &--full{
+        width: 100%;
+    }
+}

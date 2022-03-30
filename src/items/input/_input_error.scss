@@ -1,0 +1,8 @@
+.input_error{
+    border: 1px solid $red-dark-100;
+    color: $red-dark-100;
+
+    &:focus{
+        outline-color: $red-dark-100;
+    }
+}

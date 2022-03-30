@@ -5,10 +5,17 @@ html,body {
     line-height: $line-height-base;
 }
 
-.text-bolder{ font-weight: $font-weight-bolder;}
-.text-bold{ font-weight: $font-weight-bold;}
 
-.text-small{ font-size: 0.85rem;}
+// Weight
+.text-bolder{ font-weight: $font-weight-bolder; }
+.text-bold{ font-weight: $font-weight-bold; }
+
+// Size
+.text-small{ font-size: 0.85rem; }
+
+// Color
+.font-secondary{ color: $secondary-dark; }
+
 
 // @media all and (min-width: map-get($grid-breakpoints, 'sm')){
 // }

@@ -6,20 +6,33 @@ $black-40             : #403A51;
 $white                : #ffffff;
 $black                : $black-100;
 
-// Dark
 $secondary-dark       : #CBCEFF;
+
 $primary-dark-100     : #00FFFF;
 $primary-dark-80      : #99FFFF;
 $primary-dark-60      : #CBFFFF;
 
-// Light
+$green-dark-100       : #ADFC04;
+$green-dark-80        : #C6FF4D;
+$green-dark-60        : #D6FF7E;
+
+$red-dark-100         : #F25634;
+$red-dark-80          : #FF6B4B;
+$re-dark-60           : #ff8a6f;
+
+$shadow-dark          : 4px 4px 10px #1F1C29;
 
 $border-radius        : 4px;
 
-// $link-color           : $white !default;
-// $link-hover-color     : $primary !default;
+$link-color           : $white !default;
+$link-hover-color     : $primary-dark-100 !default;
 $link-decoration      : none !default;
 $link-hover-decoration: underline !default;
+
+$input-color          : $white;
+$input-placeholder    : $secondary-dark;
+$input-border         : $black-100;
+$input-background     : $black-100;
 
 $transition-base      : 0.3s;
 

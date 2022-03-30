@@ -1,0 +1,35 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "Log In"
+block content
+    main.intro
+        .container-fluid
+            .row
+                .col-6.px-0
+                    .intro__image
+                .col-6
+                    .row.align-items-center.justify-content-center.intro__form.pt-5.pb-5
+                        .col-6.px-0
+                            p.h5.text-uppercase Sign up
+                            p.font-secondary.text-bolder Don't have an account? Create your account, it takes less than a minute
+                            form.form(action="") 
+                                .form__group
+                                    .form__label First Name:
+                                    input.input.input--full(type="text" placeholder="Enter your first name")
+                                .form__group
+                                    .form__label Last Name:
+                                    input.input.input--full(type="text" placeholder="Enter your last name")
+                                .form__group
+                                    .form__label E-mail:
+                                    input.input.input--full(type="email" placeholder="Enter your e-mail")
+                                .form__group
+                                    .form__label Password
+                                    input.input.input--full(type="password" placeholder="Enter password")
+                                .form__group
+                                    a.btn.btn-success.btn--full(href="#") Create account
+                                .form__additional
+                                    p.text-small Already have account? 
+                                        a.text-bold(href="index.html") Log In
+                    
+block footer
