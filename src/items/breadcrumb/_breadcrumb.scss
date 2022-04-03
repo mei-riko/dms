@@ -1,0 +1,41 @@
+.breadcrumb{
+    margin-bottom: 0;
+
+    &__home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-icon{
+            fill: $primary-dark-100;
+        }
+    }
+}
+
+// Bootstrap 4
+.breadcrumb-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active{
+        color: $secondary-dark;
+    }
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 1rem;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    float: unset;
+    color: $secondary-dark;
+    padding-right: 0;
+    margin-right: 0.75rem;
+
+    width: 10px;
+    height: 10px;
+
+    background: url('../icon/breadcrumb-sep.svg') no-repeat center / contain;
+
+    display: block;
+    content: '';
+}

@@ -331,6 +331,8 @@ html, body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
+  background-color: #14121D;
+  color: #ffffff;
 }
 
 .text-bolder {
