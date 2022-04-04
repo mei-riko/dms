@@ -5,7 +5,7 @@
     &__inside{
         padding: map-get($map: $spacers, $key: 3);
         background-color: $black-80;
-        border-radius: 12px;
+        border-radius: 6px;
     }
     // Content Header
     &__heading{

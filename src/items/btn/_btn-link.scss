@@ -1,10 +1,29 @@
 .btn-link {
     color: $primary-dark-100;
-    // background-color: $green-dark-100;
-    // border-color: $green-dark-100;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    &__icon{
+        fill: $primary-dark-100;
+    }
 
     &:hover{
+        color: $white;
+        text-decoration: none;
+
+        .btn-link__icon{
+            fill: $white;
+        }
     }
     &:focus{
+        color: $secondary;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+
+        .btn-link__icon{
+            fill: $secondary;
+        }
     }
 }

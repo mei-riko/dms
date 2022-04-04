@@ -1,0 +1,18 @@
+.form_search{
+    position: relative;
+
+    &__icon{
+        display: inline-block;
+        width: 16px;
+        // height: 16px;
+        background: url("../icon/search-secondary.svg") no-repeat center / contain;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: map-get($map: $spacers, $key: 2);
+    }
+    &__input{
+        padding-left: map-get($map: $spacers, $key: 4);
+    }
+}

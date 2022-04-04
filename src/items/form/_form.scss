@@ -1,4 +1,6 @@
 .form{
+    margin-bottom: 0;
+    
     &__label{
         margin-bottom: map-get($map: $spacers, $key: 2);
         line-height: $line-height-smaller;
@@ -11,7 +13,7 @@
         margin-top: map-get($map: $spacers, $key: 3);
     }
     &__addinional-link{
-        color: $secondary-dark;
+        color: $secondary;
         position: absolute;
         top: 0;
         right: 0;

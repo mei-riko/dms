@@ -39,8 +39,8 @@
         transition: $transition-base;
 
         &:hover{
-            fill: $secondary-dark;
-            stroke: $secondary-dark;
+            fill: $secondary;
+            stroke: $secondary;
             box-shadow: $shadow-dark;
         }
     }
@@ -75,16 +75,16 @@
         padding: 12px 16px;
         border-radius: $border-radius;
 
-        color: $secondary-dark;
+        color: $secondary;
         transition: $transition-base;
         cursor: pointer;
 
         &-icon{
-            fill: $secondary-dark;
+            fill: $secondary;
         }
         &-arrow{
-            fill: $secondary-dark;
-            stroke: $secondary-dark;
+            fill: $secondary;
+            stroke: $secondary;
         }
 
         &:hover{
@@ -136,7 +136,7 @@
         }
         &-role{
             font-size: map-get($map: $font-size, $key: sm);
-            color: $secondary-dark;
+            color: $secondary;
         }
 
         &:hover{

@@ -6,7 +6,7 @@ $black-40             : #403A51;
 $white                : #ffffff;
 $black                : $black-100;
 
-$secondary-dark       : #CBCEFF;
+$secondary            : #CBCEFF;
 
 $primary-dark-100     : #00FFFF;
 $primary-dark-80      : #99FFFF;
@@ -18,7 +18,7 @@ $green-dark-60        : #D6FF7E;
 
 $red-dark-100         : #F25634;
 $red-dark-80          : #FF6B4B;
-$red-dark-60           : #ff8a6f;
+$red-dark-60          : #ff8a6f;
 
 $shadow-dark          : 4px 4px 10px #1F1C29;
 $border-radius        : 4px;
@@ -31,7 +31,7 @@ $link-decoration      : none !default;
 $link-hover-decoration: underline !default;
 
 $input-color          : $white;
-$input-placeholder    : $secondary-dark;
+$input-placeholder    : $secondary;
 $input-border         : $black-100;
 $input-background     : $black-100;
 

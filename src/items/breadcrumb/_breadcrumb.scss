@@ -19,7 +19,7 @@
     justify-content: center;
 
     &.active{
-        color: $secondary-dark;
+        color: $secondary;
     }
 }
 .breadcrumb-item+.breadcrumb-item {
@@ -27,7 +27,7 @@
 }
 .breadcrumb-item+.breadcrumb-item::before{
     float: unset;
-    color: $secondary-dark;
+    color: $secondary;
     padding-right: 0;
     margin-right: 0.75rem;
 

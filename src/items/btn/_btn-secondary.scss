@@ -1,0 +1,41 @@
+.btn-secondary {
+    color: $white;
+    background-color: $black-60;
+    border-color: $black-60;
+
+    display: flex;
+    align-items: center;
+
+    &__icon{
+        fill: $white;
+    }
+
+    &:hover{
+        color: $secondary;
+        background-color: $black-40;
+        border-color: $black-40;
+
+        box-shadow: $shadow-dark;
+
+        text-decoration: none;
+
+        .btn-secondary__icon{
+            fill: $secondary;
+        }
+    }
+    &:active,
+    &:focus,
+    &:active:focus{
+        color: $secondary;
+        background-color: $black-60;
+        border-color: $black-60;
+
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+
+        .btn-link__icon{
+            fill: $secondary;
+        }
+    }
+}
