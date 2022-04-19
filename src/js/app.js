@@ -16,11 +16,35 @@ $(function() {
     $(document).on('click', '[data-trigger="click"]', function(e){
         e.preventDefault();
     })
+
+    if( $('.select_table').length > 0 ){
+        function actionFormateState (state) {
+            if (!state.id) {
+              return state.text;
+            }
+            var $state = $(
+              '<span data-value="' + state.element.value + '">' + state.text + '</span>'
+            );
+            return $state;
+        };
+        $('.select_table').select2({
+            theme: "table",
+            placeholder: "Action",
+            minimumResultsForSearch: Infinity,
+            // containerCssClass: ':all:',
+            templateResult: actionFormateState,
+            dropdownPosition: 'auto',
+        });
+    }
+    $('.table .table__edit-action').on("click", function(){
+        $(this).parent().find('.table__edit-select').toggle();
+    })
     // Fancybox
-    Fancybox.bind("[data-fancybox]", {
-        autoFocus: false,
-        dragToClose: false,
-    });
+    // Fancybox.bind("[data-fancybox]", {
+    //     autoFocus: false,
+    //     dragToClose: false,
+    // });
 });
 
 import './mouseup';
+import '../blocks/sidebar/sidebar';

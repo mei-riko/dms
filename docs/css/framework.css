@@ -335,6 +335,11 @@ html, body {
   color: #ffffff;
 }
 
+main {
+  overflow: hidden;
+  width: 100%;
+}
+
 .text-bolder {
   font-weight: 500;
 }

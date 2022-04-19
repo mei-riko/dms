@@ -8,6 +8,13 @@ html,body {
     color: $white;
 }
 
+// Main
+main{
+    // height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
 
 // Weight
 .text-bolder{ font-weight: $font-weight-bolder; }

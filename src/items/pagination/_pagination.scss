@@ -1,0 +1,33 @@
+.pagination{
+
+}
+.page-item{
+    margin-right: map-get($map: $spacers, $key: 1);
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &.active{
+        .page-link{
+            color: $black-100;
+            background-color: $primary-dark-100;
+            border-color: $primary-dark-100;
+        }
+    }
+}
+.page-link{
+    border-radius: $border-radius;
+    padding: 6px 10px;
+    line-height: 1;
+
+    color: $secondary;
+    background-color: $black-60;
+    border-color: $black-60;
+
+    &:hover{
+        text-decoration: none;
+        color: $white;
+        background-color: $black-40;
+        border-color: $black-40;
+    }
+}

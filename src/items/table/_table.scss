@@ -1,0 +1,148 @@
+.table{
+    min-width: 100%;
+    width: auto;
+    flex: 1;
+    
+    .table__item {
+        border-color: $black-100;
+
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        white-space: nowrap;
+
+        text-align: left;
+
+        &_head{
+            position: relative;
+            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 0) map-get($map: $spacers, $key: 2);
+
+            font-size: map-get($map: $font-size, $key: sm);
+            font-weight: $font-weight-bolder;
+            color: $secondary;
+    
+            vertical-align: baseline;
+        }
+        &_body{
+            padding: map-get($map: $spacers, $key: 2);
+
+            font-size: map-get($map: $font-size, $key: sm);
+            font-weight: $font-weight-base;
+            color: $white;
+
+            vertical-align: middle;
+        }
+    }
+    &__item-sortable{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-radius: $border-radius;
+        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+
+        transition: $transition-base;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $black-60;
+        }
+
+        &_active{
+            background-color: $black-100;
+
+            &:hover{
+                background-color: $black-60;
+            }
+        }
+    }
+    &__item-no-sortable{
+        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+    }
+
+    &__item-sort{
+        fill: $secondary;
+        margin-left: map-get($map: $spacers, $key: 1);
+
+        // от меньшего к большему
+        &_asc{
+            path:nth-child(1){
+                fill: $black-40;
+            }
+            path:nth-child(2){
+                fill: $white;
+            }
+        }
+        // от большего к меньшему
+        &_desc{
+            path:nth-child(1){
+                fill: $white;
+            }
+            path:nth-child(2){
+                fill: $black-40;
+            }
+        }
+    }
+
+    &__body{
+        border-top: none;
+    }
+    &__link{
+        text-decoration: underline;
+    }
+
+    &__edit{
+        position: relative;
+
+        &-action{
+            padding: 8px 8px 8px 10px;
+            border-radius: 16px;
+            background-color: $black-60;
+
+            display: inline-flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+
+            transition: $transition-base;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $black-40;
+                box-shadow: $shadow-dark;
+            }
+        }
+        &-arrow{
+            margin-left: map-get($map: $spacers, $key: 1);
+            fill: $white;
+            stroke: $white;
+        }
+
+        &-select{
+            display: none;
+
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            top: calc(100% + 6px);
+
+            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 0);
+            
+            border-radius: $border-radius;
+            background-color: $black-60;
+            border-color: $black-100;
+            
+            min-width: fit-content;
+        }
+        &-item{
+            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+
+            transition: $transition-base;
+            cursor: pointer;
+
+            &:hover{
+                color: $white;
+                background-color: $black-40;
+            }
+        }
+    }
+}

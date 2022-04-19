@@ -1,0 +1,81 @@
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__open{
+        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+        border-radius: 16px;
+        background-color: $black-60;
+
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+
+        transition: $transition-base;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $black-40;
+            box-shadow: $shadow-dark;
+        }
+
+        &_has-count{
+            margin-right: map-get($map: $spacers, $key: 2);
+        }
+    }
+    &__open-icon{
+        fill: $secondary;
+        transition: $transition-base;
+    }
+    &__open-count{
+        border-radius: 50%;
+        background-color: $primary-dark-100;
+        color: $black-100;
+
+        width: 18px;
+        flex: 0 0 18px;
+        height: 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 10px;
+        font-weight: $font-weight-bold;
+
+        margin-left: map-get($map: $spacers, $key: 1);
+    }
+
+    &__item{
+        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+        border-radius: 16px;
+        background-color: $black-60;
+
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+
+        margin-right: map-get($map: $spacers, $key: 2);
+
+        &-name{
+            margin-right: map-get($map: $spacers, $key: 1);
+        }
+        &-value{
+            margin-right: map-get($map: $spacers, $key: 1);
+        }
+        &-close{
+            fill: $white;
+
+            transition: $transition-base;
+            cursor: pointer;
+
+            &:hover, &:focus{
+                fill: $secondary;
+            }
+        }
+    }
+}

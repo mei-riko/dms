@@ -1,0 +1,41 @@
+.sidebar-action{
+    fill: $white;
+    stroke: $white;
+    background-color: $black-60;
+
+    border-radius: $border-radius;
+    width: 44px;
+    height: 44px;
+    padding: map-get($map: $spacers, $key: 2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    left: 260px;
+    top: 24px;
+
+    transform: translateX(-36px);
+    z-index: 111;
+
+    cursor: pointer;
+    transition: $transition-base;
+
+    &:hover{
+        fill: $secondary;
+        stroke: $secondary;
+        box-shadow: $shadow-dark;
+    }
+
+    &--small{
+        // left: 72px;
+        left: 14px;
+        transform: translateX(0px);
+
+        path{
+            transform: rotate(180deg) translateX(-1px);
+            transform-origin: center;
+        }
+    }
+}

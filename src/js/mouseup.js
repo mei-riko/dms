@@ -1,11 +1,12 @@
 import $ from 'jquery';
 
 $(document).on('mouseup', function (e){
-    // let $calculatorModal = $(".calculator .calculator__modal.calculator__modal--active");
-    // if (!$calculatorModal.is(e.target) // клик был не по блоку
-    //       && $calculatorModal.has(e.target).length === 0 // и не по его дочерним 
-    // ) {
-    //     $calculatorModal.removeClass('calculator__modal--active');
-    //     $calculatorModal.slideUp();
-    // }
+    let $tableEditSelect = $('.table .table__edit-select');
+    let $tableEditAction = $('.table .table__edit-action');
+    if (!$tableEditSelect.is(e.target) // клик был не по блоку
+        && !$tableEditAction.is(e.target)
+        && $tableEditAction.has(e.target).length === 0 // и не по его дочерним
+    ) {
+        $tableEditSelect.hide();
+    }
 });

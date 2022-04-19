@@ -9,17 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
     <link href="./css/framework.css" rel="stylesheet"/>
     <link href="./css/main.css" rel="stylesheet"/>
   </head>
   <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <main>
+      <svg class="sidebar-action" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8951 13.887C11.8619 13.9228 11.8225 13.9512 11.7792 13.9706C11.7358 13.99 11.6893 14 11.6423 14C11.5953 14 11.5488 13.99 11.5055 13.9706C11.4621 13.9512 11.4227 13.9228 11.3895 13.887L7.1049 9.27217C7.07165 9.23645 7.04527 9.19401 7.02727 9.14729C7.00927 9.10057 7 9.05048 7 8.9999C7 8.94931 7.00927 8.89923 7.02727 8.85251C7.04527 8.80578 7.07165 8.76335 7.1049 8.72762L11.3895 4.11278C11.4566 4.04057 11.5475 4 11.6423 4C11.7371 4 11.8281 4.04057 11.8951 4.11278C11.9621 4.18499 11.9998 4.28293 11.9998 4.38506C11.9998 4.48718 11.9621 4.58512 11.8951 4.65733L7.86256 8.9999L11.8951 13.3425C11.9284 13.3782 11.9547 13.4206 11.9727 13.4673C11.9907 13.5141 12 13.5642 12 13.6147C12 13.6653 11.9907 13.7154 11.9727 13.7621C11.9547 13.8089 11.9284 13.8513 11.8951 13.887Z"></path>
+      </svg>
       <div class="sidebar">
         <div class="sidebar__header">
-          <svg class="sidebar__action" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8951 13.887C11.8619 13.9228 11.8225 13.9512 11.7792 13.9706C11.7358 13.99 11.6893 14 11.6423 14C11.5953 14 11.5488 13.99 11.5055 13.9706C11.4621 13.9512 11.4227 13.9228 11.3895 13.887L7.1049 9.27217C7.07165 9.23645 7.04527 9.19401 7.02727 9.14729C7.00927 9.10057 7 9.05048 7 8.9999C7 8.94931 7.00927 8.89923 7.02727 8.85251C7.04527 8.80578 7.07165 8.76335 7.1049 8.72762L11.3895 4.11278C11.4566 4.04057 11.5475 4 11.6423 4C11.7371 4 11.8281 4.04057 11.8951 4.11278C11.9621 4.18499 11.9998 4.28293 11.9998 4.38506C11.9998 4.48718 11.9621 4.58512 11.8951 4.65733L7.86256 8.9999L11.8951 13.3425C11.9284 13.3782 11.9547 13.4206 11.9727 13.4673C11.9907 13.5141 12 13.5642 12 13.6147C12 13.6653 11.9907 13.7154 11.9727 13.7621C11.9547 13.8089 11.9284 13.8513 11.8951 13.887Z"></path>
-          </svg>
           <svg class="sidebar__logo" width="151" height="27" viewBox="0 0 151 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24.0725 26.7775C26.2502 26.7775 28.1668 26.2098 29.4322 25.0761C30.4375 24.1801 31.0326 22.9543 31.0887 21.4183H28.6509C28.5952 22.3879 28.2229 23.1377 27.6088 23.6676C26.7901 24.3995 25.5241 24.7835 24.0541 24.7835C21.8954 24.7835 20.2953 23.9785 19.5878 22.4243C19.2718 21.7467 19.141 20.9608 19.141 19.9917C19.141 19.0224 19.2901 18.2361 19.5878 17.5589C20.2765 16.0592 21.8398 15.1994 24.0541 15.1994C25.4875 15.1994 26.6968 15.5837 27.5157 16.3151C28.1299 16.8647 28.5208 17.5955 28.6141 18.5471H31.0518C30.9961 17.0836 30.4005 15.8403 29.3951 14.9069C28.1111 13.7914 26.2317 13.206 24.0727 13.206C20.6673 13.206 18.304 14.5598 17.2804 16.8093C16.8711 17.7233 16.6477 18.7852 16.6477 19.992C16.6477 21.1808 16.8523 22.2412 17.2804 23.1743C18.3037 25.4602 20.6484 26.7775 24.0725 26.7775ZM43.0936 26.4474H45.5503L39.9483 13.5354H36.6172L30.9971 26.4474H33.4909L34.7938 23.3568H41.7913L43.0936 26.4474ZM35.5939 21.4365L38.2552 15.0716H38.292L40.9716 21.4365H35.5939ZM55.573 26.4474H58.5509L53.5631 21.1981C55.4055 21.1255 56.6712 20.4124 57.2668 19.095C57.5085 18.5831 57.6205 17.9611 57.6205 17.2667C57.6205 16.6257 57.5083 16.059 57.285 15.5837C56.6712 14.1935 55.1448 13.5352 52.9675 13.5352H46.6034V26.4472H48.9291V21.2166H50.7159L55.573 26.4474ZM48.9294 15.4011H52.3911C53.7684 15.4011 54.7357 15.6384 55.0897 16.4439C55.2012 16.6811 55.2571 16.9741 55.2571 17.3216C55.2571 17.7418 55.201 18.0532 55.0707 18.3273C54.7357 19.0952 53.8236 19.3515 52.3911 19.3515H48.9294V15.4011ZM70.2661 21.3629C69.8382 20.4674 69.019 19.9185 67.7907 19.6805C68.7026 19.4245 69.3534 18.9307 69.6887 18.2175C69.8751 17.8152 69.9676 17.3216 69.9676 16.7724C69.9676 16.2425 69.8749 15.8032 69.6697 15.3826C69.0933 14.1205 67.6414 13.5354 65.6874 13.5354H59.6207V26.4474H65.7624C67.9024 26.4474 69.5956 25.826 70.2469 24.3992C70.4515 23.9786 70.5448 23.4847 70.5448 22.8815C70.545 22.2781 70.4517 21.8019 70.2661 21.3629ZM61.9473 15.309H64.7389C66.0042 15.309 67.0089 15.5469 67.3816 16.3151C67.4746 16.5351 67.5489 16.7724 67.5489 17.1021C67.5489 17.4494 67.4934 17.7063 67.3816 17.9437C67.0279 18.6929 66.0785 18.9679 64.7763 18.9679H61.9475V15.309H61.9473ZM67.8836 23.5944C67.53 24.3992 66.451 24.6738 65.055 24.6738H61.9473V20.7599H65.0923C66.4512 20.7599 67.4934 21.034 67.9026 21.8938C68.014 22.1314 68.0696 22.3877 68.0696 22.7352C68.0694 23.0641 67.9953 23.3568 67.8836 23.5944ZM79.0419 26.7775C82.4659 26.7775 84.7735 25.4602 85.7972 23.2654C86.2435 22.3146 86.4669 21.1981 86.4669 19.9917C86.4669 18.8022 86.2435 17.7061 85.8156 16.754C84.8115 14.5411 82.5029 13.2058 79.0603 13.2058C75.6175 13.2058 73.2912 14.5595 72.2678 16.8091C71.8585 17.7231 71.6349 18.8205 71.6349 19.9917C71.6349 21.1805 71.8585 22.2781 72.2864 23.2101C73.2914 25.4602 75.6175 26.7775 79.0419 26.7775ZM79.0603 24.765C76.8087 24.765 75.2639 23.8872 74.5942 22.4057C74.2777 21.6925 74.1289 20.9242 74.1289 19.9917C74.1289 19.0589 74.2775 18.2908 74.5942 17.5775C75.2639 16.0958 76.8087 15.2179 79.0603 15.2179C81.2939 15.2179 82.8383 16.0958 83.5266 17.5775C83.843 18.2908 83.9919 19.0589 83.9919 19.9917C83.9919 20.9242 83.843 21.6925 83.5266 22.4057C82.8383 23.8869 81.2939 24.765 79.0603 24.765ZM95.4294 19.4795V21.3811H99.9141C99.8585 21.8571 99.7653 22.2594 99.5982 22.6432C98.9091 24.0882 97.2526 24.7833 95.1692 24.7833C92.9542 24.7833 91.2793 23.9968 90.5535 22.4057C90.2556 21.7467 90.1063 20.9975 90.1063 19.9917C90.1063 19.0039 90.237 18.2361 90.5535 17.5775C91.2603 15.9862 92.9352 15.1995 95.1692 15.1995C96.6201 15.1995 97.9231 15.5471 98.76 16.297C99.2627 16.7363 99.5982 17.3401 99.747 18.0896H102.203C102.055 16.8093 101.384 15.6574 100.473 14.871C99.2072 13.7371 97.3273 13.2062 95.1502 13.2062C91.7262 13.2062 89.3247 14.4865 88.2644 16.7915C87.8361 17.7065 87.6132 18.7484 87.6132 19.9922C87.6132 21.2357 87.8361 22.2785 88.2461 23.1921C89.2886 25.4786 91.7072 26.7779 95.0945 26.7779C98.3137 26.7779 100.621 25.6069 101.663 23.339C102.11 22.3513 102.315 21.3093 102.315 20.0101V19.48H95.4294V19.4795ZM114.207 26.4474H116.664L111.062 13.5354H107.73L102.11 26.4474H104.604L105.906 23.3568H112.904L114.207 26.4474ZM106.707 21.4365L109.368 15.0716H109.406L112.085 21.4365H106.707ZM119.003 26.4474H121.328V15.4923H125.218V13.5354H115.094V15.4923H119.003V26.4474ZM129.764 26.4474H132.09V15.4923H135.98V13.5354H125.856V15.4923H129.764V26.4474ZM143.575 26.7775C147 26.7775 149.307 25.4602 150.33 23.2654C150.777 22.3146 151 21.1981 151 19.9917C151 18.8022 150.777 17.7061 150.349 16.754C149.344 14.5411 147.036 13.2058 143.593 13.2058C140.151 13.2058 137.825 14.5595 136.801 16.8091C136.392 17.7231 136.169 18.8205 136.169 19.9917C136.169 21.1805 136.391 22.2781 136.819 23.2101C137.825 25.4602 140.151 26.7775 143.575 26.7775ZM143.593 24.765C141.341 24.765 139.798 23.8872 139.127 22.4057C138.81 21.6925 138.662 20.9242 138.662 19.9917C138.662 19.0589 138.81 18.2908 139.127 17.5775C139.798 16.0958 141.341 15.2179 143.593 15.2179C145.827 15.2179 147.372 16.0958 148.06 17.5775C148.376 18.2908 148.525 19.0589 148.525 19.9917C148.525 20.9242 148.376 21.6925 148.06 22.4057C147.372 23.8869 145.827 24.765 143.593 24.765Z" fill="white"></path>
             <path d="M2.14961 22.0429V17.9403L7.3443 15.3175L12.5392 17.9403V22.0429L7.3443 24.6657L2.14961 22.0429ZM0 16.5987V23.384L7.3443 27L14.6888 23.384V16.5987L7.3443 12.9827L0 16.5987Z" fill="#00FFFF"></path>
@@ -29,7 +30,7 @@
         <div class="sidebar__body">
           <nav class="sidebar__nav"><a class="sidebar__item" href="#">
               <svg class="sidebar__item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.0361 3.20491C11.4793 3.20528 10.9399 3.39776 10.5096 3.74959C10.0793 4.10143 9.78464 4.59089 9.67582 5.1347C9.567 5.67851 9.65071 6.24307 9.91271 6.73234C10.1747 7.2216 10.5988 7.60534 11.1129 7.81827C10.9907 8.11006 10.7844 8.35921 10.52 8.53426C10.2557 8.7093 9.94519 8.80237 9.62777 8.80171H6.4167C5.85078 8.80407 5.29603 8.95878 4.81117 9.24946V4.66008C5.34678 4.47147 5.79821 4.10034 6.08566 3.61229C6.37312 3.12424 6.47809 2.55069 6.38202 1.99302C6.28595 1.43534 5.99503 0.92944 5.56068 0.564735C5.12633 0.20003 4.57651 0 4.0084 0C3.44029 0 2.89048 0.20003 2.45612 0.564735C2.02177 0.92944 1.73085 1.43534 1.63479 1.99302C1.53872 2.55069 1.64369 3.12424 1.93114 3.61229C2.21859 4.10034 2.67002 4.47147 3.20564 4.66008V11.3443C2.6766 11.5337 2.2308 11.9016 1.94549 12.3841C1.66018 12.8666 1.55334 13.4333 1.64349 13.986C1.73364 14.5387 2.01509 15.0425 2.43907 15.4103C2.86305 15.778 3.40284 15.9864 3.9649 15.9994C4.52695 16.0123 5.07584 15.829 5.51645 15.4812C5.95706 15.1334 6.26162 14.6431 6.37735 14.0951C6.49308 13.5472 6.41268 12.9761 6.15009 12.481C5.88751 11.9859 5.45927 11.5979 4.93961 11.3842C5.06129 11.0937 5.26636 10.8454 5.52912 10.6705C5.79188 10.4955 6.10064 10.4017 6.4167 10.4008H9.62777C10.3622 10.4007 11.0743 10.1498 11.6455 9.69002C12.2167 9.23025 12.6124 8.58938 12.7666 7.87424C13.3033 7.69261 13.7585 7.32824 14.052 6.84527C14.3456 6.36229 14.4586 5.79167 14.3714 5.23383C14.2841 4.67599 14.0021 4.16669 13.5749 3.79557C13.1477 3.42445 12.6028 3.21529 12.0361 3.20491ZM4.0084 1.60582C4.16717 1.60582 4.32238 1.65272 4.45439 1.74057C4.58641 1.82843 4.6893 1.9533 4.75006 2.0994C4.81082 2.24549 4.82672 2.40625 4.79574 2.56135C4.76477 2.71645 4.68831 2.85891 4.57604 2.97073C4.46377 3.08255 4.32073 3.1587 4.16501 3.18955C4.00929 3.2204 3.84788 3.20456 3.7012 3.14405C3.55451 3.08353 3.42913 2.98105 3.34093 2.84957C3.25272 2.71809 3.20564 2.5635 3.20564 2.40537C3.20564 2.19332 3.29021 1.98995 3.44076 1.84C3.59131 1.69006 3.79549 1.60582 4.0084 1.60582ZM4.0084 14.3985C3.84963 14.3985 3.69442 14.3516 3.56241 14.2638C3.43039 14.1759 3.3275 14.051 3.26674 13.9049C3.20598 13.7588 3.19009 13.5981 3.22106 13.443C3.25204 13.2879 3.32849 13.1454 3.44076 13.0336C3.55303 12.9218 3.69607 12.8456 3.85179 12.8148C4.00751 12.7839 4.16892 12.7998 4.31561 12.8603C4.46229 12.9208 4.58767 13.0233 4.67588 13.1548C4.76409 13.2863 4.81117 13.4408 4.81117 13.599C4.81117 13.811 4.72659 14.0144 4.57604 14.1643C4.4255 14.3143 4.22131 14.3985 4.0084 14.3985ZM12.0361 6.40308C11.8773 6.40308 11.7221 6.35619 11.5901 6.26833C11.4581 6.18048 11.3552 6.05561 11.2944 5.90951C11.2336 5.76341 11.2177 5.60265 11.2487 5.44756C11.2797 5.29246 11.3562 5.14999 11.4684 5.03818C11.5807 4.92636 11.7237 4.85021 11.8795 4.81936C12.0352 4.78851 12.1966 4.80434 12.3433 4.86486C12.49 4.92537 12.6153 5.02785 12.7035 5.15934C12.7918 5.29082 12.8388 5.4454 12.8388 5.60354C12.8388 5.81559 12.7543 6.01896 12.6037 6.1689C12.4532 6.31884 12.249 6.40308 12.0361 6.40308Z"></path>
+                <path d="M13.6 0H5.6C4.96348 0 4.35303 0.252856 3.90294 0.702944C3.45286 1.15303 3.2 1.76348 3.2 2.4V3.2H2.4C1.76348 3.2 1.15303 3.45286 0.702944 3.90294C0.252856 4.35303 0 4.96348 0 5.6V13.6C0 14.2365 0.252856 14.847 0.702944 15.2971C1.15303 15.7471 1.76348 16 2.4 16H10.4C11.0365 16 11.647 15.7471 12.0971 15.2971C12.5471 14.847 12.8 14.2365 12.8 13.6V12.8H13.6C14.2365 12.8 14.847 12.5471 15.2971 12.0971C15.7471 11.647 16 11.0365 16 10.4V2.4C16 1.76348 15.7471 1.15303 15.2971 0.702944C14.847 0.252856 14.2365 0 13.6 0ZM11.2 13.6C11.2 13.8122 11.1157 14.0157 10.9657 14.1657C10.8157 14.3157 10.6122 14.4 10.4 14.4H2.4C2.18783 14.4 1.98434 14.3157 1.83431 14.1657C1.68429 14.0157 1.6 13.8122 1.6 13.6V8H11.2V13.6ZM11.2 6.4H1.6V5.6C1.6 5.38783 1.68429 5.18434 1.83431 5.03431C1.98434 4.88428 2.18783 4.8 2.4 4.8H10.4C10.6122 4.8 10.8157 4.88428 10.9657 5.03431C11.1157 5.18434 11.2 5.38783 11.2 5.6V6.4ZM14.4 10.4C14.4 10.6122 14.3157 10.8157 14.1657 10.9657C14.0157 11.1157 13.8122 11.2 13.6 11.2H12.8V5.6C12.7978 5.32708 12.7491 5.05654 12.656 4.8H14.4V10.4ZM14.4 3.2H4.8V2.4C4.8 2.18783 4.88428 1.98434 5.03431 1.83431C5.18434 1.68429 5.38783 1.6 5.6 1.6H13.6C13.8122 1.6 14.0157 1.68429 14.1657 1.83431C14.3157 1.98434 14.4 2.18783 14.4 2.4V3.2Z"></path>
               </svg><span class="sidebar__item-title">Dashboard</span>
               <svg class="sidebar__item-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.1049 4.11298C7.13806 4.07717 7.17747 4.04875 7.22084 4.02937C7.26422 4.00998 7.31073 4 7.35769 4C7.40465 4 7.45116 4.00998 7.49454 4.02937C7.53791 4.04875 7.57732 4.07717 7.61048 4.11298L11.8951 8.72783C11.9284 8.76355 11.9547 8.80599 11.9727 8.85271C11.9907 8.89943 12 8.94952 12 9.0001C12 9.05069 11.9907 9.10077 11.9727 9.14749C11.9547 9.19422 11.9284 9.23665 11.8951 9.27238L7.61048 13.8872C7.54344 13.9594 7.45251 14 7.35769 14C7.26287 14 7.17194 13.9594 7.1049 13.8872C7.03785 13.815 7.00019 13.7171 7.00019 13.6149C7.00019 13.5128 7.03785 13.4149 7.1049 13.3427L11.1374 9.0001L7.1049 4.65753C7.07165 4.62181 7.04527 4.57937 7.02727 4.53265C7.00927 4.48593 7 4.43584 7 4.38526C7 4.33467 7.00927 4.28459 7.02727 4.23786C7.04527 4.19114 7.07165 4.14871 7.1049 4.11298Z"></path>
@@ -55,7 +56,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z"></path>
               </svg>
             </div>
-            <div class="sidebar__children" id="devices"><a class="sidebar__item-child" href="#">Controllers Base</a><a class="sidebar__item-child" href="#">Displays Base</a><a class="sidebar__item-child" href="#">Distribution Boards Base</a><a class="sidebar__item-child" href="#">Unit Boards Base</a><a class="sidebar__item-child" href="#">Remote Controls Base</a><a class="sidebar__item-child" href="#">GPS Modules Base</a><a class="sidebar__item-child" href="#">Batterys Base</a><a class="sidebar__item-child" href="#">PSC Base</a></div>
+            <div class="sidebar__children" id="devices"><a class="sidebar__item-child" href="#">Controllers</a><a class="sidebar__item-child" href="#">Displays</a><a class="sidebar__item-child" href="#">Distribution Boards</a><a class="sidebar__item-child" href="#">Unit Boards</a><a class="sidebar__item-child" href="#">Remote Controls</a><a class="sidebar__item-child" href="#">GPS Modules</a><a class="sidebar__item-child" href="#">Batterys</a><a class="sidebar__item-child" href="#">PSC</a></div>
           </nav>
         </div>
         <div class="sidebar__footer">
@@ -107,11 +108,539 @@
                 </div>
               </div>
             </div>
+            <div class="content__filters">
+              <div class="filters">
+                <div class="filters__open filters__open_has-count">
+                  <svg class="filters__open-icon" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.125 13.4583C7.125 13.2926 7.18756 13.1336 7.29891 13.0164C7.41026 12.8992 7.56128 12.8333 7.71875 12.8333H11.2813C11.4387 12.8333 11.5897 12.8992 11.7011 13.0164C11.8124 13.1336 11.875 13.2926 11.875 13.4583C11.875 13.6241 11.8124 13.783 11.7011 13.9003C11.5897 14.0175 11.4387 14.0833 11.2813 14.0833H7.71875C7.56128 14.0833 7.41026 14.0175 7.29891 13.9003C7.18756 13.783 7.125 13.6241 7.125 13.4583ZM4.75 9.70831C4.75 9.54255 4.81256 9.38358 4.92391 9.26637C5.03526 9.14916 5.18628 9.08331 5.34375 9.08331H13.6563C13.8137 9.08331 13.9647 9.14916 14.0761 9.26637C14.1874 9.38358 14.25 9.54255 14.25 9.70831C14.25 9.87407 14.1874 10.033 14.0761 10.1503C13.9647 10.2675 13.8137 10.3333 13.6563 10.3333H5.34375C5.18628 10.3333 5.03526 10.2675 4.92391 10.1503C4.81256 10.033 4.75 9.87407 4.75 9.70831ZM2.375 5.95831C2.375 5.79255 2.43756 5.63358 2.54891 5.51637C2.66026 5.39916 2.81128 5.33331 2.96875 5.33331H16.0313C16.1887 5.33331 16.3397 5.39916 16.4511 5.51637C16.5624 5.63358 16.625 5.79255 16.625 5.95831C16.625 6.12407 16.5624 6.28304 16.4511 6.40025C16.3397 6.51746 16.1887 6.58331 16.0313 6.58331H2.96875C2.81128 6.58331 2.66026 6.51746 2.54891 6.40025C2.43756 6.28304 2.375 6.12407 2.375 5.95831Z"></path>
+                  </svg>
+                  <div class="filters__open-count">6</div>
+                </div>
+                <div class="filters__item"> 
+                  <div class="filters__item-name">Manufacturer: </div>
+                  <div class="filters__item-value">Carbogatto </div>
+                  <svg class="filters__item-close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z"></path>
+                  </svg>
+                </div>
+                <div class="filters__item"> 
+                  <div class="filters__item-name">Generation: </div>
+                  <div class="filters__item-value">First </div>
+                  <svg class="filters__item-close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="content__table">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="table__head">
+                    <tr class="table__line">
+                      <th class="table__item table__item_head"> 
+                        <div class="table__edit">
+                          <div class="table__edit-action">
+                            <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                            </label>
+                            <svg class="table__edit-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.25785 5.40324C9.28173 5.42536 9.30067 5.45162 9.31359 5.48054C9.32652 5.50946 9.33317 5.54046 9.33317 5.57177C9.33317 5.60308 9.32652 5.63408 9.31359 5.663C9.30067 5.69192 9.28173 5.71819 9.25785 5.7403L6.18129 8.59671C6.15747 8.61888 6.12918 8.63647 6.09803 8.64847C6.06688 8.66047 6.03349 8.66665 5.99977 8.66665C5.96605 8.66665 5.93266 8.66047 5.90151 8.64847C5.87036 8.63647 5.84207 8.61888 5.81825 8.59671L2.74169 5.7403C2.69355 5.6956 2.6665 5.63498 2.6665 5.57177C2.6665 5.50856 2.69355 5.44794 2.74169 5.40324C2.78983 5.35855 2.85513 5.33344 2.92321 5.33344C2.99129 5.33344 3.05658 5.35855 3.10472 5.40324L5.99977 8.09161L8.89481 5.40324C8.91863 5.38108 8.94692 5.36349 8.97807 5.35149C9.00922 5.33949 9.04261 5.33331 9.07633 5.33331C9.11005 5.33331 9.14345 5.33949 9.17459 5.35149C9.20574 5.36349 9.23403 5.38108 9.25785 5.40324Z"></path>
+                            </svg>
+                          </div>
+                          <div class="table__edit-select">
+                            <div class="table__edit-item">Update selected</div>
+                            <div class="table__edit-item">Delete selected</div>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="table__item table__item_head">
+                        <div class="table__item-sortable">VPN Number 
+                          <svg class="table__item-sort" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
+                            <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
+                          </svg>
+                        </div>
+                      </th>
+                      <th class="table__item table__item_head">
+                        <div class="table__item-sortable">Model 
+                          <svg class="table__item-sort" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
+                            <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
+                          </svg>
+                        </div>
+                      </th>
+                      <th class="table__item table__item_head"> 
+                        <div class="table__item-no-sortable">Generation </div>
+                      </th>
+                      <th class="table__item table__item_head">
+                        <div class="table__item-sortable">Production date 
+                          <svg class="table__item-sort" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
+                            <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
+                          </svg>
+                        </div>
+                      </th>
+                      <th class="table__item table__item_head">
+                        <div class="table__item-sortable table__item-sortable_active">Color/Style  
+                          <svg class="table__item-sort table__item-sort_desc" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
+                            <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
+                          </svg>
+                        </div>
+                      </th>
+                      <th class="table__item table__item_head">
+                        <div class="table__item-sortable">Manufacturer 
+                          <svg class="table__item-sort" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
+                            <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
+                          </svg>
+                        </div>
+                      </th>
+                      <th class="table__item table__item_head"> 
+                        <div class="table__item-no-sortable">Status</div>
+                      </th>
+                      <th class="table__item table__item_head"> 
+                        <div class="table__item-no-sortable">Requests to update</div>
+                      </th>
+                      <th class="table__item table__item_head"> </th>
+                    </tr>
+                  </thead>
+                  <tbody class="table__body">
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345678</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345679</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Custom</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345680</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345681</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345682</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Red Gloss</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345683</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Custom</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345684</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345685</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345686</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Silver</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345687</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345688</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345689</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345690</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                        </label>
+                      </td>
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345691</a></td>
+                      <td class="table__item table__item_body">CG-H7LR</td>
+                      <td class="table__item table__item_body">First</td>
+                      <td class="table__item table__item_body">01/04/2022</td>
+                      <td class="table__item table__item_body">Black Matt</td>
+                      <td class="table__item table__item_body">Carbogatto</td>
+                      <td class="table__item table__item_body"> 
+                        <div class="status status_minimal" data-type="true">GPS</div>
+                      </td>
+                      <td class="table__item table__item_body">Required</td>
+                      <td class="table__item table__item_body">
+                        <select class="select select_table">
+                          <option> </option>
+                          <option value="1">Full information</option>
+                          <option value="2" disabled="disabled">View request</option>
+                          <option value="3">Show log</option>
+                          <option value="delete">Delete</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-8">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item active"><a class="page-link" href="#">3</a></li>
+              </ul>
+            </div>
+            <div class="col-4"><a class="logs" href="#" data-bs-toggle="modal" data-bs-target="#logsModal"><span class="logs__heading">Show logs</span><span class="logs__intro">Last Update: 10/04/2022 15:40</span></a></div>
+          </div>
+        </div>
+        <div class="content__footer"> 
+          <p class="content__footer-intro">Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1</p>
+        </div>
+      </div>
+      <div class="modal fade" id="logsModal" tabindex="-1" aria-labelledby="logsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title" id="logsModalLabel">Vehicle Logs</p>
+              <svg class="modal__close" data-bs-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z"></path>
+              </svg>
+            </div>
+            <div class="modal-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="table__head">
+                    <tr class="table__line">
+                      <th class="table__item table__item_head"> 
+                        <div class="table__item-no-sortable">VPN Number</div>
+                      </th>
+                      <th class="table__item table__item_head"> 
+                        <div class="table__item-no-sortable">Description</div>
+                      </th>
+                      <th class="table__item table__item_head"> 
+                        <div class="table__item-no-sortable">Time</div>
+                      </th>
+                      <th class="table__item table__item_head"> 
+                        <div class="table__item-no-sortable">User</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="table__body">
+                    <tr class="table__line">
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345678</a></td>
+                      <td class="table__item table__item_body">Change "Firmware"</td>
+                      <td class="table__item table__item_body">2021-06-25 14:50:24</td>
+                      <td class="table__item table__item_body"> <a class="table__link" href="profile.html">Nikolai Kuzmenko</a></td>
+                    </tr>
+                    <tr class="table__line">
+                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345679</a></td>
+                      <td class="table__item table__item_body">Change "Firmware"</td>
+                      <td class="table__item table__item_body">2021-06-25 14:54:18</td>
+                      <td class="table__item table__item_body"> <a class="table__link" href="profile.html">Nikolai Kuzmenko</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/jquery.inputmask.min.js"></script>
     <script src="./js/app.min.js"></script>
   </body>

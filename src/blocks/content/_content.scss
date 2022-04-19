@@ -1,6 +1,15 @@
 .content{
-    padding: map-get($map: $spacers, $key: 3);
-    margin-left: $sidebar-width;
+    padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
+    // margin-left: $sidebar-width;
+    max-width: calc(100% - 260px);
+    transform: translateX(260px);
+
+    transition: $transition-base;
+
+    &--sidebar-open{
+        max-width: calc(100% - 72px);
+        transform: translateX(72px);
+    }
 
     &__inside{
         padding: map-get($map: $spacers, $key: 3);
@@ -31,5 +40,21 @@
         align-items: center;
 
         justify-content: flex-end;
+    }
+
+    // Filters
+    &__filters{
+        padding-bottom: map-get($map: $spacers, $key: 3);
+    }
+
+    // Footer
+    &__footer{
+        text-align: center;
+        padding-top: map-get($map: $spacers, $key: 2);
+
+        &-intro{
+            color: $secondary;
+            font-size: map-get($map: $font-size, $key: sm);
+        }
     }
 }

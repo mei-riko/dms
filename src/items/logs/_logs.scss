@@ -1,0 +1,38 @@
+.logs{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+    justify-content: flex-end;
+
+    border-radius: $border-radius;
+
+    width: fit-content;
+    margin-left: auto;
+    padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+
+    font-size: map-get($map: $font-size, $key: sm);
+    text-align: right;
+
+    &__heading{
+        font-weight: $font-weight-bold;
+        color: $secondary;
+        transition: $transition-base;
+    }
+    &__intro{
+        color: $secondary;
+        filter: opacity(.5);
+        transition: $transition-base;
+    }
+
+    &:hover{
+        text-decoration: none;
+        background-color: $black-60;
+
+        .logs__heading{
+            color: $white;
+        }
+        .logs__intro{
+            filter: opacity(1);
+        }
+    }
+}
