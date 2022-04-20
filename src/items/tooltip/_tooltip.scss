@@ -1,0 +1,20 @@
+.tooltip{
+    &.true{
+        .tooltip-inner{
+            background-color: $green-dark-100;
+            color: $black-100;
+        }
+    }
+    &.false{
+        .tooltip-inner{
+            background-color: $red-dark-100;
+            color: $white;
+        }
+    }
+    &.warning{
+        .tooltip-inner{
+            background-color: $yellow-dark-100;
+            color: $black-100;
+        }
+    }
+}

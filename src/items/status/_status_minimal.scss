@@ -1,0 +1,31 @@
+.status_minimal{
+    display: flex;
+    align-items: center;
+    color: $secondary;
+
+    &:before{
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        display: inline-block;
+
+        margin-right: map-get($map: $spacers, $key: 1);
+    }
+    
+    &[data-type=true]{
+        &:before{
+            background-color: $green-dark-100;
+        }
+    }
+    &[data-type=warning]{
+        &:before{
+            background-color: $yellow-dark-100;
+        }
+    }
+    &[data-type=false]{
+        &:before{
+            background-color: $red-dark-100;
+        }
+    }
+}

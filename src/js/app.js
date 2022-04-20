@@ -44,6 +44,19 @@ $(function() {
     //     autoFocus: false,
     //     dragToClose: false,
     // });
+
+    // Tooltips
+    // $('[data-toggle="tooltip"]').tooltip();
+
+    $('.status.status_warning[data-toggle="tooltip"]').tooltip({
+        customClass: 'warning'
+    });
+    $('.status.status_true[data-toggle="tooltip"]').tooltip({
+        customClass: 'true'
+    });
+    $('.status.status_false[data-toggle="tooltip"]').tooltip({
+        customClass: 'false'
+    });
 });
 
 import './mouseup';

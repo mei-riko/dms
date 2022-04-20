@@ -32,11 +32,18 @@
             filter: opacity(0);
         }
     }
+    &__container{
+        overflow: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
     // Body
     &__body{
         padding: map-get($map: $spacers, $key: 3);
         flex-grow: 1;
-        overflow: auto;
+        // overflow: auto;
 
         &--small{
             padding-left: map-get($map: $spacers, $key: 2);
@@ -105,6 +112,15 @@
             grid-template-columns: 16px;
         }
     }
+    &__parent-secondary{
+        border-radius: $border-radius;
+        background-color: $black-60;
+        transition: $transition-base;
+        
+        &--small{
+            background-color: inherit;
+        }
+    }
     &__item-child{
         color: $secondary;
 
@@ -122,6 +138,11 @@
 
         &--open{
             display: grid;
+        }
+
+        &_secondary{
+            padding-left: 48px;
+            padding-bottom: 12px;
         }
     }
     // Footer

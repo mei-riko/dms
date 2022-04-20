@@ -1,0 +1,21 @@
+.status{
+    display: flex;
+    align-items: center;
+
+    font-size: map-get($map: $font-size, $key: sm);
+
+    &__icon{
+        border-radius: 4px;
+        margin-left: map-get($map: $spacers, $key: 1);
+
+        &[data-type=true]{
+            fill: $green-dark-100;
+        }
+        &[data-type=warning]{
+            fill: $yellow-dark-100;
+        }
+        &[data-type=false]{
+            fill: $red-dark-100;
+        }
+    }
+}

@@ -20,10 +20,10 @@
             font-weight: $font-weight-bolder;
             color: $secondary;
     
-            vertical-align: baseline;
+            vertical-align: middle;
         }
         &_body{
-            padding: map-get($map: $spacers, $key: 2);
+            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
 
             font-size: map-get($map: $font-size, $key: sm);
             font-weight: $font-weight-base;
@@ -88,6 +88,11 @@
     }
     &__link{
         text-decoration: underline;
+    }
+    &__intro{
+        margin-top: 4px;
+        font-size: map-get($map: $font-size, $key: sm);
+        color: $secondary;
     }
 
     &__edit{
