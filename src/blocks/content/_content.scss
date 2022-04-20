@@ -1,4 +1,8 @@
 .content{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
     padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
     // margin-left: $sidebar-width;
     max-width: calc(100% - 260px);
