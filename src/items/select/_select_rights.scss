@@ -6,9 +6,9 @@ $border-radius-select: 14px;
         min-width: 100%;
     }    
 }
-.select2-container.select2-container--table{
+.select2-container.select2-container--rights{
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     .select2-selection--single {
         background-color: $black-60;
@@ -56,7 +56,7 @@ $border-radius-select: 14px;
     }
 }
 // Select2 Open
-.select2-container.select2-container--table.select2-container--open{
+.select2-container.select2-container--rights.select2-container--open{
     .select2-selection--single{
         .select2-selection__arrow{
             b {
@@ -74,18 +74,19 @@ $border-radius-select: 14px;
     }
 }
 // Select2 Open Position
-.select2-container--table.select2-container--open.select2-container--above .select2-selection--single {
+.select2-container--rights.select2-container--open.select2-container--above .select2-selection--single {
     border-color: $white;
     // border-top-left-radius: 0;
     // border-top-right-radius: 0;
 }
-.select2-container--table.select2-container--open.select2-container--below .select2-selection--single {
+.select2-container--rights.select2-container--open.select2-container--below .select2-selection--single {
     border-color: $white;
     // border-bottom-left-radius: 0;
     // border-bottom-right-radius: 0;
 }
+
 // Select2 Dropdown
-.select2-container--table .select2-results > .select2-results__options {
+.select2-container--rights .select2-results > .select2-results__options {
     max-height: 200px;
     overflow-y: auto;
     padding: map-get($map: $spacers, $key: 1) 0;
@@ -96,10 +97,6 @@ $border-radius-select: 14px;
         
         padding-left: map-get($map: $spacers, $key: 2);
         padding-right: map-get($map: $spacers, $key: 2);
-
-        span[data-type=delete]{
-            color: $red-dark-100;
-        }
 
         &--disabled{
             color: $black-40;
@@ -124,23 +121,23 @@ $border-radius-select: 14px;
 //-------- 
 //-------- Select2 Disabled
 //-------- 
-// .select2-container--table.select2-container--disabled .select2-selection--single {
+// .select2-container--rights.select2-container--disabled .select2-selection--single {
 //     background-color: #eee;
 //     cursor: default;
 // }
-// .select2-container--table.select2-container--disabled .select2-selection--single .select2-selection__clear {
+// .select2-container--rights.select2-container--disabled .select2-selection--single .select2-selection__clear {
 //     display: none;
 // }
-// .select2-container--table.select2-container--disabled .select2-selection__choice__remove {
+// .select2-container--rights.select2-container--disabled .select2-selection__choice__remove {
 //     display: none;
 // }
 //-------- 
 //-------- Search In Dropbox
 //-------- 
-// .select2-container--table .select2-search--dropdown .select2-search__field {
+// .select2-container--rights .select2-search--dropdown .select2-search__field {
 //     border: 1px solid #aaa;
 // }
-// .select2-container--table .select2-search--inline .select2-search__field {
+// .select2-container--rights .select2-search--inline .select2-search__field {
 //     background: transparent;
 //     border: none;
 //     outline: 0;
@@ -148,28 +145,28 @@ $border-radius-select: 14px;
 //     -webkit-appearance: textfield;
 // }
 
-// .select2-container--table .select2-results__option .select2-results__option .select2-results__group {
+// .select2-container--rights .select2-results__option .select2-results__option .select2-results__group {
 //   padding-left: 0; }
-// .select2-container--table .select2-results__option .select2-results__option .select2-results__option {
+// .select2-container--rights .select2-results__option .select2-results__option .select2-results__option {
 //   margin-left: -1em;
 //   padding-left: 2em; }
-//   .select2-container--table .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+//   .select2-container--rights .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
 //     margin-left: -2em;
 //     padding-left: 3em; }
-//     .select2-container--table .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+//     .select2-container--rights .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
 //       margin-left: -3em;
 //       padding-left: 4em; }
-//       .select2-container--table .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+//       .select2-container--rights .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
 //         margin-left: -4em;
 //         padding-left: 5em; }
-//         .select2-container--table .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+//         .select2-container--rights .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
 //           margin-left: -5em;
 //           padding-left: 6em; }
   
-//   .select2-container--table .select2-results__option--group {
+//   .select2-container--rights .select2-results__option--group {
 //     padding: 0; }
  
-//   .select2-container--table .select2-results__group {
+//   .select2-container--rights .select2-results__group {
 //     cursor: default;
 //     display: block;
 //     padding: 6px; }

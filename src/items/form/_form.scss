@@ -4,6 +4,10 @@
     &__label{
         margin-bottom: map-get($map: $spacers, $key: 2);
         line-height: $line-height-smaller;
+
+        &_secondary{
+            color: $secondary;
+        }
     }
     &__group{
         position: relative;

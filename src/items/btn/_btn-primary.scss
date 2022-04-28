@@ -1,0 +1,24 @@
+.btn-primary {
+    color: $black-100;
+    background-color: $primary-dark-100;
+    border-color: $primary-dark-100;
+
+    &__icon{
+        fill: $black-100;
+    }
+
+    &:hover{
+        color: $black-100;
+        background-color: $primary-dark-80;
+        border-color: $primary-dark-80;
+
+        box-shadow: $shadow-dark;
+
+        text-decoration: $link-decoration;
+    }
+    &:focus{
+        color: $black-100;
+        background-color: $primary-dark-60;
+        border-color: $primary-dark-60;
+    }
+}

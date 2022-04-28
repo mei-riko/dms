@@ -1,4 +1,4 @@
-.checkbox{
+.radio{
     cursor: pointer;
 
     &__input{
@@ -6,7 +6,7 @@
         z-index: -1;
         opacity: 0;
 
-        & + .checkbox__label{
+        & + .radio__label{
             display: inline-flex;
             align-items: center;
             user-select: none;
@@ -22,16 +22,16 @@
                 flex-grow: 0;
 
                 border: 1px solid $white;
-                border-radius: $border-radius;
+                border-radius: 50%;
                 background: inherit;
 
                 transition: $transition-base;
             }
         }
-        &:hover + .checkbox__label:before{
+        &:hover + .radio__label:before{
             border-color: $primary-dark-100;
         }
-        &:checked + .checkbox__label:before{
+        &:checked + .radio__label:before{
             background-color: $primary-dark-100;
             border-color: $primary-dark-100;
         }

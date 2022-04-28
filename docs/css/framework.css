@@ -326,36 +326,6 @@ template {
   display: none !important;
 }
 
-html, body {
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6;
-  background-color: #14121D;
-  color: #ffffff;
-}
-
-main {
-  overflow: hidden;
-  width: 100%;
-}
-
-.text-bolder {
-  font-weight: 500;
-}
-
-.text-bold {
-  font-weight: 600;
-}
-
-.text-small {
-  font-size: 0.85rem;
-}
-
-.font-secondary {
-  color: #CBCEFF;
-}
-
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -391,4 +361,34 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 .h6, h6 {
   font-size: 18px;
+}
+
+html, body {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #14121D;
+  color: #ffffff;
+}
+
+main {
+  overflow: hidden;
+  width: 100%;
+}
+
+.text-bolder {
+  font-weight: 500;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-small {
+  font-size: 0.85rem;
+}
+
+.font-secondary {
+  color: #CBCEFF;
 }

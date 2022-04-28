@@ -1,8 +1,9 @@
 .pagination{
-
+    margin-bottom: 0;
 }
 .page-item{
     margin-right: map-get($map: $spacers, $key: 1);
+    
     &:last-child{
         margin-right: 0;
     }

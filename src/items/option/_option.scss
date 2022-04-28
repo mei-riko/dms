@@ -1,0 +1,29 @@
+.option{
+    padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+    border-radius: 16px;
+    background-color: $black-60;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: map-get($map: $spacers, $key: 2);
+
+    &__name{
+        margin-right: map-get($map: $spacers, $key: 1);
+    }
+    &__value{
+        margin-right: map-get($map: $spacers, $key: 1);
+    }
+    &__close{
+        fill: $white;
+
+        transition: $transition-base;
+        cursor: pointer;
+
+        &:hover, &:focus{
+            fill: $secondary;
+        }
+    }
+}

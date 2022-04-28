@@ -31,7 +31,15 @@
 
             vertical-align: middle;
         }
+        // Fixed Width
+        &_check{
+            width: 60px;
+        }
+        &_avatar{
+            width: 54px;
+        }
     }
+    // Header
     &__item-sortable{
         display: inline-flex;
         align-items: center;
@@ -58,7 +66,6 @@
     &__item-no-sortable{
         padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
     }
-
     &__item-sort{
         fill: $secondary;
         margin-left: map-get($map: $spacers, $key: 1);
@@ -82,9 +89,16 @@
             }
         }
     }
-
+    // Body
     &__body{
         border-top: none;
+    }
+    &__user{
+        &-avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+        }
     }
     &__link{
         text-decoration: underline;
@@ -121,7 +135,6 @@
             fill: $white;
             stroke: $white;
         }
-
         &-select{
             display: none;
 

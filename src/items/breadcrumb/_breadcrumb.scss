@@ -8,6 +8,14 @@
 
         &-icon{
             fill: $primary-dark-100;
+            transition: $transition-base;
+
+            &:hover{
+                fill: $primary-dark-80;
+            }
+            &:focus{
+                fill: $primary-dark-60;
+            }
         }
     }
 }

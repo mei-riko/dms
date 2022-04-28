@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Displays Base</title>
+    <title>DMS Users</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
@@ -87,13 +87,13 @@
               <div class="row align-items-center content__heading">
                 <div class="col-8">
                   <div class="content__heading-left">
-                    <h1 class="h5 content__title">Displays Base </h1>
+                    <h1 class="h5 content__title">Dms Users </h1>
                     <ul class="breadcrumb">
                       <li class="breadcrumb-item"><a class="breadcrumb__link breadcrumb__home" href="dashboard.html"> 
                           <svg class="breadcrumb__home-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.05938 6.90431L6.69082 1.27697C6.73137 1.23634 6.77953 1.20411 6.83255 1.18212C6.88557 1.16012 6.94241 1.1488 6.99981 1.1488C7.05721 1.1488 7.11404 1.16012 7.16706 1.18212C7.22008 1.20411 7.26824 1.23634 7.30879 1.27697L12.9402 6.90431C13.1043 7.06837 13.1973 7.29122 13.1973 7.52365C13.1973 8.00626 12.8049 8.39865 12.3223 8.39865H11.7289V12.4141C11.7289 12.6561 11.5334 12.8516 11.2914 12.8516H7.87481V9.78908H6.34356V12.8516H2.70821C2.46621 12.8516 2.27071 12.6561 2.27071 12.4141V8.39865H1.67735C1.44493 8.39865 1.22207 8.30704 1.05801 8.14161C0.717583 7.79982 0.717583 7.24611 1.05938 6.90431Z"></path>
                           </svg></a></li>
-                      <li class="breadcrumb-item active">Displays</li>
+                      <li class="breadcrumb-item active">Users</li>
                     </ul>
                     <div class="content__heading-action"> <a class="btn btn-link btn_with-icon" href="#">Add new
                         <svg class="btn__icon btn-link__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,9 +117,17 @@
               </div>
               <div class="content__filters">
                 <div class="filters">
-                  <div class="filters__open">
+                  <div class="filters__open filters__open_has-count">
                     <svg class="filters__open-icon" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.125 13.4583C7.125 13.2926 7.18756 13.1336 7.29891 13.0164C7.41026 12.8992 7.56128 12.8333 7.71875 12.8333H11.2813C11.4387 12.8333 11.5897 12.8992 11.7011 13.0164C11.8124 13.1336 11.875 13.2926 11.875 13.4583C11.875 13.6241 11.8124 13.783 11.7011 13.9003C11.5897 14.0175 11.4387 14.0833 11.2813 14.0833H7.71875C7.56128 14.0833 7.41026 14.0175 7.29891 13.9003C7.18756 13.783 7.125 13.6241 7.125 13.4583ZM4.75 9.70831C4.75 9.54255 4.81256 9.38358 4.92391 9.26637C5.03526 9.14916 5.18628 9.08331 5.34375 9.08331H13.6563C13.8137 9.08331 13.9647 9.14916 14.0761 9.26637C14.1874 9.38358 14.25 9.54255 14.25 9.70831C14.25 9.87407 14.1874 10.033 14.0761 10.1503C13.9647 10.2675 13.8137 10.3333 13.6563 10.3333H5.34375C5.18628 10.3333 5.03526 10.2675 4.92391 10.1503C4.81256 10.033 4.75 9.87407 4.75 9.70831ZM2.375 5.95831C2.375 5.79255 2.43756 5.63358 2.54891 5.51637C2.66026 5.39916 2.81128 5.33331 2.96875 5.33331H16.0313C16.1887 5.33331 16.3397 5.39916 16.4511 5.51637C16.5624 5.63358 16.625 5.79255 16.625 5.95831C16.625 6.12407 16.5624 6.28304 16.4511 6.40025C16.3397 6.51746 16.1887 6.58331 16.0313 6.58331H2.96875C2.81128 6.58331 2.66026 6.51746 2.54891 6.40025C2.43756 6.28304 2.375 6.12407 2.375 5.95831Z"></path>
+                    </svg>
+                    <div class="filters__open-count">1</div>
+                  </div>
+                  <div class="filters__item"> 
+                    <div class="filters__item-name">Role: </div>
+                    <div class="filters__item-value">manager </div>
+                    <svg class="filters__item-close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z"></path>
                     </svg>
                   </div>
                 </div>
@@ -145,8 +153,9 @@
                             </div>
                           </div>
                         </th>
+                        <th class="table__item table__item_head table__item_avatar"></th>
                         <th class="table__item table__item_head">
-                          <div class="table__item-sortable">Serial Number 
+                          <div class="table__item-sortable">Username 
                             <svg class="table__item-sort" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
                               <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
@@ -154,7 +163,7 @@
                           </div>
                         </th>
                         <th class="table__item table__item_head">
-                          <div class="table__item-sortable table__item-sortable_active">Model 
+                          <div class="table__item-sortable table__item-sortable_active">Fullname 
                             <svg class="table__item-sort table__item-sort_asc" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
                               <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
@@ -162,10 +171,10 @@
                           </div>
                         </th>
                         <th class="table__item table__item_head"> 
-                          <div class="table__item-no-sortable">Firmware </div>
+                          <div class="table__item-no-sortable">E-mail</div>
                         </th>
                         <th class="table__item table__item_head">
-                          <div class="table__item-sortable">Firmware status 
+                          <div class="table__item-sortable">User rights
                             <svg class="table__item-sort" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
                               <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
@@ -173,100 +182,219 @@
                           </div>
                         </th>
                         <th class="table__item table__item_head">
-                          <div class="table__item-no-sortable">Connection status</div>
-                        </th>
-                        <th class="table__item table__item_head"> 
-                          <div class="table__item-no-sortable">Requests to update</div>
+                          <div class="table__item-sortable">Role
+                            <svg class="table__item-sort" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.34446 0.692434C3.42451 0.593399 3.57549 0.593399 3.65554 0.692434L6.26781 3.92428C6.37352 4.05506 6.28044 4.25 6.11227 4.25H0.887733C0.719563 4.25 0.626476 4.05506 0.73219 3.92428L3.34446 0.692434Z"></path>
+                              <path d="M3.65554 9.30757C3.57549 9.4066 3.42451 9.4066 3.34446 9.30757L0.732191 6.07572C0.626476 5.94494 0.719563 5.75 0.887733 5.75L6.11227 5.75C6.28044 5.75 6.37352 5.94494 6.26781 6.07572L3.65554 9.30757Z"></path>
+                            </svg>
+                          </div>
                         </th>
                         <th class="table__item table__item_head"> </th>
                       </tr>
                     </thead>
                     <tbody class="table__body">
                       <tr class="table__line">
-                        <th class="table__item table__item_body"> 
+                        <td class="table__item table__item_body">
                           <label class="checkbox">
                             <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
                           </label>
-                        </th>
-                        <th class="table__item table__item_body"><a class="table__link" href="display.html">DTDSPL2201</a>
-                          <div class="table__intro">vehicle X2712345678</div>
-                        </th>
-                        <th class="table__item table__item_body">DT - DIsplay1</th>
-                        <th class="table__item table__item_body"> <a class="status status_warning" data-toggle="tooltip" data-placement="top" title="update availible">V11.3.001
-                            <svg class="status__icon" data-type="warning" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M7.35385 4H8.65769L8.43846 9.42776H7.56154L7.35385 4ZM8.01154 12C7.79615 12 7.61538 11.932 7.46923 11.796C7.32308 11.6525 7.25 11.4788 7.25 11.2748C7.25 11.0708 7.32308 10.9009 7.46923 10.7649C7.61538 10.6213 7.79615 10.5496 8.01154 10.5496C8.22692 10.5496 8.40385 10.6213 8.54231 10.7649C8.68077 10.9009 8.75 11.0708 8.75 11.2748C8.75 11.4788 8.67692 11.6525 8.53077 11.796C8.39231 11.932 8.21923 12 8.01154 12Z"></path>
-                              <path d="M4 1H12V-1H4V1ZM15 4V12H17V4H15ZM12 15H4V17H12V15ZM1 12V4H-1V12H1ZM4 15C2.34315 15 1 13.6569 1 12H-1C-1 14.7614 1.23858 17 4 17V15ZM15 12C15 13.6569 13.6569 15 12 15V17C14.7614 17 17 14.7614 17 12H15ZM12 1C13.6569 1 15 2.34315 15 4H17C17 1.23858 14.7614 -1 12 -1V1ZM4 -1C1.23858 -1 -1 1.23858 -1 4H1C1 2.34315 2.34315 1 4 1V-1Z"></path>
-                            </svg></a></th>
-                        <th class="table__item table__item_body">01/04/2022</th>
-                        <th class="table__item table__item_body">
-                          <div class="status status_minimal" data-type="true">GPS</div>
-                        </th>
-                        <th class="table__item table__item_body">Required</th>
-                        <th class="table__item table__item_body">
-                          <select class="select select_table">
+                        </td>
+                        <td class="table__item table__item_body"><img class="img-fluid table__user-avatar" src="../img/profile.png"/></td>
+                        <td class="table__item table__item_body"><a class="table__link" href="user.html">@alice.manager</a></td>
+                        <td class="table__item table__item_body">Alice Harding</td>
+                        <td class="table__item table__item_body"><a href="mailto:mail@mail.ru">alice.manager@email.ru</a></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_right">
                             <option> </option>
-                            <option value="1" data-action="display.html" data-type="link">Full information</option>
-                            <option value="2" disabled="disabled">View request</option>
-                            <option value="3" data-action="#logsModal" data-type="modal">Show log</option>
-                            <option value="4" data-action="" data-type="delete">Delete</option>
+                            <option value="1">can edit</option>
+                            <option value="2" selected="selected">read only</option>
+                            <option value="3">admin</option>
+                            <option value="4">superadmin</option>
                           </select>
-                        </th>
+                        </td>
+                        <td class="table__item table__item_body">manager</td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="user rights">
+                            <option> </option>
+                            <option value="1" data-action="edit-user-rights.html" data-type="link">Edit rights</option>
+                            <option value="2" data-action="#logsModal" data-type="modal">Show log</option>
+                            <option value="3" data-action="" data-type="delete">Delete</option>
+                          </select>
+                        </td>
                       </tr>
                       <tr class="table__line">
-                        <th class="table__item table__item_body"> 
+                        <td class="table__item table__item_body">
                           <label class="checkbox">
                             <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
                           </label>
-                        </th>
-                        <th class="table__item table__item_body"><a class="table__link" href="display.html">DTDSPL2201</a>
-                          <div class="table__intro">vehicle X2712345678</div>
-                        </th>
-                        <th class="table__item table__item_body">DT - DIsplay1</th>
-                        <th class="table__item table__item_body">V11.3.001</th>
-                        <th class="table__item table__item_body">01/04/2022</th>
-                        <th class="table__item table__item_body">
-                          <div class="status status_minimal" data-type="false">Disconnect</div>
-                        </th>
-                        <th class="table__item table__item_body"> <a class="status status_true" data-toggle="tooltip" data-placement="top" title="new request">Required
-                            <svg class="status__icon" data-type="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M7.35385 4H8.65769L8.43846 9.42776H7.56154L7.35385 4ZM8.01154 12C7.79615 12 7.61538 11.932 7.46923 11.796C7.32308 11.6525 7.25 11.4788 7.25 11.2748C7.25 11.0708 7.32308 10.9009 7.46923 10.7649C7.61538 10.6213 7.79615 10.5496 8.01154 10.5496C8.22692 10.5496 8.40385 10.6213 8.54231 10.7649C8.68077 10.9009 8.75 11.0708 8.75 11.2748C8.75 11.4788 8.67692 11.6525 8.53077 11.796C8.39231 11.932 8.21923 12 8.01154 12Z"></path>
-                              <path d="M4 1H12V-1H4V1ZM15 4V12H17V4H15ZM12 15H4V17H12V15ZM1 12V4H-1V12H1ZM4 15C2.34315 15 1 13.6569 1 12H-1C-1 14.7614 1.23858 17 4 17V15ZM15 12C15 13.6569 13.6569 15 12 15V17C14.7614 17 17 14.7614 17 12H15ZM12 1C13.6569 1 15 2.34315 15 4H17C17 1.23858 14.7614 -1 12 -1V1ZM4 -1C1.23858 -1 -1 1.23858 -1 4H1C1 2.34315 2.34315 1 4 1V-1Z"></path>
-                            </svg></a></th>
-                        <th class="table__item table__item_body">
-                          <select class="select select_table">
+                        </td>
+                        <td class="table__item table__item_body"><img class="img-fluid table__user-avatar" src="../img/profile.png"/></td>
+                        <td class="table__item table__item_body"><a class="table__link" href="user.html">@annadoe</a></td>
+                        <td class="table__item table__item_body">Anna Doe</td>
+                        <td class="table__item table__item_body"><a href="mailto:mail@mail.ru">a.doe@email.ru</a></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_right">
                             <option> </option>
-                            <option value="1" data-action="display.html" data-type="link">Full information</option>
-                            <option value="2" disabled="disabled">View request</option>
-                            <option value="3" data-action="#logsModal" data-type="modal">Show log</option>
-                            <option value="4" data-action="" data-type="delete">Delete</option>
+                            <option value="1">can edit</option>
+                            <option value="2" selected="selected">read only</option>
+                            <option value="3">admin</option>
+                            <option value="4">superadmin</option>
                           </select>
-                        </th>
+                        </td>
+                        <td class="table__item table__item_body">manager</td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="user rights">
+                            <option> </option>
+                            <option value="1" data-action="edit-user-rights.html" data-type="link">Edit rights</option>
+                            <option value="2" data-action="#logsModal" data-type="modal">Show log</option>
+                            <option value="3" data-action="" data-type="delete">Delete</option>
+                          </select>
+                        </td>
                       </tr>
                       <tr class="table__line">
-                        <th class="table__item table__item_body"> 
+                        <td class="table__item table__item_body">
                           <label class="checkbox">
                             <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
                           </label>
-                        </th>
-                        <th class="table__item table__item_body"><a class="table__link" href="display.html">DTDSPL2201</a>
-                          <div class="table__intro">vehicle X2712345678</div>
-                        </th>
-                        <th class="table__item table__item_body">DT - DIsplay1</th>
-                        <th class="table__item table__item_body">V11.3.001</th>
-                        <th class="table__item table__item_body">01/04/2022</th>
-                        <th class="table__item table__item_body">
-                          <div class="status status_minimal" data-type="true">Direct</div>
-                        </th>
-                        <th class="table__item table__item_body">Required</th>
-                        <th class="table__item table__item_body">
-                          <select class="select select_table">
+                        </td>
+                        <td class="table__item table__item_body"><img class="img-fluid table__user-avatar" src="../img/profile.png"/></td>
+                        <td class="table__item table__item_body"><a class="table__link" href="user.html">@andrey.manager</a></td>
+                        <td class="table__item table__item_body">Andrey Ivanov</td>
+                        <td class="table__item table__item_body"><a href="mailto:mail@mail.ru">andrey.manager@email.ru</a></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_right">
                             <option> </option>
-                            <option value="1" data-action="display.html" data-type="link">Full information</option>
-                            <option value="2" disabled="disabled">View request</option>
-                            <option value="3" data-action="#logsModal" data-type="modal">Show log</option>
-                            <option value="4" data-action="" data-type="delete">Delete</option>
+                            <option value="1">can edit</option>
+                            <option value="2" selected="selected">read only</option>
+                            <option value="3">admin</option>
+                            <option value="4">superadmin</option>
                           </select>
-                        </th>
+                        </td>
+                        <td class="table__item table__item_body">manager</td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="user rights">
+                            <option> </option>
+                            <option value="1" data-action="edit-user-rights.html" data-type="link">Edit rights</option>
+                            <option value="2" data-action="#logsModal" data-type="modal">Show log</option>
+                            <option value="3" data-action="" data-type="delete">Delete</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                          </label>
+                        </td>
+                        <td class="table__item table__item_body"><img class="img-fluid table__user-avatar" src="../img/profile.png"/></td>
+                        <td class="table__item table__item_body"><a class="table__link" href="user.html">@fanana</a></td>
+                        <td class="table__item table__item_body">Anna Farko</td>
+                        <td class="table__item table__item_body"><a href="mailto:mail@mail.ru">fanana@email.ru</a></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_right">
+                            <option> </option>
+                            <option value="1">can edit</option>
+                            <option value="2" selected="selected">read only</option>
+                            <option value="3">admin</option>
+                            <option value="4">superadmin</option>
+                          </select>
+                        </td>
+                        <td class="table__item table__item_body">manager</td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="user rights">
+                            <option> </option>
+                            <option value="1" data-action="edit-user-rights.html" data-type="link">Edit rights</option>
+                            <option value="2" data-action="#logsModal" data-type="modal">Show log</option>
+                            <option value="3" data-action="" data-type="delete">Delete</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                          </label>
+                        </td>
+                        <td class="table__item table__item_body"><img class="img-fluid table__user-avatar" src="../img/profile.png"/></td>
+                        <td class="table__item table__item_body"><a class="table__link" href="user.html">@andrey99.manager</a></td>
+                        <td class="table__item table__item_body">Andrey Lydd</td>
+                        <td class="table__item table__item_body"><a href="mailto:mail@mail.ru">andrey99.manager@email.ru</a></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_right">
+                            <option> </option>
+                            <option value="1">can edit</option>
+                            <option value="2" selected="selected">read only</option>
+                            <option value="3">admin</option>
+                            <option value="4">superadmin</option>
+                          </select>
+                        </td>
+                        <td class="table__item table__item_body">manager</td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="user rights">
+                            <option> </option>
+                            <option value="1" data-action="edit-user-rights.html" data-type="link">Edit rights</option>
+                            <option value="2" data-action="#logsModal" data-type="modal">Show log</option>
+                            <option value="3" data-action="" data-type="delete">Delete</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                          </label>
+                        </td>
+                        <td class="table__item table__item_body"><img class="img-fluid table__user-avatar" src="../img/profile.png"/></td>
+                        <td class="table__item table__item_body"><a class="table__link" href="user.html">@slavadr.manager</a></td>
+                        <td class="table__item table__item_body">Slava Drew</td>
+                        <td class="table__item table__item_body"><a href="mailto:mail@mail.ru">slavadr@email.ru</a></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_right">
+                            <option> </option>
+                            <option value="1">can edit</option>
+                            <option value="2" selected="selected">read only</option>
+                            <option value="3">admin</option>
+                            <option value="4">superadmin</option>
+                          </select>
+                        </td>
+                        <td class="table__item table__item_body">manager</td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="user rights">
+                            <option> </option>
+                            <option value="1" data-action="edit-user-rights.html" data-type="link">Edit rights</option>
+                            <option value="2" data-action="#logsModal" data-type="modal">Show log</option>
+                            <option value="3" data-action="" data-type="delete">Delete</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">
+                          <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"></span>
+                          </label>
+                        </td>
+                        <td class="table__item table__item_body"><img class="img-fluid table__user-avatar" src="../img/profile.png"/></td>
+                        <td class="table__item table__item_body"><a class="table__link" href="user.html">@drefty</a></td>
+                        <td class="table__item table__item_body">Julien Mood</td>
+                        <td class="table__item table__item_body"><a href="mailto:mail@mail.ru">trytry@email.ru</a></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_right">
+                            <option> </option>
+                            <option value="1">can edit</option>
+                            <option value="2" selected="selected">read only</option>
+                            <option value="3">admin</option>
+                            <option value="4">superadmin</option>
+                          </select>
+                        </td>
+                        <td class="table__item table__item_body">manager</td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="user rights">
+                            <option> </option>
+                            <option value="1" data-action="edit-user-rights.html" data-type="link">Edit rights</option>
+                            <option value="2" data-action="#logsModal" data-type="modal">Show log</option>
+                            <option value="3" data-action="" data-type="delete">Delete</option>
+                          </select>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -289,18 +417,18 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <p class="modal-title" id="logsModalLabel">Display Logs</p>
-              <svg class="modal__close" data-bs-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <p class="modal-title" id="logsModalLabel">Users Logs</p>
+              <svg class="modal__close" data-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z"></path>
               </svg>
             </div>
             <div class="modal-body">
-              <div class="table-responsive">
+              <div class="table-responsive mb-2">
                 <table class="table">
                   <thead class="table__head">
                     <tr class="table__line">
                       <th class="table__item table__item_head"> 
-                        <div class="table__item-no-sortable">VPN Number</div>
+                        <div class="table__item-no-sortable">Username</div>
                       </th>
                       <th class="table__item table__item_head"> 
                         <div class="table__item-no-sortable">Description</div>
@@ -315,20 +443,24 @@
                   </thead>
                   <tbody class="table__body">
                     <tr class="table__line">
-                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345678</a></td>
-                      <td class="table__item table__item_body">Change "Firmware"</td>
+                      <td class="table__item table__item_body"><a class="table__link" href="user.html">@annadoe</a></td>
+                      <td class="table__item table__item_body">Change user rights "admin" to "read only"</td>
                       <td class="table__item table__item_body">2021-06-25 14:50:24</td>
                       <td class="table__item table__item_body"> <a class="table__link" href="profile.html">Nikolai Kuzmenko</a></td>
                     </tr>
                     <tr class="table__line">
-                      <td class="table__item table__item_body"><a class="table__link" href="vehicle.html">X2712345679</a></td>
-                      <td class="table__item table__item_body">Change "Firmware"</td>
-                      <td class="table__item table__item_body">2021-06-25 14:54:18</td>
+                      <td class="table__item table__item_body"><a class="table__link" href="user.html">@annadoe</a></td>
+                      <td class="table__item table__item_body">Change e-mail "a.doe@email.ru" to "a.doe@mail.ru"</td>
+                      <td class="table__item table__item_body">2021-06-25 14:40:10</td>
                       <td class="table__item table__item_body"> <a class="table__link" href="profile.html">Nikolai Kuzmenko</a></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+              </ul>
             </div>
           </div>
         </div>

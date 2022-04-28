@@ -1,0 +1,195 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "Edit DMS User Rights"
+block content
+    .content
+        .content__inside
+            .content__inside-container
+                .container-fluid
+                    .row.align-items-center.content__heading
+                        .col-6
+                            .content__heading-left
+                                h1.h5.content__title @alice.manager  
+                                ul.breadcrumb
+                                    li.breadcrumb-item
+                                        a.breadcrumb__link.breadcrumb__home(href="dashboard.html") 
+                                            svg.breadcrumb__home-icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M1.05938 6.90431L6.69082 1.27697C6.73137 1.23634 6.77953 1.20411 6.83255 1.18212C6.88557 1.16012 6.94241 1.1488 6.99981 1.1488C7.05721 1.1488 7.11404 1.16012 7.16706 1.18212C7.22008 1.20411 7.26824 1.23634 7.30879 1.27697L12.9402 6.90431C13.1043 7.06837 13.1973 7.29122 13.1973 7.52365C13.1973 8.00626 12.8049 8.39865 12.3223 8.39865H11.7289V12.4141C11.7289 12.6561 11.5334 12.8516 11.2914 12.8516H7.87481V9.78908H6.34356V12.8516H2.70821C2.46621 12.8516 2.27071 12.6561 2.27071 12.4141V8.39865H1.67735C1.44493 8.39865 1.22207 8.30704 1.05801 8.14161C0.717583 7.79982 0.717583 7.24611 1.05938 6.90431Z")
+                                    li.breadcrumb-item
+                                        a.breadcrumb__link(href="dms-users.html") Users
+                                    li.breadcrumb-item.active Edit User Rights
+                        .col-6
+                            .content__heading-right
+                                .content__heading-btn
+                                    a.btn.btn-secondary(href="#") Cancel
+                                .content__heading-btn
+                                    a.btn.btn-danger(href="#") Delete user
+                                .content__heading-btn
+                                    a.btn.btn-success(href="#") Save change
+                .content__sep
+                .container-fluid
+                    .row
+                        .col-6
+                            p.h6.text-bold.mb-4 Role
+                            .row.mb-5 
+                                .col-6.mb-3
+                                    label.radio(for="guest")
+                                        input.radio__input(type="radio" name="role" id="guest")
+                                        span.radio__label 
+                                            span.radio__label-inside Guest
+                                .col-6.mb-3
+                                    label.radio(for="manager")
+                                        input.radio__input(type="radio" name="role" id="manager")
+                                        span.radio__label 
+                                            span.radio__label-inside Manager
+                                .col-6.mb-3
+                                    label.radio(for="admin")
+                                        input.radio__input(type="radio" name="role" id="admin")
+                                        span.radio__label 
+                                            span.radio__label-inside Admin
+                                .col-6.mb-3
+                                    label.radio(for="superadmin")
+                                        input.radio__input(type="radio" name="role" id="superadmin")
+                                        span.radio__label 
+                                            span.radio__label-inside Superadmin
+                            .row 
+                                .col-6.mb-5
+                                    p.h6.text-bold.mb-4 Rights
+                                    .mb-3
+                                        label.checkbox
+                                            input.checkbox__input(type="checkbox" checked)
+                                            span.checkbox__label 
+                                                span.checkbox__label-inside can read
+                                    .mb-3
+                                        label.checkbox
+                                            input.checkbox__input(type="checkbox" checked)
+                                            span.checkbox__label 
+                                                span.checkbox__label-inside can create request
+                                    .mb-3
+                                        label.checkbox
+                                            input.checkbox__input(type="checkbox")
+                                            span.checkbox__label 
+                                                span.checkbox__label-inside can edit
+                                .col-6.mb-5
+                                    p.h6.text-bold.mb-4 Status
+                                    .mb-3
+                                        label.radio(for="active")
+                                            input.radio__input(type="radio" name="status" id="active" checked)
+                                            span.radio__label 
+                                                span.radio__label-inside Active User
+                                    .mb-3
+                                        label.radio(for="disabled")
+                                            input.radio__input(type="radio" name="status" id="disabled")
+                                            span.radio__label 
+                                                span.radio__label-inside Blocked User
+                        .col-6.mb-5
+                            p.h6.text-bold.mb-4 Availible Devices
+                            .row 
+                                .col-6.mb-3
+                                    label.checkbox
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__label 
+                                            span.checkbox__label-inside Controllers
+                                .col-6.mb-3
+                                    label.checkbox
+                                        input.checkbox__input(type="checkbox" checked)
+                                        span.checkbox__label 
+                                            span.checkbox__label-inside Remote Controls
+                                .col-6.mb-3
+                                    label.checkbox
+                                        input.checkbox__input(type="checkbox" checked)
+                                        span.checkbox__label 
+                                            span.checkbox__label-inside Displays
+                                .col-6.mb-3
+                                    label.checkbox
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__label 
+                                            span.checkbox__label-inside GPS Modules
+                                .col-6.mb-3
+                                    label.checkbox
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__label 
+                                            span.checkbox__label-inside Distribution Boards
+                                .col-6.mb-3
+                                    label.checkbox
+                                        input.checkbox__input(type="checkbox" checked)
+                                        span.checkbox__label 
+                                            span.checkbox__label-inside Batterys
+                                .col-6.mb-3
+                                    label.checkbox
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__label 
+                                            span.checkbox__label-inside Unit Boards
+                                .col-6.mb-3
+                                    label.checkbox
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__label 
+                                            span.checkbox__label-inside PSC
+                        .col-12.mb-5
+                            p.h6.text-bold.mb-4 Available Vehicles
+                            select.select.select_options(data-placeholder="Choose vehicle")
+                                option 
+                                option(value="1") X2712345678
+                                option(value="2") X2712345679
+                                option(value="3") X2712345680
+                                option(value="4" disabled="disabled") X2712345681
+                                option(value="5") X2712345682
+                                option(value="6") X2712345683
+                                option(value="7") X2712345684
+                                option(value="8") X2712345685
+                                option(value="9") X2712345686
+                                option(value="10") X2712345687
+                                option(value="11") X2712345688
+                                option(value="12") X2712345689
+                                option(value="13") X2712345690
+                                option(value="14") X2712345691
+                                option(value="15") X2712345692
+                                option(value="16") X2712345693
+                                option(value="17") X2712345694
+                                option(value="18") X2712345695
+                                option(value="19") X2712345696
+                                option(value="20") X2712345697
+                            .options-container.mt-4
+                                .option 
+                                    .option__name X2712345686
+                                    svg.option__close(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                                .option 
+                                    .option__name X2712345681
+                                    svg.option__close(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                                .option 
+                                    .option__name X2712345684
+                                    svg.option__close(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                                .option 
+                                    .option__name X2712345678
+                                    svg.option__close(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                        .col-12
+                            p.h6.text-bold.mb-4 Available Parameters
+                            select.select.select_options(data-placeholder="Choose parameter")
+                                option 
+                                option(value="1") X2712345678
+                                option(value="2") X2712345679
+                                option(value="3") X2712345680
+                                option(value="4" disabled="disabled") X2712345681
+                                option(value="5") X2712345682
+                                option(value="6") X2712345683
+                                option(value="7") X2712345684
+                                option(value="8") X2712345685
+                                option(value="9") X2712345686
+                                option(value="10") X2712345687
+                                option(value="11") X2712345688
+                                option(value="12") X2712345689
+                                option(value="13") X2712345690
+                                option(value="14") X2712345691
+                                option(value="15") X2712345692
+                                option(value="16") X2712345693
+                                option(value="17") X2712345694
+                                option(value="18") X2712345695
+                                option(value="19") X2712345696
+                                option(value="20") X2712345697
+        .content__footer 
+            p.content__footer-intro Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1            

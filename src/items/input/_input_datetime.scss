@@ -1,0 +1,5 @@
+.input_datetime{
+    &::-webkit-calendar-picker-indicator {
+        filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+    }
+}

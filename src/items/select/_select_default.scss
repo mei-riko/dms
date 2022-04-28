@@ -1,0 +1,197 @@
+// Select2
+.select2-container.select2-container--default{
+    display: flex;
+    justify-content: flex-start;
+
+    // width: 100%;
+    .selection{
+        width: inherit;
+    }
+    .select2-selection--single {
+        background-color: $black-100;
+        border: 1px solid $black-100;
+        border-radius: $border-radius;
+
+        min-width: 240px;
+        // width: 100%;
+        height: 44px;
+
+        // display: inline-block;
+        position: relative;
+
+        .select2-selection__rendered {
+            color: $white;
+            line-height: 43px;
+            // line-height: 44px;
+            
+            padding-left: 12px;
+            padding-right: 30px;
+        }
+        .select2-selection__placeholder {
+            color: $white;
+        }
+        .select2-selection__arrow {
+            height: 42px;
+            position: absolute;
+            top: 1px;
+            right: 6px;
+            width: 20px;
+
+            b {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                background: url("../icon/select-arrow.svg") no-repeat center / 12px;
+
+                border: unset;
+                position: unset;
+                margin: 0;
+            }
+        }
+        // .select2-selection__clear {
+        //     cursor: pointer;
+
+        //     float: right;
+        //     font-weight: bold;
+        //     height: 26px;
+        //     margin-right: 20px;
+        //     padding-right: 0px;
+        // }
+    }
+}
+// Select2 Open
+.select2-container.select2-container--default.select2-container--open{
+    .select2-selection--single{
+        .select2-selection__arrow{
+            b {
+                filter: opacity(.5);
+                // transform: rotate(180deg);
+            }
+        }
+    }
+    .select2-dropdown{
+        border-radius: $border-radius;
+        background-color: $black-60;
+        border-color: $black-100;
+        
+        min-width: 240px;
+    }
+}
+// Select2 Open Position
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border-color: $black-60;
+    // border-top-left-radius: 0;
+    // border-top-right-radius: 0;
+}
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+    border-color: $black-60;
+    // border-bottom-left-radius: 0;
+    // border-bottom-right-radius: 0;
+}
+// .select2-container--default .select2-results__option--selected{
+//     background-color: $black-100;
+//     color: $white;
+// }
+// Select2 Dropdown
+.select2-container--default .select2-search{
+    .select2-search__field{
+        background-color: $black-40;
+        color: $white;
+        border: unset;
+        border-radius: $border-radius;
+
+        &:focus{
+            outline: unset;
+        }
+
+        &::placeholder{
+            color: $input-placeholder;
+        }
+    }
+}
+.select2-container--default .select2-results {
+    // max-height: 200px;
+    // overflow-y: auto;
+    padding: map-get($map: $spacers, $key: 1) 0;
+
+    .select2-results__option {
+        // font-size: map-get($map: $font-size, $key: sm);
+        white-space: nowrap;
+        
+        padding-left: map-get($map: $spacers, $key: 2);
+        padding-right: map-get($map: $spacers, $key: 2);
+
+        &--disabled{
+            color: $black-40;
+        }
+        &--selectable{
+            &.select2-results__option--highlighted{
+                color: $white;
+                background-color: $black-40;
+            }
+        }
+        &--selected {
+            background-color: $black-100;
+            color: $white;
+
+            &.select2-results__option--highlighted{
+                background-color: $black-100;
+                color: $white;
+            }
+        }
+    }
+}
+//-------- 
+//-------- Select2 Disabled
+//-------- 
+// .select2-container--default.select2-container--disabled .select2-selection--single {
+//     background-color: #eee;
+//     cursor: default;
+// }
+// .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
+//     display: none;
+// }
+// .select2-container--default.select2-container--disabled .select2-selection__choice__remove {
+//     display: none;
+// }
+//-------- 
+//-------- Search In Dropbox
+//-------- 
+// .select2-container--default .select2-search--dropdown .select2-search__field {
+//     border: 1px solid #aaa;
+// }
+// .select2-container--default .select2-search--inline .select2-search__field {
+//     background: transparent;
+//     border: none;
+//     outline: 0;
+//     box-shadow: none;
+//     -webkit-appearance: textfield;
+// }
+
+// .select2-container--default .select2-results__option .select2-results__option .select2-results__group {
+//   padding-left: 0; }
+// .select2-container--default .select2-results__option .select2-results__option .select2-results__option {
+//   margin-left: -1em;
+//   padding-left: 2em; }
+//   .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+//     margin-left: -2em;
+//     padding-left: 3em; }
+//     .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+//       margin-left: -3em;
+//       padding-left: 4em; }
+//       .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+//         margin-left: -4em;
+//         padding-left: 5em; }
+//         .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+//           margin-left: -5em;
+//           padding-left: 6em; }
+  
+//   .select2-container--default .select2-results__option--group {
+//     padding: 0; }
+ 
+//   .select2-container--default .select2-results__group {
+//     cursor: default;
+//     display: block;
+//     padding: 6px; }
+  
