@@ -23,7 +23,7 @@
             vertical-align: middle;
         }
         &_body{
-            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+            padding: 8px 12px;
 
             font-size: map-get($map: $font-size, $key: sm);
             font-weight: $font-weight-base;
@@ -37,6 +37,12 @@
         }
         &_avatar{
             width: 54px;
+        }
+        &_fill{
+            width: 100%;
+        }
+        &_action{
+            min-width: 150px;
         }
     }
     // Header

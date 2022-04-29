@@ -36,12 +36,16 @@
     &__heading-left{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__heading-action{
         margin-left: map-get($map: $spacers, $key: 3);
     }
     &__heading-btn{
         margin-left: map-get($map: $spacers, $key: 2);
+    }
+    &__heading-logs{
+        margin-right: map-get($map: $spacers, $key: 2);
     }
     &__title{
         text-transform: uppercase;
@@ -59,6 +63,10 @@
 
     // Filters
     &__filters{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         padding-bottom: map-get($map: $spacers, $key: 3);
     }
     // Sep Line
@@ -69,6 +77,72 @@
 
         transform: translateX(-24px);
         margin-bottom: map-get($map: $spacers, $key: 3);
+    }
+    // Tabs
+    &__tabs{
+        margin-bottom: map-get($map: $spacers, $key: 4);
+        
+        &-item{
+            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+            border-radius: $border-radius;
+            color: $secondary;
+            // background-color: $black-100;
+
+            display: inline-flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+
+            margin-right: map-get($map: $spacers, $key: 2);
+
+            transition: $transition-base;
+
+            &:hover{
+                text-decoration: none;
+                color: $secondary;
+                background-color: $black-60;
+            }
+
+            &--active{
+                color: $white;
+                background-color: $black-100;
+
+                &:hover{
+                    text-decoration: none;
+                    color: $secondary;
+                    background-color: $black-60;
+                }
+            }
+            &--parent{
+                color: $white;
+                background-color: $black-100;
+
+                &:hover{
+                    text-decoration: none;
+                    color: $white;
+                    background-color: $black-100;
+
+                    cursor: default;
+                }
+            }
+        }
+        &-close{
+            margin-left: map-get($map: $spacers, $key: 1);
+            
+            fill: $white;
+
+            transition: $transition-base;
+            cursor: pointer;
+
+            &:hover, &:focus{
+                fill: $secondary;
+            }
+        }
+    }
+    // Additional information
+    &__additional{
+        font-size: map-get($map: $font-size, $key: sm);
+        color: $secondary;
     }
     // Footer
     &__footer{

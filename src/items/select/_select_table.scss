@@ -18,6 +18,17 @@ $border-radius-select: 14px;
         display: inline-block;
         position: relative;
 
+        transition: $transition-base;
+
+        &:hover{
+            background-color: $black-40;
+            border-color: $black-40;
+
+            .select2-selection__placeholder{
+                color: $secondary;
+            }
+        }
+
         .select2-selection__rendered {
             color: $white;
             line-height: 27px;
@@ -27,7 +38,13 @@ $border-radius-select: 14px;
             padding-right: 30px;
         }
         .select2-selection__placeholder {
+            font-weight: $font-weight-bolder;
             color: $white;
+            transition: $transition-base;
+            
+            &:hover{
+                color: $secondary;
+            }
         }
         .select2-selection__arrow {
             height: 26px;

@@ -1,0 +1,80 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "X2712345678 - Display DT - Monitor1"
+    mixin tableLineBasic(parametr, value, status, statusValue, request)
+        tr.table__line
+            td.table__item.table__item_body= parametr
+            td.table__item.table__item_body= value
+            td.table__item.table__item_body
+                if request
+                    span.status.status_minimal.status_warning(data-type=status data-toggle="tooltip" data-placement="top" title="has update")= statusValue
+                        svg.status__icon(data-type="warning" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M7.35385 4H8.65769L8.43846 9.42776H7.56154L7.35385 4ZM8.01154 12C7.79615 12 7.61538 11.932 7.46923 11.796C7.32308 11.6525 7.25 11.4788 7.25 11.2748C7.25 11.0708 7.32308 10.9009 7.46923 10.7649C7.61538 10.6213 7.79615 10.5496 8.01154 10.5496C8.22692 10.5496 8.40385 10.6213 8.54231 10.7649C8.68077 10.9009 8.75 11.0708 8.75 11.2748C8.75 11.4788 8.67692 11.6525 8.53077 11.796C8.39231 11.932 8.21923 12 8.01154 12Z")
+                            path(d="M4 1H12V-1H4V1ZM15 4V12H17V4H15ZM12 15H4V17H12V15ZM1 12V4H-1V12H1ZM4 15C2.34315 15 1 13.6569 1 12H-1C-1 14.7614 1.23858 17 4 17V15ZM15 12C15 13.6569 13.6569 15 12 15V17C14.7614 17 17 14.7614 17 12H15ZM12 1C13.6569 1 15 2.34315 15 4H17C17 1.23858 14.7614 -1 12 -1V1ZM4 -1C1.23858 -1 -1 1.23858 -1 4H1C1 2.34315 2.34315 1 4 1V-1Z")
+                else
+                    .status.status_minimal(data-type=status)= statusValue
+            td.table__item.table__item_body
+                select.select.select_table(data-placeholder="Action")
+                    option 
+                    if request
+                        option(value="3" data-action="" data-type="") Update Firmware
+                    option(value="1" data-action="" data-type="") Change
+                    option(value="2" data-action="" data-type="") Add request
+
+block content
+    .content
+        .content__inside
+            .container-fluid
+                .row.align-items-center.content__heading
+                    .col-7
+                        .content__heading-left
+                            h1.h5.content__title X2712345678
+                            ul.breadcrumb
+                                li.breadcrumb-item
+                                    a.breadcrumb__link.breadcrumb__home(href="dashboard.html") 
+                                        svg.breadcrumb__home-icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M1.05938 6.90431L6.69082 1.27697C6.73137 1.23634 6.77953 1.20411 6.83255 1.18212C6.88557 1.16012 6.94241 1.1488 6.99981 1.1488C7.05721 1.1488 7.11404 1.16012 7.16706 1.18212C7.22008 1.20411 7.26824 1.23634 7.30879 1.27697L12.9402 6.90431C13.1043 7.06837 13.1973 7.29122 13.1973 7.52365C13.1973 8.00626 12.8049 8.39865 12.3223 8.39865H11.7289V12.4141C11.7289 12.6561 11.5334 12.8516 11.2914 12.8516H7.87481V9.78908H6.34356V12.8516H2.70821C2.46621 12.8516 2.27071 12.6561 2.27071 12.4141V8.39865H1.67735C1.44493 8.39865 1.22207 8.30704 1.05801 8.14161C0.717583 7.79982 0.717583 7.24611 1.05938 6.90431Z")
+                                li.breadcrumb-item
+                                    a.breadcrumb__link(href="vehicles.html") Vehicles Base
+                                li.breadcrumb-item.active X2712345678
+                    .col-5
+                        .content__heading-right
+                            .content__heading-logs
+                                a.logs(href="#" data-toggle="modal" data-target="#logsModal")
+                                    span.logs__heading Show logs
+                                    span.logs__intro Last Update: 10/04/2022 15:40
+                            .content__heading-search
+                                form.form.form_search
+                                    span.form_search__icon
+                                    input.input.form_search__input(type="text" placeholder="Search")
+                .content__tabs
+                    a.content__tabs-item(href="vehicles.html") Vehicle
+                    a.content__tabs-item.content__tabs-item--active(href="vehicle-display.html") Display
+                        svg.content__tabs-close(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                .toggle
+                    .toggle__title.toggle__title_has-btn
+                        .toggle__icon 
+                            svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z" fill="white" stroke="white")
+                        .toggle__title-text Basic info
+                    .toggle__content
+                        .table-responsive
+                            table.table
+                                thead.table__head
+                                    tr.table__line
+                                        th.table__item.table__item_head 
+                                            .table__item-no-sortable Parametr
+                                        th.table__item.table__item_head 
+                                            .table__item-no-sortable Value
+                                        th.table__item.table__item_head.table__item_fill
+                                            .table__item-no-sortable Approval Status
+                                        th.table__item.table__item_head.table__item_action
+                                tbody.table__body
+                                    +tableLineBasic('Serial Number','DTDSPL2203', "true", 'Done')
+                                    +tableLineBasic('Model','DT - DIsplay1', "true", 'Done')
+                                    +tableLineBasic('Firmware','V11.3.001', "warning", 'Done',true)
+                                    +tableLineBasic('Model','DT - DIsplay1')
+                                    +tableLineBasic('Model','DT - DIsplay1')
+                

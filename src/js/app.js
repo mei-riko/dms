@@ -42,3 +42,4 @@ $(function() {
 
 import './mouseup';
 import '../blocks/sidebar/sidebar';
+import '../items/toggle/toggle';

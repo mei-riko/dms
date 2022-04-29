@@ -1,1 +1,18 @@
-.status_label{}
+.status_label{
+    display: inline-flex;
+    border-radius: $border-radius;
+    font-weight: $font-weight-bolder;
+
+    padding: 4px 8px;
+
+    &[data-type=true]{
+        background-color: $green-dark-100;
+        color: $black-100;
+    }
+    &[data-type=warning]{
+        background-color: $yellow-dark-100;
+    }
+    &[data-type=false]{
+        background-color: $red-dark-100;
+    }
+}

@@ -16,4 +16,11 @@
     &--full{
         width: 100%;
     }
+    &--small{
+        font-size: map-get($map: $font-size, $key: sm);
+        font-weight: $font-weight-bolder;
+        line-height: 1;
+        
+        padding: 6px 12px;
+    }
 }

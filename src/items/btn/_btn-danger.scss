@@ -3,6 +3,10 @@
     background-color: $red-dark-100;
     border-color: $red-dark-100;
 
+    &__icon{
+        fill: $white;
+    }
+
     &:hover{
         color: $white;
         background-color: $red-dark-80;
