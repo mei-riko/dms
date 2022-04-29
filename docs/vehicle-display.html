@@ -120,6 +120,7 @@
                   </svg>
                 </div>
                 <div class="toggle__title-text">Basic info</div>
+                <div class="toggle__title-btns"><a class="btn btn-secondary btn--small" href="display-settings.html">Edit</a></div>
               </div>
               <div class="toggle__content">
                 <div class="table-responsive">
@@ -186,8 +187,36 @@
                         </td>
                       </tr>
                       <tr class="table__line">
-                        <td class="table__item table__item_body">Model</td>
-                        <td class="table__item table__item_body">DT - DIsplay1</td>
+                        <td class="table__item table__item_body">Connection status</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Direct</div>
+                        </td>
+                        <td class="table__item table__item_body"></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Activation status</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Activated</div>
+                        </td>
+                        <td class="table__item table__item_body"></td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Activation date</td>
+                        <td class="table__item table__item_body">02.04.2022</td>
                         <td class="table__item table__item_body">
                           <div class="status status_minimal"></div>
                         </td>
@@ -200,10 +229,474 @@
                         </td>
                       </tr>
                       <tr class="table__line">
-                        <td class="table__item table__item_body">Model</td>
-                        <td class="table__item table__item_body">DT - DIsplay1</td>
+                        <td class="table__item table__item_body">Stolen status</td>
+                        <td class="table__item table__item_body">Positive</td>
                         <td class="table__item table__item_body">
-                          <div class="status status_minimal"></div>
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="toggle mt-4">
+              <div class="toggle__title toggle__title_has-btn">
+                <div class="toggle__icon"> 
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z" fill="white" stroke="white"></path>
+                  </svg>
+                </div>
+                <div class="toggle__title-text">Owner info</div>
+              </div>
+              <div class="toggle__content">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="table__head">
+                      <tr class="table__line">
+                        <th class="table__item table__item_head"> 
+                          <div class="table__item-no-sortable">Parametr</div>
+                        </th>
+                        <th class="table__item table__item_head"> 
+                          <div class="table__item-no-sortable">Value</div>
+                        </th>
+                        <th class="table__item table__item_head table__item_fill">
+                          <div class="table__item-no-sortable">Approval Status</div>
+                        </th>
+                        <th class="table__item table__item_head table__item_action"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="table__body">
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">First Name</td>
+                        <td class="table__item table__item_body">Artem</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Last Name</td>
+                        <td class="table__item table__item_body">Khayrullin</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Date of birth</td>
+                        <td class="table__item table__item_body">07.04.1984</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Country</td>
+                        <td class="table__item table__item_body">Russia</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">City</td>
+                        <td class="table__item table__item_body">Moscow</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Address</td>
+                        <td class="table__item table__item_body">123100, Chernogryzskaya 2nd, d.6, k.1, of.3</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Primary Email</td>
+                        <td class="table__item table__item_body">artemddi@gmail.com</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Reserve Email</td>
+                        <td class="table__item table__item_body">artem@carbogatto.bike</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Mobile Phone 1</td>
+                        <td class="table__item table__item_body">79857775090</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Mobile Phone 2</td>
+                        <td class="table__item table__item_body">-</td>
+                        <td class="table__item table__item_body"><span class="status status_minimal status_warning" data-type="warning" data-toggle="tooltip" data-placement="top" title="has update">Required
+                            <svg class="status__icon" data-type="warning" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.35385 4H8.65769L8.43846 9.42776H7.56154L7.35385 4ZM8.01154 12C7.79615 12 7.61538 11.932 7.46923 11.796C7.32308 11.6525 7.25 11.4788 7.25 11.2748C7.25 11.0708 7.32308 10.9009 7.46923 10.7649C7.61538 10.6213 7.79615 10.5496 8.01154 10.5496C8.22692 10.5496 8.40385 10.6213 8.54231 10.7649C8.68077 10.9009 8.75 11.0708 8.75 11.2748C8.75 11.4788 8.67692 11.6525 8.53077 11.796C8.39231 11.932 8.21923 12 8.01154 12Z"></path>
+                              <path d="M4 1H12V-1H4V1ZM15 4V12H17V4H15ZM12 15H4V17H12V15ZM1 12V4H-1V12H1ZM4 15C2.34315 15 1 13.6569 1 12H-1C-1 14.7614 1.23858 17 4 17V15ZM15 12C15 13.6569 13.6569 15 12 15V17C14.7614 17 17 14.7614 17 12H15ZM12 1C13.6569 1 15 2.34315 15 4H17C17 1.23858 14.7614 -1 12 -1V1ZM4 -1C1.23858 -1 -1 1.23858 -1 4H1C1 2.34315 2.34315 1 4 1V-1Z"></path>
+                            </svg></span>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="3" data-action="" data-type="">Update Firmware</option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">WhatsApp Number</td>
+                        <td class="table__item table__item_body">79857775090</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="warning">Required</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Telegram Number</td>
+                        <td class="table__item table__item_body">79857775090</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="warning">Required</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Facebook</td>
+                        <td class="table__item table__item_body">-</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="warning">Required</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Instagram</td>
+                        <td class="table__item table__item_body">-</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="warning">Required</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">TikTok</td>
+                        <td class="table__item table__item_body">-</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="warning">Required</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Date of entry</td>
+                        <td class="table__item table__item_body">31.03.2022</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Contract #</td>
+                        <td class="table__item table__item_body">CGLR/310322</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Date of last inquiry</td>
+                        <td class="table__item table__item_body">10.11.2022</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="warning">Required</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="toggle mt-4">
+              <div class="toggle__title toggle__title_has-btn">
+                <div class="toggle__icon"> 
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z" fill="white" stroke="white"></path>
+                  </svg>
+                </div>
+                <div class="toggle__title-text">Vehicle info</div>
+              </div>
+              <div class="toggle__content">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="table__head">
+                      <tr class="table__line">
+                        <th class="table__item table__item_head"> 
+                          <div class="table__item-no-sortable">Parametr</div>
+                        </th>
+                        <th class="table__item table__item_head"> 
+                          <div class="table__item-no-sortable">Value</div>
+                        </th>
+                        <th class="table__item table__item_head table__item_fill">
+                          <div class="table__item-no-sortable">Approval Status</div>
+                        </th>
+                        <th class="table__item table__item_head table__item_action"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="table__body">
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">VIN Number</td>
+                        <td class="table__item table__item_body">X2712345680</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Model</td>
+                        <td class="table__item table__item_body">CG-H7LR</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Generation</td>
+                        <td class="table__item table__item_body">03.2022-08.2024</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Production date</td>
+                        <td class="table__item table__item_body">02.04.2022</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Color/Style</td>
+                        <td class="table__item table__item_body">Black Gloss</td>
+                        <td class="table__item table__item_body"><span class="status status_minimal status_warning" data-type="warning" data-toggle="tooltip" data-placement="top" title="has update">Required
+                            <svg class="status__icon" data-type="warning" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.35385 4H8.65769L8.43846 9.42776H7.56154L7.35385 4ZM8.01154 12C7.79615 12 7.61538 11.932 7.46923 11.796C7.32308 11.6525 7.25 11.4788 7.25 11.2748C7.25 11.0708 7.32308 10.9009 7.46923 10.7649C7.61538 10.6213 7.79615 10.5496 8.01154 10.5496C8.22692 10.5496 8.40385 10.6213 8.54231 10.7649C8.68077 10.9009 8.75 11.0708 8.75 11.2748C8.75 11.4788 8.67692 11.6525 8.53077 11.796C8.39231 11.932 8.21923 12 8.01154 12Z"></path>
+                              <path d="M4 1H12V-1H4V1ZM15 4V12H17V4H15ZM12 15H4V17H12V15ZM1 12V4H-1V12H1ZM4 15C2.34315 15 1 13.6569 1 12H-1C-1 14.7614 1.23858 17 4 17V15ZM15 12C15 13.6569 13.6569 15 12 15V17C14.7614 17 17 14.7614 17 12H15ZM12 1C13.6569 1 15 2.34315 15 4H17C17 1.23858 14.7614 -1 12 -1V1ZM4 -1C1.23858 -1 -1 1.23858 -1 4H1C1 2.34315 2.34315 1 4 1V-1Z"></path>
+                            </svg></span>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="3" data-action="" data-type="">Update Firmware</option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Manufacturer</td>
+                        <td class="table__item table__item_body">Carbogatto</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Shipment date</td>
+                        <td class="table__item table__item_body">07.04.2022</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Activate Date</td>
+                        <td class="table__item table__item_body">21.05.2022</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Primary PSC</td>
+                        <td class="table__item table__item_body">#077 Marbella Bike</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="warning">Required</div>
+                        </td>
+                        <td class="table__item table__item_body">
+                          <select class="select select_table" data-placeholder="Action">
+                            <option> </option>
+                            <option value="1" data-action="" data-type="">Change</option>
+                            <option value="2" data-action="" data-type="">Add request</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr class="table__line">
+                        <td class="table__item table__item_body">Stolen status</td>
+                        <td class="table__item table__item_body">Positive</td>
+                        <td class="table__item table__item_body">
+                          <div class="status status_minimal" data-type="true">Done</div>
                         </td>
                         <td class="table__item table__item_body">
                           <select class="select select_table" data-placeholder="Action">
