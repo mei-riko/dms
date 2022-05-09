@@ -37,7 +37,8 @@ $(function() {
                 // code to be executed if n is different from case 1 and 2
                     break;
             }
-            $selectChanged.val(null).trigger("change");
+            // $selectChanged.val(null).trigger("change");
+            $selectChanged.val(0).trigger("change");
         });
     }
     if( $('.select_right').length > 0 ){

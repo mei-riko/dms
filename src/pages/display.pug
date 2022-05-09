@@ -1,0 +1,232 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "X2712345678 - Display DT - Monitor1"
+    mixin tableLineBasic(parametr, value, status, statusValue, request)
+        tr.table__line
+            td.table__item.table__item_body= parametr
+            td.table__item.table__item_body= value
+            td.table__item.table__item_body
+                if request
+                    span.status.status_minimal.status_warning(data-type=status data-toggle="tooltip" data-placement="top" title="has update")= statusValue
+                        svg.status__icon(data-type="warning" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M7.35385 4H8.65769L8.43846 9.42776H7.56154L7.35385 4ZM8.01154 12C7.79615 12 7.61538 11.932 7.46923 11.796C7.32308 11.6525 7.25 11.4788 7.25 11.2748C7.25 11.0708 7.32308 10.9009 7.46923 10.7649C7.61538 10.6213 7.79615 10.5496 8.01154 10.5496C8.22692 10.5496 8.40385 10.6213 8.54231 10.7649C8.68077 10.9009 8.75 11.0708 8.75 11.2748C8.75 11.4788 8.67692 11.6525 8.53077 11.796C8.39231 11.932 8.21923 12 8.01154 12Z")
+                            path(d="M4 1H12V-1H4V1ZM15 4V12H17V4H15ZM12 15H4V17H12V15ZM1 12V4H-1V12H1ZM4 15C2.34315 15 1 13.6569 1 12H-1C-1 14.7614 1.23858 17 4 17V15ZM15 12C15 13.6569 13.6569 15 12 15V17C14.7614 17 17 14.7614 17 12H15ZM12 1C13.6569 1 15 2.34315 15 4H17C17 1.23858 14.7614 -1 12 -1V1ZM4 -1C1.23858 -1 -1 1.23858 -1 4H1C1 2.34315 2.34315 1 4 1V-1Z")
+                else
+                    .status.status_minimal(data-type=status)= statusValue
+            td.table__item.table__item_body.table__item_action-body
+                select.select.select_table(data-placeholder="Action")
+                    option 
+                    if request
+                        option(value="3" data-action="#firmwareModal" data-type="modal") Update Firmware
+                    option(value="1" data-action="" data-type="") Change
+                    option(value="2" data-action="" data-type="") Add request
+
+block content
+    .content
+        .content__inside
+            .content__inside-container
+                .container-fluid
+                    .row.align-items-center.content__heading
+                        .col-7
+                            .content__heading-left
+                                h1.h5.content__title X2712345678
+                                ul.breadcrumb
+                                    li.breadcrumb-item
+                                        a.breadcrumb__link.breadcrumb__home(href="dashboard.html") 
+                                            svg.breadcrumb__home-icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M1.05938 6.90431L6.69082 1.27697C6.73137 1.23634 6.77953 1.20411 6.83255 1.18212C6.88557 1.16012 6.94241 1.1488 6.99981 1.1488C7.05721 1.1488 7.11404 1.16012 7.16706 1.18212C7.22008 1.20411 7.26824 1.23634 7.30879 1.27697L12.9402 6.90431C13.1043 7.06837 13.1973 7.29122 13.1973 7.52365C13.1973 8.00626 12.8049 8.39865 12.3223 8.39865H11.7289V12.4141C11.7289 12.6561 11.5334 12.8516 11.2914 12.8516H7.87481V9.78908H6.34356V12.8516H2.70821C2.46621 12.8516 2.27071 12.6561 2.27071 12.4141V8.39865H1.67735C1.44493 8.39865 1.22207 8.30704 1.05801 8.14161C0.717583 7.79982 0.717583 7.24611 1.05938 6.90431Z")
+                                    li.breadcrumb-item
+                                        a.breadcrumb__link(href="displays.html") Displays Base
+                                    li.breadcrumb-item.active DTDSPL2203
+                        .col-5
+                            .content__heading-right
+                                .content__heading-search
+                                    form.form.form_search
+                                        span.form_search__icon
+                                        input.input.form_search__input(type="text" placeholder="Search")
+                                .content__heading-action
+                                    a.btn.btn-secondary(href="display-settings.html")
+                                        svg.btn-secondary__icon(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" clip-rule="evenodd" d="M16.8746 5.70831L15.9653 7.52689L17.8972 8.17086C18.0105 8.20923 18.1089 8.2822 18.1785 8.37948C18.2483 8.4769 18.2856 8.5945 18.2853 8.71429V11.2846C18.2842 11.4031 18.2463 11.5183 18.1769 11.6143C18.1073 11.7104 18.0091 11.7827 17.8967 11.8207L15.9653 12.4646L16.875 14.284C16.9277 14.391 16.9456 14.5119 16.9262 14.6296C16.9067 14.7475 16.8506 14.8564 16.7661 14.9408L14.9413 16.7656C14.8579 16.8472 14.7515 16.9014 14.6364 16.9207C14.5218 16.94 14.404 16.9239 14.2988 16.8745L12.4813 15.9657L11.8373 17.8977C11.7989 18.011 11.7259 18.1093 11.6287 18.179C11.5313 18.2487 11.4137 18.286 11.2939 18.2857L8.7217 18.2857C8.6019 18.286 8.48504 18.2487 8.38763 18.179C8.29035 18.1093 8.21722 18.0105 8.17884 17.8972L7.53503 15.9657L5.71554 16.8754C5.60852 16.9281 5.48768 16.946 5.36998 16.9266C5.2521 16.9071 5.14319 16.8511 5.05876 16.7665L3.23344 14.9412C3.15039 14.8573 3.09537 14.7497 3.07595 14.6332C3.0566 14.5171 3.07359 14.3978 3.12459 14.2917L4.03389 12.4731L2.10189 11.8291C1.98862 11.7907 1.89025 11.7178 1.82063 11.6205C1.75091 11.5231 1.71356 11.4055 1.71387 11.2857V8.71546C1.71495 8.59698 1.75283 8.48175 1.82229 8.38573C1.89183 8.2896 1.99006 8.21734 2.10243 8.17927L4.03389 7.53546L3.12407 5.71582C3.07143 5.60883 3.05357 5.48805 3.07301 5.3704C3.09249 5.25253 3.14852 5.14362 3.23304 5.05918L5.05832 3.2339C5.14225 3.15083 5.24987 3.0958 5.36636 3.07638C5.4825 3.05703 5.60177 3.07402 5.70787 3.12502L7.52646 4.03432L8.17042 2.10244C8.20879 1.98912 8.28177 1.8907 8.37906 1.82106C8.47647 1.75133 8.59407 1.71399 8.71387 1.7143H11.2841C11.4026 1.71537 11.5178 1.75326 11.6139 1.82272C11.71 1.89226 11.7823 1.99049 11.8203 2.10286L12.4641 4.03432L14.2837 3.12453C14.3907 3.07186 14.5115 3.054 14.6292 3.07344C14.7471 3.09291 14.856 3.14895 14.9404 3.23347L16.7657 5.05872C16.8487 5.14265 16.9038 5.25028 16.9232 5.36679C16.9426 5.48293 16.9256 5.60221 16.8746 5.70831ZM15.9163 11.2832L17.1424 10.8745V9.09979L15.9182 8.6917C15.7239 8.62722 15.5458 8.52177 15.3959 8.38247C15.246 8.24318 15.1277 8.0733 15.0492 7.88433C14.9706 7.69537 14.9335 7.49173 14.9405 7.2872C14.9475 7.08418 14.9976 6.885 15.0876 6.70293L15.7008 5.56855L14.4617 4.32951L13.3004 4.91015L13.2971 4.91185C13.113 5.00692 12.9104 5.0608 12.7033 5.06974C12.4963 5.07869 12.2898 5.0425 12.0982 4.96367C11.9066 4.88484 11.7344 4.76527 11.5936 4.61324C11.4528 4.46122 11.3467 4.28038 11.2828 4.08328L10.8741 2.85715H9.12508L8.71709 4.08108L8.71638 4.08328C8.65244 4.28039 8.5464 4.46122 8.40559 4.61324C8.26479 4.76527 8.0926 4.88484 7.90096 4.96367C7.70933 5.0425 7.50284 5.07869 7.29583 5.06974C7.08881 5.0608 6.88564 5.00663 6.70153 4.91156L5.56482 4.32785L4.32742 5.56525L4.91143 6.70252C5.00649 6.88664 5.06037 7.08923 5.06932 7.29625C5.07826 7.50327 5.04207 7.70976 4.96324 7.90139C4.88441 8.09302 4.76484 8.26521 4.61282 8.40602C4.46079 8.54682 4.27996 8.65286 4.08285 8.7168L2.85673 9.12551V10.8745L4.08066 11.2825L4.08286 11.2832C4.27996 11.3471 4.46079 11.4532 4.61282 11.594C4.76484 11.7348 4.88441 11.907 4.96324 12.0986C5.04207 12.2903 5.07826 12.4967 5.06932 12.7038C5.06041 12.9099 5.00694 13.1117 4.91261 13.2952L4.29841 14.4315L5.53745 15.6705L6.6988 15.0899L6.70209 15.0882C6.88621 14.9931 7.08881 14.9392 7.29583 14.9303C7.50284 14.9213 7.70933 14.9575 7.90096 15.0363C8.0926 15.1152 8.26479 15.2348 8.40559 15.3868C8.5464 15.5388 8.65244 15.7196 8.71637 15.9167L9.12508 17.1429H10.8998L11.3079 15.9186C11.3724 15.7244 11.4778 15.5463 11.6171 15.3963C11.7564 15.2464 11.9263 15.1282 12.1153 15.0496C12.3042 14.971 12.5079 14.934 12.7124 14.941C12.9154 14.9479 13.1146 14.998 13.2967 15.088L14.431 15.7012L15.6701 14.4621L15.0894 13.3008L15.0877 13.2975C14.9927 13.1134 14.9388 12.9108 14.9298 12.7038C14.9209 12.4967 14.9571 12.2903 15.0359 12.0986C15.1147 11.907 15.2343 11.7348 15.3863 11.594C15.5384 11.4532 15.7192 11.3471 15.9163 11.2832ZM8.2535 7.38682C8.77034 7.04148 9.37798 6.85715 9.99958 6.85715C10.8331 6.85715 11.6325 7.18827 12.2219 7.77767C12.8113 8.36707 13.1424 9.16647 13.1424 10C13.1424 10.6216 12.9581 11.2292 12.6128 11.7461C12.2674 12.2629 11.7766 12.6658 11.2023 12.9036C10.628 13.1415 9.99609 13.2037 9.38644 13.0825C8.77679 12.9612 8.21678 12.6619 7.77725 12.2223C7.33771 11.7828 7.03838 11.2228 6.91711 10.6131C6.79585 10.0035 6.85809 9.37157 7.09596 8.79729C7.33384 8.22301 7.73666 7.73216 8.2535 7.38682ZM8.88844 11.6629C9.21734 11.8827 9.60402 12 9.99958 12C10.53 12 11.0387 11.7893 11.4138 11.4142C11.7889 11.0391 11.9996 10.5304 11.9996 10C11.9996 9.60445 11.8823 9.21777 11.6625 8.88887C11.4428 8.55997 11.1304 8.30362 10.7649 8.15225C10.3995 8.00087 9.99736 7.96127 9.6094 8.03844C9.22144 8.11561 8.86507 8.30609 8.58537 8.5858C8.30566 8.8655 8.11518 9.22187 8.03801 9.60983C7.96084 9.99779 8.00045 10.3999 8.15182 10.7654C8.3032 11.1308 8.55954 11.4432 8.88844 11.6629Z")
+                    .toggle.toggle--open
+                        .toggle__title.toggle__title_has-btn.toggle__title--active
+                            .toggle__icon.toggle__icon--active
+                                svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z" fill="white" stroke="white")
+                            .toggle__title-text Basic info
+                            .toggle__title-btns
+                                a.btn.btn-secondary.btn_with-icon.btn--small(href="edit-display-basic.html") Edit
+                                    svg.btn__icon.btn-secondary__icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M3.00001 8.28005V10.7534C3.00001 10.9081 3.06147 11.0565 3.17086 11.1659C3.28026 11.2753 3.42863 11.3367 3.58334 11.3367H6.05668C6.13345 11.3372 6.20955 11.3224 6.28062 11.2934C6.35169 11.2644 6.41634 11.2216 6.47084 11.1675L10.5075 7.12505L12.1642 5.50338C12.2189 5.44915 12.2622 5.38464 12.2919 5.31355C12.3215 5.24247 12.3367 5.16622 12.3367 5.08922C12.3367 5.01221 12.3215 4.93596 12.2919 4.86488C12.2622 4.79379 12.2189 4.72928 12.1642 4.67505L9.69084 2.17255C9.63661 2.11787 9.5721 2.07448 9.50101 2.04486C9.42993 2.01525 9.35368 2 9.27668 2C9.19967 2 9.12342 2.01525 9.05234 2.04486C8.98126 2.07448 8.91674 2.11787 8.86251 2.17255L7.21751 3.82338L3.16918 7.86588C3.11511 7.92039 3.07234 7.98503 3.04331 8.0561C3.01428 8.12718 2.99957 8.20328 3.00001 8.28005ZM9.27668 3.40922L10.9275 5.06005L10.0992 5.88838L8.44834 4.23755L9.27668 3.40922ZM4.16668 8.51922L7.62584 5.06005L9.27668 6.71088L5.81751 10.17H4.16668V8.51922Z")
+                        .toggle__content.toggle__content--open(style="display: block;")
+                            .table-responsive
+                                table.table
+                                    thead.table__head
+                                        tr.table__line
+                                            th.table__item.table__item_head 
+                                                .table__item-no-sortable Parametr
+                                            th.table__item.table__item_head 
+                                                .table__item-no-sortable Value
+                                            th.table__item.table__item_head.table__item_fill
+                                                .table__item-no-sortable Approval Status
+                                            th.table__item.table__item_head.table__item_action
+                                    tbody.table__body
+                                        +tableLineBasic('Serial Number','DTDSPL2203', 'true', 'Done')
+                                        +tableLineBasic('Model','DT - DIsplay1', 'true', 'Done')
+                                        +tableLineBasic('Firmware','V11.3.001', 'warning', 'Done', true)
+                                        tr.table__line
+                                            td.table__item.table__item_body Connection status
+                                            td.table__item.table__item_body= value
+                                                .status.status_minimal(data-type="true") Direct
+                                            td.table__item.table__item_body
+                                            td.table__item.table__item_body.table__item_action-body
+                                                select.select.select_table(data-placeholder="Action")
+                                                    option 
+                                                    option(value="1" data-action="" data-type="") Change
+                                                    option(value="2" data-action="" data-type="") Add request
+                                        tr.table__line
+                                            td.table__item.table__item_body Activation status
+                                            td.table__item.table__item_body= value
+                                                .status.status_minimal(data-type="true") Activated
+                                            td.table__item.table__item_body
+                                            td.table__item.table__item_body.table__item_action-body
+                                                select.select.select_table(data-placeholder="Action")
+                                                    option 
+                                                    option(value="1" data-action="" data-type="") Change
+                                                    option(value="2" data-action="" data-type="") Add request
+                                        +tableLineBasic('Activation date','02.04.2022')
+                                        +tableLineBasic('Stolen status','Positive', 'true', 'Done')
+                    .toggle.mt-4
+                        .toggle__title.toggle__title_has-btn
+                            .toggle__icon 
+                                svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z" fill="white" stroke="white")
+                            .toggle__title-text Owner info
+                        .toggle__content
+                            .table-responsive
+                                table.table
+                                    thead.table__head
+                                        tr.table__line
+                                            th.table__item.table__item_head 
+                                                .table__item-no-sortable Parametr
+                                            th.table__item.table__item_head 
+                                                .table__item-no-sortable Value
+                                            th.table__item.table__item_head.table__item_fill
+                                                .table__item-no-sortable Approval Status
+                                            th.table__item.table__item_head.table__item_action
+                                    tbody.table__body
+                                        +tableLineBasic('First Name','Artem', "true", 'Done')
+                                        +tableLineBasic('Last Name','Khayrullin', "true", 'Done')
+                                        +tableLineBasic('Date of birth','07.04.1984', "true", 'Done')
+                                        +tableLineBasic('Country','Russia', "true", 'Done')
+                                        +tableLineBasic('City','Moscow', "true", 'Done')
+                                        +tableLineBasic('Address','123100, Chernogryzskaya 2nd, d.6, k.1, of.3', "true", 'Done')
+                                        +tableLineBasic('Primary Email','artemddi@gmail.com', "true", 'Done')
+                                        +tableLineBasic('Reserve Email','artem@carbogatto.bike', "true", 'Done')
+                                        +tableLineBasic('Mobile Phone 1','79857775090', "true", 'Done')
+                                        +tableLineBasic('Mobile Phone 2','-', "warning", 'Required', true)
+                                        +tableLineBasic('WhatsApp Number','79857775090', "warning", 'Required')
+                                        +tableLineBasic('Telegram Number','79857775090', "warning", 'Required')
+                                        +tableLineBasic('Facebook','-', "warning", 'Required')
+                                        +tableLineBasic('Instagram','-', "warning", 'Required')
+                                        +tableLineBasic('TikTok','-', "warning", 'Required')
+                                        +tableLineBasic('Date of entry','31.03.2022', "true", 'Done')
+                                        +tableLineBasic('Contract #','CGLR/310322', "true", 'Done')
+                                        +tableLineBasic('Date of last inquiry','10.11.2022', "warning", 'Required')
+                    .toggle.mt-4
+                        .toggle__title.toggle__title_has-btn
+                            .toggle__icon 
+                                svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z" fill="white" stroke="white")
+                            .toggle__title-text Vehicle info
+                        .toggle__content
+                            .table-responsive
+                                table.table
+                                    thead.table__head
+                                        tr.table__line
+                                            th.table__item.table__item_head 
+                                                .table__item-no-sortable Parametr
+                                            th.table__item.table__item_head 
+                                                .table__item-no-sortable Value
+                                            th.table__item.table__item_head.table__item_fill
+                                                .table__item-no-sortable Approval Status
+                                            th.table__item.table__item_head.table__item_action
+                                    tbody.table__body
+                                        +tableLineBasic('VIN Number','X2712345680', "true", 'Done')
+                                        +tableLineBasic('Model','CG-H7LR', "true", 'Done')
+                                        +tableLineBasic('Generation','03.2022-08.2024', "true", 'Done')
+                                        +tableLineBasic('Production date','02.04.2022', "true", 'Done')
+                                        +tableLineBasic('Color/Style','Black Gloss', "warning", 'Required', true)
+                                        +tableLineBasic('Manufacturer','Carbogatto', "true", 'Done')
+                                        +tableLineBasic('Shipment date','07.04.2022', "true", 'Done')
+                                        +tableLineBasic('Activate Date','21.05.2022', "true", 'Done')
+                                        +tableLineBasic('Primary PSC','#077 Marbella Bike', "warning", 'Required')
+                                        +tableLineBasic('Stolen status','Positive', "true", 'Done')
+            .content__inside-footer
+                .row.mt-5
+                    .col-8
+                    .col-4
+                        a.logs(href="#" data-toggle="modal" data-target="#logsModal")
+                            span.logs__heading Show logs
+                            span.logs__intro Last Update: 10/04/2022 15:40
+        .content__footer 
+            p.content__footer-intro Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1
+    //- Modal Logs
+    .modal.fade(id="logsModal" tabindex="-1" aria-labelledby="logsModalLabel" aria-hidden="true")
+        .modal-dialog.modal-lg
+            .modal-content
+                .modal-header
+                    p.modal-title(id="logsModalLabel") Devices Settings Logs
+                    svg.modal__close(data-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                .modal-body
+                    .table-responsive.mb-2
+                        table.table
+                            thead.table__head
+                                tr.table__line
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable Device
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable Model
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable Description
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable Time
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable User
+                            tbody.table__body
+                                tr.table__line
+                                    td.table__item.table__item_body
+                                        a.table__link(href="display.html") Display
+                                    td.table__item.table__item_body DT - DIsplay1
+                                    td.table__item.table__item_body Add new firmware
+                                    td.table__item.table__item_body 2021-06-25 14:50:24
+                                    td.table__item.table__item_body 
+                                        a.table__link(href="profile.html") Nikolai Kuzmenko
+                                tr.table__line
+                                    td.table__item.table__item_body
+                                        a.table__link(href="display.html") Display
+                                    td.table__item.table__item_body DT - DIsplay2
+                                    td.table__item.table__item_body Add new model
+                                    td.table__item.table__item_body 2022-06-25 01:20:08
+                                    td.table__item.table__item_body 
+                                        a.table__link(href="profile.html") Nikolai Kuzmenko
+    //- Modal Firmware
+    .modal.fade(id="firmwareModal" tabindex="-1" aria-labelledby="firmwareModalLabel" aria-hidden="true")
+        .modal-dialog.modal-sm
+            .modal-content
+                .modal-header
+                    p.modal-title(id="firmwareModalLabel") Update Firmware
+                    svg.modal__close(data-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                .modal-body
+                    select.select.select_options(style="width: 100%" data-placeholder="Choose Firmware" data-minimum-results-for-search="10")
+                        option 
+                        option(value="1") V11.2.000
+                        option(value="1") V11.3.001
+                        option(value="2") V12.0.000
+                    .modal__confirmation.mt-3
+                        a.btn.btn-success.btn--full(href="#") Confirm
+                        a.btn.btn-danger.btn--full(href="#") Cancel
+block footer

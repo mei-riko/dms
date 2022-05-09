@@ -10,6 +10,11 @@
             fill: $white;
         }
     }
+    &__confirmation{
+        display: grid;
+        grid-gap: map-get($map: $spacers, $key: 2);
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .modal-header{
@@ -20,4 +25,45 @@
 }
 .modal-title{
     text-transform: uppercase;
+}
+
+.modal-body{
+    &_w-link{
+        padding: 0;
+    }
+
+    &__link{
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid $black-100;
+
+        text-align: center;
+
+        &[data-type=primary]{
+            color: $primary-dark-100;
+
+            &:hover{
+                color: $primary-dark-60;
+            }
+        }
+        &[data-type=danger]{
+            color: $red-dark-100;
+
+            &:hover{
+                color: $red-dark-60;
+            }
+        }
+        &[data-type=secondary]{
+            color: $secondary;
+
+            &:hover{
+                color: $white;
+            }
+        }
+
+        &:hover{
+            text-decoration: none;
+            background-color: $black-60;
+        }
+    }
 }

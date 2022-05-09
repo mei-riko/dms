@@ -11,6 +11,24 @@
     &__icon{
         margin-left: map-get($map: $spacers, $key: 1);
         transition: $transition-base;
+
+        &_success{
+            fill: $green-dark-100;
+        }
+        &_failed{
+            fill: $red-dark-100;
+        }
+    }
+    &__loading-animation{
+        display: inline-block;
+        background: url("../icon/loading.svg") no-repeat center / contain;
+        margin-left: map-get($map: $spacers, $key: 1);
+
+        &--small{
+            width: 14px;
+            height: 14px;
+            background-size: 24px;
+        }
     }
 
     &--full{
@@ -19,7 +37,7 @@
     &--small{
         font-size: map-get($map: $font-size, $key: sm);
         font-weight: $font-weight-bolder;
-        line-height: 1;
+        line-height: map-get($map: $font-size, $key: md);
         
         padding: 6px 12px;
     }

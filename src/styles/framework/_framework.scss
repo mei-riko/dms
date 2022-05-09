@@ -21,11 +21,22 @@ main{
 .text-bold{ font-weight: $font-weight-bold; }
 
 // Size
-.text-small{ font-size: 0.85rem; }
+.text-small{ font-size: map-get($map: $font-size, $key: xs); }
+.text-smaller{ font-size: map-get($map: $font-size, $key: sm); }
+.text-normal{ font-size: map-get($map: $font-size, $key: md); }
+.text-large{ font-size: map-get($map: $font-size, $key: lg); }
 
 // Color
 .font-secondary{ color: $secondary; }
 
+// Content
+p{
+    margin-bottom: map-get($map: $spacers, $key: 1);
+
+    &:last-child{
+        margin-bottom: map-get($map: $spacers, $key: 0);
+    }
+}
 
 // @media all and (min-width: map-get($grid-breakpoints, 'sm')){
 // }

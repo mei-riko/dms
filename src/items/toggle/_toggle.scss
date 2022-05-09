@@ -3,7 +3,7 @@
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        background: $secondary-dark;
+        background: $black-40;
 
         display: flex;
         align-items: center;
@@ -12,7 +12,7 @@
         transition: $transition-base;
 
         &--active{
-            background-color: $black-40;
+            // background-color: $black-40;
             transform: rotate(180deg);
         }
     }

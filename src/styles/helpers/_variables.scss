@@ -1,13 +1,21 @@
-$black-100            : #14121D;
-$black-80             : #221E2D;
-$black-60             : #2F2A3D;
-$black-40             : #403A51;
+// $black-100            : #14121D;
+// $black-80             : #221E2D;
+// $black-60             : #2F2A3D;
+// $black-40             : #403A51;
+
+$black-100            : #12111d;
+$black-80             : #1f1e2d;
+$black-60             : #2a2a3d;
+$black-40             : #2e2e45;
+
+$overflow             : rgba(20,18,29,0.7);
 
 $white                : #ffffff;
 $black                : $black-100;
 
-$secondary            : #CBCEFF;
-$secondary-dark       : #313467;
+// $secondary            : #CBCEFF;
+$secondary            : #a5abda;
+$secondary-dark       : #231F54;
 
 $primary-dark-100     : #00FFFF;
 $primary-dark-80      : #99FFFF;
@@ -35,7 +43,7 @@ $link-hover-decoration: underline !default;
 
 $input-color          : $white;
 $input-placeholder    : $secondary;
-$input-border         : $black-100;
+$input-border         : $black-60;
 $input-background     : $black-100;
 
 $transition-base      : 0.3s;

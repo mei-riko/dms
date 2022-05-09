@@ -1,0 +1,23 @@
+.toggle_secondary{
+    border-radius: $border-radius;
+    border: 1px solid $black-40;
+
+    &__title{
+        justify-content: space-between;
+        padding: map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 3);
+
+        &-btns{
+            padding: 0 map-get($map: $spacers, $key: 3);
+            flex-grow: 1;
+        }
+    }
+    &__icon{
+        background: inherit;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__content{
+        padding: 0 map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3);
+    }
+}

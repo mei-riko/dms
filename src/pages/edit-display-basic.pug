@@ -98,5 +98,53 @@ block content
                                 //- option 
                                 option(value="1") Positive
                                 option(value="2") Attention
+            .content__inside-footer
+                .row.mt-5
+                    .col-8
+                    .col-4
+                        a.logs(href="#" data-toggle="modal" data-target="#logsModal")
+                            span.logs__heading Show logs
+                            span.logs__intro Last Update: 10/04/2022 15:40
         .content__footer 
             p.content__footer-intro Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1
+    //- Modal Logs
+    .modal.fade(id="logsModal" tabindex="-1" aria-labelledby="logsModalLabel" aria-hidden="true")
+        .modal-dialog.modal-lg
+            .modal-content
+                .modal-header
+                    p.modal-title(id="logsModalLabel") Change right @alice.manager
+                    svg.modal__close(data-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                .modal-body
+                    .table-responsive.mb-2
+                        table.table
+                            thead.table__head
+                                tr.table__line
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable Device
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable Model
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable Description
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable Time
+                                    th.table__item.table__item_head 
+                                        .table__item-no-sortable User
+                            tbody.table__body
+                                tr.table__line
+                                    td.table__item.table__item_body
+                                        a.table__link(href="display.html") Display
+                                    td.table__item.table__item_body DT - DIsplay1
+                                    td.table__item.table__item_body Add new firmware
+                                    td.table__item.table__item_body 2021-06-25 14:50:24
+                                    td.table__item.table__item_body 
+                                        a.table__link(href="profile.html") Nikolai Kuzmenko
+                                tr.table__line
+                                    td.table__item.table__item_body
+                                        a.table__link(href="display.html") Display
+                                    td.table__item.table__item_body DT - DIsplay2
+                                    td.table__item.table__item_body Add new model
+                                    td.table__item.table__item_body 2022-06-25 01:20:08
+                                    td.table__item.table__item_body 
+                                        a.table__link(href="profile.html") Nikolai Kuzmenko
+    

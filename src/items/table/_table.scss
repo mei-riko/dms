@@ -1,10 +1,10 @@
 .table{
     min-width: 100%;
     width: auto;
+    margin-bottom: 0;
     flex: 1;
     
     .table__item {
-        border-color: $black-100;
 
         // overflow: hidden;
         // text-overflow: ellipsis;
@@ -14,20 +14,36 @@
 
         &_head{
             position: relative;
-            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 0) map-get($map: $spacers, $key: 2);
+            // padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 0);
+            padding: map-get($map: $spacers, $key: 1) 4px;
 
             font-size: map-get($map: $font-size, $key: sm);
             font-weight: $font-weight-bolder;
             color: $secondary;
     
+            border-color: $black-100;
+
             vertical-align: middle;
         }
         &_body{
-            padding: 8px 12px;
+            padding: 8px 16px;
 
             font-size: map-get($map: $font-size, $key: sm);
             font-weight: $font-weight-base;
             color: $white;
+
+            border-color: $black-100;
+
+            vertical-align: middle;
+        }
+        &_inner{
+            padding: 8px 16px;
+
+            font-size: map-get($map: $font-size, $key: sm);
+            font-weight: $font-weight-base;
+            color: $white;
+
+            border: unset;
 
             vertical-align: middle;
         }
@@ -97,7 +113,7 @@
     }
     // Body
     &__body{
-        border-top: none;
+        border: unset!important;
     }
     &__user{
         &-avatar{
@@ -114,7 +130,13 @@
         font-size: map-get($map: $font-size, $key: sm);
         color: $secondary;
     }
-
+    &__color{
+        display: inline-block;
+        
+        width: 60px;
+        height: 20px;
+        border-radius: $border-radius;
+    }
     &__edit{
         position: relative;
 

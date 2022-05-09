@@ -1,0 +1,28 @@
+.slider-ui{
+    .ui-widget-header{
+        background-color: $secondary;
+        border-color: $secondary;
+    }
+    .ui-state-default{
+        border-radius: 50%;
+        background-color: $primary-dark-100;
+        border-color: $primary-dark-100;
+    }
+    .ui-slider-handle {
+        top: -6px;
+    }
+
+    &.ui-widget.ui-widget-content{
+        border: none;
+        height: 6px;
+    }
+}
+
+.slider-ui-container{
+    // width: 100%;
+    // height: 46px;
+
+    // display: flex;
+    // align-items: center;
+    padding: 20px 0;
+}

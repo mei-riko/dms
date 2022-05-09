@@ -12,7 +12,7 @@ block variables
                 a.table__link(href=link)= vehicle
             td.table__item.table__item_body= model
             td.table__item.table__item_body= firmware
-            td.table__item.table__item_body.table__item_action
+            td.table__item.table__item_body.table__item_action.table__item_action-body
                 select.select.select_table(data-placeholder="Action")
                     option 
                     option(value="1" data-action="edit-device-setting.html" data-type="link") Edit model
@@ -34,10 +34,10 @@ block content
                                     li.breadcrumb-item.active Devices Settings
                         .col-6
                             .content__heading-right
-                                .content__heading-logs
-                                    a.logs(href="#" data-toggle="modal" data-target="#logsModal")
-                                        span.logs__heading Show logs
-                                        span.logs__intro Last Update: 10/04/2022 15:40
+                                //- .content__heading-logs
+                                //-     a.logs(href="#" data-toggle="modal" data-target="#logsModal")
+                                //-         span.logs__heading Show logs
+                                //-         span.logs__intro Last Update: 10/04/2022 15:40
                                 .content__heading-search
                                     form.form.form_search
                                         span.form_search__icon
@@ -105,6 +105,9 @@ block content
                             li.page-item
                                 a.page-link(href="#") 4
                     .col-4
+                        a.logs(href="#" data-toggle="modal" data-target="#logsModal")
+                            span.logs__heading Show logs
+                            span.logs__intro Last Update: 10/04/2022 15:40
         .content__footer 
             p.content__footer-intro Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1
     //- Modal Logs

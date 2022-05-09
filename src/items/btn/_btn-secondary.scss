@@ -1,14 +1,14 @@
 .btn-secondary {
-    color: $white;
+    color: $secondary;
     background-color: $black-60;
     border-color: $black-60;
 
     &__icon{
-        fill: $white;
+        fill: $secondary;
     }
 
     &:hover{
-        color: $secondary;
+        color: $white;
         background-color: $black-40;
         border-color: $black-40;
 
@@ -17,7 +17,7 @@
         text-decoration: none;
 
         .btn-secondary__icon{
-            fill: $secondary;
+            fill: $white;
         }
     }
     &:active,

@@ -1,5 +1,7 @@
 @import "../styles/helpers/variables";
 
+@import "../items/avatar/avatar";
+
 @import "../items/btn/btn";
 @import "../items/btn/btn_with-icon";
 
@@ -13,6 +15,7 @@
 @import "../items/input/input_datetime";
 @import "../items/input/input_success";
 @import "../items/input/input_error";
+@import "../items/input/input_color";
 
 @import "../items/checkbox/checkbox";
 @import "../items/radio/radio";
@@ -24,6 +27,8 @@
 
 @import "../items/form/form";
 @import "../items/form/form_search";
+
+@import "../items/slider-ui/slider-ui";
 
 @import "../items/breadcrumb/breadcrumb";
 @import "../items/pagination/pagination";
@@ -38,9 +43,13 @@
 @import "../items/status/status_label";
 
 @import "../items/tooltip/tooltip";
+
 @import "../items/toggle/toggle";
+@import "../items/toggle/toggle_secondary";
 
 @import "../items/table/table";
+
+@import "../items/network/network";
 
 @import "../blocks/intro/intro";
 @import "../blocks/filters/filters";

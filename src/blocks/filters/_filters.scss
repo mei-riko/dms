@@ -14,6 +14,9 @@
         align-items: center;
         justify-content: center;
 
+        margin-top: map-get($map: $spacers, $key: 1);
+        margin-bottom: map-get($map: $spacers, $key: 1);
+
         transition: $transition-base;
         cursor: pointer;
 
@@ -60,6 +63,8 @@
         justify-content: center;
 
         margin-right: map-get($map: $spacers, $key: 2);
+        margin-top: map-get($map: $spacers, $key: 1);
+        margin-bottom: map-get($map: $spacers, $key: 1);
 
         &-name{
             margin-right: map-get($map: $spacers, $key: 1);

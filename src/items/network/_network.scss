@@ -1,0 +1,7 @@
+.network{
+    display: grid;
+    align-items: center;
+
+    grid-gap: map-get($map: $spacers, $key: 2);
+    grid-template-columns: 32px 1fr;
+}

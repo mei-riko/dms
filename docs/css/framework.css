@@ -9,7 +9,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(20, 18, 29, 0);
+  -webkit-tap-highlight-color: rgba(18, 17, 29, 0);
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -368,7 +368,7 @@ html, body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
-  background-color: #14121D;
+  background-color: #12111d;
   color: #ffffff;
 }
 
@@ -386,9 +386,29 @@ main {
 }
 
 .text-small {
-  font-size: 0.85rem;
+  font-size: 10px;
+}
+
+.text-smaller {
+  font-size: 12px;
+}
+
+.text-normal {
+  font-size: 14px;
+}
+
+.text-large {
+  font-size: 16px;
 }
 
 .font-secondary {
-  color: #CBCEFF;
+  color: #a5abda;
+}
+
+p {
+  margin-bottom: 6px;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }

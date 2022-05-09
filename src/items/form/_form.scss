@@ -12,6 +12,10 @@
     &__group{
         position: relative;
         margin-top: map-get($map: $spacers, $key: 3);
+
+        &_first{
+            margin-top: 0;
+        }
     }
     &__additional{
         margin-top: map-get($map: $spacers, $key: 3);

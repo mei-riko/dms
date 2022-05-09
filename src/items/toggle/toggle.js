@@ -3,9 +3,9 @@ import $ from 'jquery';
 $(function() {
     $(".toggle .toggle__title").on("click", function(){
         let $toggleTitle = $(this);
-        let $toggle = $(this).closest(".toggle");
-        let $toggleContent = $toggle.find(".toggle__content");
-        let $toggleIcon = $toggle.find(".toggle__icon");
+        let $toggle = $(this).parent(".toggle");
+        let $toggleContent = $toggle.find(".toggle__content").eq(0);
+        let $toggleIcon = $toggle.find(".toggle__icon").eq(0);
 
         if( !$toggleContent.hasClass("toggle__content--open") ){
             $toggleTitle.addClass("toggle__title--active");
