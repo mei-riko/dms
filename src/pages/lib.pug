@@ -16,9 +16,17 @@ block content
                         .form__label Success
                         input.input.input_success.input--full(type="text" placeholder="Placeholder" value="manager@dms.ru")
                     .form__group
-                        a.form__addinional-link.text-small(href="#") Additional Text
                         .form__label Error
                         input.input.input_error.input--full(type="text" placeholder="Placeholder" value="manager@dms.ru")
+                    .form__group
+                        .form__label Date
+                        input.input.input--full.input_datetime(type="date" value="1998-01-08")
+                    .form__group
+                        .form__label Date & Time
+                        input.input.input--full.input_datetime(type="datetime-local" value="2021-01-08T16:35")
+                form.form.form_search.mt-4
+                    span.form_search__icon
+                    input.input.form_search__input(type="text" placeholder="Search")
             .col-4.mb-4
                 p.h5.text-bold.mb-4 Buttons
                 .row
@@ -32,14 +40,53 @@ block content
                         a.btn.btn-danger(href="#") Red Btn
                     .col-4.mb-3
                         a.btn.btn-link(href="#") Link Btn
-                    .col-4.mb-3
-                        a.btn.btn-secondary.btn--small(href="#") Small Btn
                     .col-12.mb-3
                         a.btn.btn-primary.btn--full(href="#") Blue Btn Full Width
                     .col-12.mb-3
                         a.btn.btn-secondary.btn_with-icon(href="#") Light Btn With Icon
                             svg.btn__icon.btn-secondary__icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
                                 path(d="M11.0835 6.41668H7.5835V2.91668C7.5835 2.76197 7.52204 2.61359 7.41264 2.5042C7.30324 2.3948 7.15487 2.33334 7.00016 2.33334C6.84545 2.33334 6.69708 2.3948 6.58768 2.5042C6.47829 2.61359 6.41683 2.76197 6.41683 2.91668V6.41668H2.91683C2.76212 6.41668 2.61375 6.47813 2.50435 6.58753C2.39495 6.69693 2.3335 6.8453 2.3335 7.00001C2.3335 7.15472 2.39495 7.30309 2.50435 7.41249C2.61375 7.52188 2.76212 7.58334 2.91683 7.58334H6.41683V11.0833C6.41683 11.2381 6.47829 11.3864 6.58768 11.4958C6.69708 11.6052 6.84545 11.6667 7.00016 11.6667C7.15487 11.6667 7.30324 11.6052 7.41264 11.4958C7.52204 11.3864 7.5835 11.2381 7.5835 11.0833V7.58334H11.0835C11.2382 7.58334 11.3866 7.52188 11.496 7.41249C11.6054 7.30309 11.6668 7.15472 11.6668 7.00001C11.6668 6.8453 11.6054 6.69693 11.496 6.58753C11.3866 6.47813 11.2382 6.41668 11.0835 6.41668Z")
+                    .col-12.mb-3
+                        a.btn.btn-secondary.btn--small(href="#") Small Btn
+                    .col-6.mb-3
+                        a.btn.btn-secondary.btn_with-icon.btn--small(href="#") Upload Success
+                            svg.btn__icon.btn__icon_success(width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M10.8847 5.2068C11.0256 5.07269 11.213 4.99855 11.4075 5.00002C11.602 5.00149 11.7883 5.07846 11.9272 5.21469C12.066 5.35092 12.1464 5.53575 12.1516 5.73018C12.1567 5.92461 12.0861 6.11343 11.9547 6.2568L7.96471 11.2468C7.8961 11.3207 7.81329 11.38 7.72124 11.4212C7.62919 11.4623 7.52978 11.4845 7.42896 11.4864C7.32814 11.4882 7.22798 11.4698 7.13447 11.432C7.04095 11.3943 6.95601 11.3381 6.88471 11.2668L4.23871 8.6208C4.16502 8.55214 4.10592 8.46934 4.06493 8.37734C4.02394 8.28534 4.00189 8.18603 4.00012 8.08533C3.99834 7.98462 4.01686 7.88459 4.05459 7.79121C4.09231 7.69782 4.14845 7.61298 4.21967 7.54176C4.29089 7.47055 4.37572 7.4144 4.46911 7.37668C4.5625 7.33896 4.66253 7.32043 4.76323 7.32221C4.86393 7.32399 4.96325 7.34603 5.05525 7.38702C5.14725 7.42801 5.23005 7.48712 5.29871 7.5608L7.39271 9.6538L10.8657 5.2288C10.872 5.2211 10.8786 5.21376 10.8857 5.2068H10.8847Z")
+                                path(fill-rule="evenodd" clip-rule="evenodd" d="M12 1H4C2.34315 1 1 2.34315 1 4V12C1 13.6569 2.34315 15 4 15H12C13.6569 15 15 13.6569 15 12V4C15 2.34315 13.6569 1 12 1ZM4 0C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4C16 1.79086 14.2091 0 12 0H4Z")
+                    .col-6.mb-3
+                        a.btn.btn-secondary.btn_with-icon.btn--small(href="#") Upload Failed
+                            svg.btn__icon.btn__icon_failed(width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M7.10385 4H8.40769L8.18846 9.42776H7.31154L7.10385 4ZM7.76154 12C7.54615 12 7.36538 11.932 7.21923 11.796C7.07308 11.6525 7 11.4788 7 11.2748C7 11.0708 7.07308 10.9009 7.21923 10.7649C7.36538 10.6213 7.54615 10.5496 7.76154 10.5496C7.97692 10.5496 8.15385 10.6213 8.29231 10.7649C8.43077 10.9009 8.5 11.0708 8.5 11.2748C8.5 11.4788 8.42692 11.6525 8.28077 11.796C8.14231 11.932 7.96923 12 7.76154 12Z")
+                                path(fill-rule="evenodd" clip-rule="evenodd" d="M12 1H4C2.34315 1 1 2.34315 1 4V12C1 13.6569 2.34315 15 4 15H12C13.6569 15 15 13.6569 15 12V4C15 2.34315 13.6569 1 12 1ZM4 0C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4C16 1.79086 14.2091 0 12 0H4Z")
+                    .col-6.mb-3
+                        a.btn.btn-secondary.btn_with-icon.btn--small(href="#") Upload Info
+                            svg.btn__icon.btn__icon_warning(width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M7.10385 4H8.40769L8.18846 9.42776H7.31154L7.10385 4ZM7.76154 12C7.54615 12 7.36538 11.932 7.21923 11.796C7.07308 11.6525 7 11.4788 7 11.2748C7 11.0708 7.07308 10.9009 7.21923 10.7649C7.36538 10.6213 7.54615 10.5496 7.76154 10.5496C7.97692 10.5496 8.15385 10.6213 8.29231 10.7649C8.43077 10.9009 8.5 11.0708 8.5 11.2748C8.5 11.4788 8.42692 11.6525 8.28077 11.796C8.14231 11.932 7.96923 12 7.76154 12Z")
+                                path(fill-rule="evenodd" clip-rule="evenodd" d="M12 1H4C2.34315 1 1 2.34315 1 4V12C1 13.6569 2.34315 15 4 15H12C13.6569 15 15 13.6569 15 12V4C15 2.34315 13.6569 1 12 1ZM4 0C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4C16 1.79086 14.2091 0 12 0H4Z")
+                    .col-6.mb-3 
+                        a.btn.btn-secondary.btn_with-icon.btn--small(href="#") Upload Process
+                            .btn__loading-animation.btn__loading-animation--small
+                p.h5.text-bold.my-4 Select2 
+                p.font-secondary Inside Table
+                .text-smaller
+                    select.select.select_table(data-placeholder="Action")
+                        option 
+                        option(value="1" data-action="edit-device-setting.html" data-type="link") Edit model
+                        option(value="2" data-action="#logsModal" data-type="modal") Show log
+                p.font-secondary.mt-4 With Search
+                select.select.select_options(data-placeholder="Choose parameter")
+                    option 
+                    option(value="1") X2712345678
+                    option(value="2") X2712345679
+                    option(value="3") X2712345680
+                    option(value="4" disabled="disabled") X2712345681
+                    option(value="5") X2712345682
+                    option(value="6") X2712345683
+                p.font-secondary.mt-4 Without Search
+                select.select.select_options(data-placeholder="Choose Status" data-minimum-results-for-search="Infinity" style="width: 100%")
+                    //- option 
+                    option(value="1") Activated
+                    option(value="2") Not activated
             .col-4.mb-4
                 p.h5.text-bold.mb-4 Filters Block
                 .filters
@@ -74,8 +121,7 @@ block content
                         a.page-link(href="#") 2
                     li.page-item.active
                         a.page-link(href="#") 3
-            .col-4.mb-4
-                p.h5.text-bold.mb-4 Statuses
+                p.h5.text-bold.my-4 Statuses
                 .row
                     .col-4.mb-3 
                         .status.status_minimal.status_true(data-type="true" data-toggle="tooltip" data-placement="top" title="Text Here") With Tooltips

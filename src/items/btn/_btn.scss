@@ -15,6 +15,9 @@
         &_success{
             fill: $green-dark-100;
         }
+        &_warning{
+            fill: $yellow-dark-100;
+        }
         &_failed{
             fill: $red-dark-100;
         }
