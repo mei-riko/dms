@@ -10,6 +10,8 @@
     background-color: $input-background;
     color: $input-color;
 
+    max-width: 100%;
+
     &--full{
         width: 100%;
     }

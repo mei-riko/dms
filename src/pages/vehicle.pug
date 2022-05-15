@@ -61,7 +61,7 @@ block content
             .content__inside-container
                 .container-fluid
                     .row.align-items-center.content__heading
-                        .col-7
+                        .col-12.col-lg-8
                             .content__heading-left
                                 h1.h5.content__title X2712345678
                                 ul.breadcrumb
@@ -72,12 +72,12 @@ block content
                                     li.breadcrumb-item
                                         a.breadcrumb__link(href="vehicles.html") Vehicles Base
                                     li.breadcrumb-item.active X2712345678
-                        .col-5
+                        .col-12.col-lg-4
                             .content__heading-right
-                                .content__heading-logs
-                                    a.logs(href="#" data-toggle="modal" data-target="#logsModal")
-                                        span.logs__heading Show logs
-                                        span.logs__intro Last Update: 10/04/2022 15:40
+                                //- .content__heading-logs
+                                //-     a.logs(href="#" data-toggle="modal" data-target="#logsModal")
+                                //-         span.logs__heading Show logs
+                                //-         span.logs__intro Last Update: 10/04/2022 15:40
                                 .content__heading-search
                                     form.form.form_search
                                         span.form_search__icon
@@ -274,5 +274,12 @@ block content
                                             td.table__item.table__item_body 
                                             td.table__item.table__item_body.text-end
                                                 a.table__link(href="#") Change
+            .content__inside-footer
+                .row.align-items-center.mt-5
+                    .col-12.col-md-7.col-lg-8
+                    .col-12.col-md-5.col-lg-4
+                        a.logs(href="#" data-toggle="modal" data-target="#logsModal")
+                            span.logs__heading Show logs
+                            span.logs__intro Last Update: 10/04/2022 15:40
         .content__footer 
             p.content__footer-intro Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1    

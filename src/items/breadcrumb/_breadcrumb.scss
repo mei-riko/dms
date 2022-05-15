@@ -1,4 +1,5 @@
 .breadcrumb{
+    font-size: map-get($map: $font-size, $key: sm);
     margin-bottom: 0;
 
     &__home{
@@ -46,4 +47,10 @@
 
     display: block;
     content: '';
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
+    .breadcrumb{
+        font-size: map-get($map: $font-size, $key: md);
+    }
 }

@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: flex-start;
 
+    font-size: map-get($map: $font-size, $key: sm);
+
     &__open{
         padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
         border-radius: 16px;
@@ -82,5 +84,11 @@
                 fill: $secondary;
             }
         }
+    }
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
+    .filters{
+        font-size: map-get($map: $font-size, $key: md);
     }
 }

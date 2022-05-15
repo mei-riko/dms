@@ -1,4 +1,5 @@
 .pagination{
+    justify-content: center;
     margin-bottom: 0;
 }
 .page-item{
@@ -30,5 +31,11 @@
         color: $white;
         background-color: $black-40;
         border-color: $black-40;
+    }
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
+    .pagination{
+        justify-content: flex-start;
     }
 }

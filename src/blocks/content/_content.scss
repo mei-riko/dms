@@ -3,14 +3,14 @@
     flex-direction: column;
     min-height: 100%;
 
-    padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
+    // padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
     // margin-left: $sidebar-width;
     max-width: calc(100% - 260px);
     transform: translateX(260px);
 
     transition: $transition-base;
 
-    &--sidebar-open{
+    &--sidebar-small{
         max-width: calc(100% - 72px);
         transform: translateX(72px);
     }
@@ -20,9 +20,10 @@
         display: flex;
         flex-direction: column;
 
-        padding: map-get($map: $spacers, $key: 3);
+        padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
         background-color: $black-80;
-        border-radius: 6px;
+        // border-radius: 6px;
+        min-width: 280px;
 
         &-container{
             flex-grow: 1;
@@ -37,37 +38,51 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+
+        margin-bottom: map-get($map: $spacers, $key: 2);
     }
-    &__heading-action{
-        margin-left: map-get($map: $spacers, $key: 3);
+    // Right Col
+    &__heading-right{
+        display: flex;
+        align-items: center;
+
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
+    // &__heading-action{
+    //     margin-left: map-get($map: $spacers, $key: 3);
+    // }
     &__heading-btn{
         margin-left: map-get($map: $spacers, $key: 2);
     }
     &__heading-logs{
         margin-right: map-get($map: $spacers, $key: 2);
     }
+    &__heading-search{
+        flex: 0 0 100%;
+        margin-bottom: map-get($map: $spacers, $key: 2);
+    }
+
     &__title{
+        flex: 0 0 100%;
+
         text-transform: uppercase;
-        margin-right: map-get($map: $spacers, $key: 3);
-        margin-bottom: 0;
+        margin-right: 0;
+        margin-bottom: map-get($map: $spacers, $key: 1);
     }
-
-    // Right Col
-    &__heading-right{
-        display: flex;
-        align-items: center;
-
-        justify-content: flex-end;
-    }
-
     // Filters
     &__filters{
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        padding-bottom: map-get($map: $spacers, $key: 3);
+        flex-wrap: wrap;
+
+        padding-bottom: map-get($map: $spacers, $key: 2);
+
+        &-additional{
+            margin-top: map-get($map: $spacers, $key: 2);
+        }
     }
     // Sep Line
     &__sep{
@@ -80,7 +95,7 @@
     }
     // Tabs
     &__tabs{
-        margin-bottom: map-get($map: $spacers, $key: 4);
+        margin-bottom: map-get($map: $spacers, $key: 3);
         
         &-item{
             padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
@@ -147,11 +162,78 @@
     // Footer
     &__footer{
         text-align: center;
-        padding-top: map-get($map: $spacers, $key: 2);
+        padding: map-get($map: $spacers, $key: 2);
 
         &-intro{
             color: $secondary;
             font-size: map-get($map: $font-size, $key: sm);
+        }
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'sm')){
+    .content{        
+        &__heading-search{
+            flex: unset;
+            margin-bottom: 0;
+        }
+        &__heading-action{
+            margin-left: map-get($map: $spacers, $key: 2);
+        }
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
+    .content{
+        padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
+
+        &__inside{
+            border-radius: 6px;
+            padding: map-get($map: $spacers, $key: 3);
+        }
+        // Filters
+        &__filters{
+            flex-wrap: nowrap;
+            padding-bottom: map-get($map: $spacers, $key: 3);
+
+            &-additional{
+                margin-top: map-get($map: $spacers, $key: 0);
+            }
+        }
+        // Tabs
+        &__tabs{
+            margin-bottom: map-get($map: $spacers, $key: 4);
+        }
+        // Right Col
+        &__heading-right{
+            flex-wrap: nowrap;
+            // justify-content: flex-end;
+        }
+        &__heading-action{
+            margin-left: map-get($map: $spacers, $key: 3);
+        }
+
+        &__title{
+            flex: unset;
+
+            margin-right: map-get($map: $spacers, $key: 3);
+            margin-bottom: 0;
+        }
+
+        // Footer
+        &__footer{
+            padding: map-get($map: $spacers, $key: 2) 0 0;
+        }
+    }
+}
+@media all and (min-width: map-get($grid-breakpoints, 'lg')){
+    .content{
+        // Right Col
+        &__heading-right{
+            // flex-wrap: nowrap;
+            justify-content: flex-end;
+        }
+        // Left Col
+        &__heading-left{
+            margin-bottom: map-get($map: $spacers, $key: 0);
         }
     }
 }

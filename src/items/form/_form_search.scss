@@ -14,5 +14,7 @@
     }
     &__input{
         padding-left: map-get($map: $spacers, $key: 4);
+
+        width: 100%;
     }
 }

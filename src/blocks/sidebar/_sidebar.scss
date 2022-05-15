@@ -7,6 +7,9 @@
     width: $sidebar-width;
     background-color: $black-80;
     height: 100vh;
+    max-height: -webkit-fill-available;
+
+    border-right: 1px solid $black-100;
 
     display: flex;
     flex-direction: column;
