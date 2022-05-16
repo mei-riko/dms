@@ -405,6 +405,18 @@ main {
   color: #a5abda;
 }
 
+.bg-black-60 {
+  background-color: #2a2a3d;
+}
+
+.bg-black-80 {
+  background-color: #1f1e2d;
+}
+
+.bg-black-100 {
+  background-color: #12111d;
+}
+
 p {
   margin-bottom: 6px;
 }

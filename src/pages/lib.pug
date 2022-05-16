@@ -2,6 +2,7 @@ extends ../blocks/enter.pug
 
 block variables
     - var pageTitle = "Library"
+    - var lib = "bg-black-80";
 block content
     .container.py-5
         .row
@@ -150,6 +151,14 @@ block content
                         .status.status_label(data-type="warning") Warning Status
                     .col-4.mb-3
                         .status.status_label(data-type="false") Problem Status
-    
+                .mt-5
+                    .form__label.form__label_secondary Price
+                    .slider-ui-container
+                        .slider-ui#slider-range
+                    .row.mt-2
+                        .col-6
+                            input#minAmount.input.input--full(type="number")
+                        .col-6
+                            input#maxAmount.input.input--full(type="number")    
 
 

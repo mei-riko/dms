@@ -8,7 +8,7 @@ block content
             .content__inside-container
                 .container-fluid
                     .row.align-items-center.content__heading
-                        .col-6
+                        .col-12.col-lg-7
                             .content__heading-left
                                 h1.h5.content__title Edit DTDSPL2203
                                 ul.breadcrumb
@@ -21,10 +21,9 @@ block content
                                     li.breadcrumb-item
                                         a.breadcrumb__link(href="display.html") DTDSPL2203
                                     li.breadcrumb-item.active Edit
-                        .col-6
+                        .col-12.col-lg-5
                             .content__heading-right
-                                .content__heading-btn
-                                    a.btn.btn-secondary(href="#") Cancel
+                                a.btn.btn-secondary(href="#") Cancel
                                 .content__heading-btn
                                     a.btn.btn-primary.btn_with-icon(href="#") Add request
                                          svg.btn__icon.btn-primary__icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
@@ -33,26 +32,26 @@ block content
                 .container-fluid
                     p.h6.text-bold Basic info
                     form.form.row(action="") 
-                        .col-6.form__group
+                        .col-12.col-md-6.form__group
                             .form__label.form__label_secondary Serial Number *
                             input.input.input--full(type="text" placeholder="Enter serial number" value="DTDSPL2203")
-                        .col-6.form__group
+                        .col-12.col-md-6.form__group
                             .form__label.form__label_secondary Model *
                             input.input.input--full(type="text" placeholder="Enter model" value="DT - DIsplay1")
-                        .col-3.form__group
+                        .col-12.col-md-6.col-xxl-3.form__group
                             .form__label.form__label_secondary Firmware
                             select.select.select_options(data-placeholder="Choose firmware" data-minimum-results-for-search="Infinity" style="width: 100%")
                                 //- option 
                                 option(value="1") V11.3.001
                                 option(value="2") V11.0.001
                                 option(value="3") V10.0.006
-                        .col-3.form__group
+                        .col-12.col-md-6.col-xxl-3.form__group
                             .form__label.form__label_secondary Firmware Status
                             select.select.select_options(data-placeholder="Choose Status" data-minimum-results-for-search="Infinity" style="width: 100%")
                                 //- option 
                                 option(value="1") Actual
                                 option(value="2") Need Update
-                        .col-6.form__group
+                        .col-12.col-md-6.col-lg-6.form__group
                             .form__label.form__label_secondary Vehicle
                             select.select.select_options(data-placeholder="Choose vehicle" style="width: 100%")
                                 //- option 
@@ -76,32 +75,32 @@ block content
                                 option(value="18") X2712345695
                                 option(value="19") X2712345696
                                 option(value="20") X2712345697
-                        .col-3.form__group
+                        .col-12.col-md-6.col-xxl-3.form__group
                             .form__label.form__label_secondary Activation Date
                             input.input.input--full.input_datetime(type="datetime-local" value="")
-                        .col-3.form__group
+                        .col-12.col-md-6.col-xxl-3.form__group
                             .form__label.form__label_secondary Activation Status
                             select.select.select_options(data-placeholder="Choose Status" data-minimum-results-for-search="Infinity" style="width: 100%")
                                 //- option 
                                 option(value="1") Activated
                                 option(value="2") Not activated
-                        .col-6.form__group
+                        .col-12.col-md-6.col-xxl-3.form__group
                             .form__label.form__label_secondary Owner
                             select.select.select_options(data-placeholder="Choose Owner" data-minimum-results-for-search="Infinity" style="width: 100%" )
                                 //- option 
                                 option(value="1") Karolina Herrera
                                 option(value="2") Alice Harding
                                 option(value="3") Anna Doe
-                        .col-3.form__group
+                        .col-12.col-md-6.col-xxl-3.form__group
                             .form__label.form__label_secondary Stolen Status
                             select.select.select_options(data-placeholder="Choose Status" data-minimum-results-for-search="Infinity" style="width: 100%")
                                 //- option 
                                 option(value="1") Positive
                                 option(value="2") Attention
             .content__inside-footer
-                .row.mt-5
-                    .col-8
-                    .col-4
+                .row.align-items-center.mt-5
+                    .col-12.col-md-7.col-lg-8
+                    .col-12.col-md-5.col-lg-4
                         a.logs(href="#" data-toggle="modal" data-target="#logsModal")
                             span.logs__heading Show logs
                             span.logs__intro Last Update: 10/04/2022 15:40

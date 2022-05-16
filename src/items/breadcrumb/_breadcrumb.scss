@@ -1,6 +1,6 @@
 .breadcrumb{
     font-size: map-get($map: $font-size, $key: sm);
-    margin-bottom: 0;
+    margin: map-get($map: $spacers, $key: 1 ) 0;
 
     &__home{
         display: flex;
@@ -26,13 +26,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    padding-right: 1rem;
 
     &.active{
         color: $secondary;
     }
 }
 .breadcrumb-item+.breadcrumb-item {
-    padding-left: 1rem;
+    padding-left: 0rem;
 }
 .breadcrumb-item+.breadcrumb-item::before{
     float: unset;

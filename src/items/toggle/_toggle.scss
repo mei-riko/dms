@@ -25,16 +25,19 @@
 
         &-text{
             font-weight: $font-weight-bold;
-            font-size: map-get($map: $heading, $key: h6);
-
-            padding: 0 map-get($map: $spacers, $key: 3);
+            // font-size: map-get($map: $heading, $key: h6);
+            font-size: map-get($map: $font-size, $key: lg);
+            
+            padding-left: map-get($map: $spacers, $key: 3);
+            // padding: 0 map-get($map: $spacers, $key: 3);
         }
         &-btns{
             flex: 0 0 100%;
             padding-top: map-get($map: $spacers, $key: 2);
+            padding-left: 60px;
 
             .btn{
-                width: 100%;
+                // width: 100%;
 
                 margin-right: map-get($map: $spacers, $key: 2);
                 margin-top: map-get($map: $spacers, $key: 2);
@@ -62,7 +65,7 @@
                 // padding-top: map-get($map: $spacers, $key: 0);
 
                 .btn{
-                    width: auto;
+                    // width: auto;
                     margin-top: 0;
                 }
             }
@@ -72,6 +75,10 @@
 @media all and (min-width: map-get($grid-breakpoints, 'md')){
     .toggle{
         &__title{
+            &-text{
+                font-size: map-get($map: $heading, $key: h6);
+                padding: 0 map-get($map: $spacers, $key: 3);
+            }
             &-btns{
                 flex: unset;
                 padding-top: map-get($map: $spacers, $key: 0);

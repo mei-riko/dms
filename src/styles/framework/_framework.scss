@@ -29,6 +29,17 @@ main{
 // Color
 .font-secondary{ color: $secondary; }
 
+// Background
+.bg-black-60{
+    background-color: $black-60;
+}
+.bg-black-80{
+    background-color: $black-80;
+}
+.bg-black-100{
+    background-color: $black-100;
+}
+
 // Content
 p{
     margin-bottom: map-get($map: $spacers, $key: 1);

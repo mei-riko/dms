@@ -8,7 +8,7 @@ block content
             .content__inside-container
                 .container-fluid
                     .row.align-items-center.content__heading
-                        .col-6
+                        .col-12.col-lg-7
                             .content__heading-left
                                 h1.h5.content__title @alice.manager  
                                 ul.breadcrumb
@@ -21,10 +21,9 @@ block content
                                     li.breadcrumb-item
                                         a.breadcrumb__link(href="user.html") @alice.manager
                                     li.breadcrumb-item.active Edit
-                        .col-6
+                        .col-12.col-lg-5
                             .content__heading-right
-                                .content__heading-btn
-                                    a.btn.btn-secondary(href="#") Cancel
+                                a.btn.btn-secondary(href="#") Cancel
                                 .content__heading-btn
                                     a.btn.btn-success(href="#") Save change
                 .content__sep
@@ -32,54 +31,54 @@ block content
                     form.form.row(action="")
                         .col-12 
                             p.h6.text-bold Account information
-                        .col-4.form__group
+                        .col-12.col-sm-6.col-lg-4.form__group
                             .form__label.form__label_secondary First Name
                             input.input.input--full(type="text" placeholder="Enter First Name" value="Alice")
-                        .col-4.form__group
+                        .col-12.col-sm-6.col-lg-4.form__group
                             .form__label.form__label_secondary Last Name
                             input.input.input--full(type="text" placeholder="Enter Last Name" value="Kuzmenko")
-                        .col-4.form__group
+                        .col-12.col-sm-6.col-lg-4.form__group
                             .form__label.form__label_secondary Date of birth
                             input.input.input--full.input_datetime(type="date" value="1998-01-08")
-                        .col-4.form__group
+                        .col-12.col-sm-6.col-lg-4.form__group
                             .form__label.form__label_secondary Mobile Phone
                             input.input.input--full(type="text" placeholder="Enter Phone" value="(310) 645-8340")
-                        .col-4
+                        .col-12.col-sm-6.col-lg-4
                             .form__group
                                 a.form__addinional-link.text-small(href="#") Request to change
                                 .form__label.form__label_secondary E-mail
                                 input.input.input--full(type="text" placeholder="Enter E-mail" value="user.email@email.com")
                         .col-12.mt-5
                             p.h6.text-bold Password
-                        .col-4.form__group
+                        .col-12.col-lg-4.form__group
                             .form__label.form__label_secondary Old password
                             input.input.input--full(type="password" placeholder="Enter Phone" value="(310) 645-8340")
-                        .col-4.form__group
+                        .col-12.col-sm-6.col-lg-4.form__group
                             .form__label.form__label_secondary New password
                             input.input.input--full(type="password" placeholder="" value="")
-                        .col-4.form__group
+                        .col-12.col-sm-6.col-lg-4.form__group
                             .form__label.form__label_secondary Repeat new passwork
                             input.input.input--full(type="password" placeholder="" value="")
                         .col-12.mt-5
                             p.h6.text-bold Address
-                        .col-4.form__group
+                        .col-12.col-sm-6.col-lg-4.form__group
                             .form__label.form__label_secondary Country
                             input.input.input--full(type="text" placeholder="Enter Country" value="USA")
-                        .col-4.form__group
+                        .col-12.col-sm-6.col-lg-4.form__group
                             .form__label.form__label_secondary City
                             input.input.input--full(type="text" placeholder="Enter City" value="Los Angeles")
-                        .col-4.form__group
+                        .col-12.col-lg-4.form__group
                             .form__label.form__label_secondary Address
                             textarea.input.input--full(rows="1" placeholder="Enter Address") 5960 W 85th Pl&#13;&#10;Los Angeles, California(CA), 90045
                         .col-12.mt-5
                             p.h6.text-bold Networks
-                        .col-4.form__group
+                        .col-12.col-lg-4.form__group
                             .form__label.form__label_secondary TikTok
                             input.input.input--full(type="text" placeholder="TikTok" value="https://tiktok.com/")
-                        .col-4.form__group
+                        .col-12.col-lg-4.form__group
                             .form__label.form__label_secondary Instagram
                             input.input.input--full(type="text" placeholder="Instagram" value="https://instagram.com/")
-                        .col-4.form__group
+                        .col-12.col-lg-4.form__group
                             .form__label.form__label_secondary Facebook
                             input.input.input--full(type="text" placeholder="Facebook" value="https://facebook.com/")
         .content__footer 

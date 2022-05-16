@@ -8,7 +8,7 @@ block content
             .content__inside-container
                 .container-fluid
                     .row.align-items-center.content__heading
-                        .col-6
+                        .col-12.col-lg-7
                             .content__heading-left
                                 h1.h5.content__title @alice.manager  
                                 ul.breadcrumb
@@ -19,67 +19,68 @@ block content
                                     li.breadcrumb-item
                                         a.breadcrumb__link(href="dms-users.html") Users
                                     li.breadcrumb-item.active @alice.manager
-                        .col-6
+                        .col-12.col-lg-5
                             .content__heading-right
-                                .content__heading-logs
-                                    a.logs(href="#" data-toggle="modal" data-target="#logsModal")
-                                        span.logs__heading Show logs
-                                        span.logs__intro Last Update: 10/04/2022 15:40
-                                .content__heading-btn
-                                    a.btn.btn-primary(href="edit-user.html") Edit profile
+                                a.btn.btn-primary(href="edit-user.html") Edit profile
                 .content__sep
                 .container-fluid
                     .row
-                        .col-3
+                        .col-12.col-md-4.col-lg-3.mb-4.mb-md-0
                             .avatar(data-toggle="modal" data-target="#changeAvatarModal")
                                 .avatar__hover Change photo
                                 .avatar__image(style="background-image: url('../img/@img.png');")
-                        .col-9
+                        .col-12.col-md-8.col-lg-9
                             p.h6.text-bold.mb-4 Account information
                             .row 
-                                .col-6.mb-3
+                                .col-12.col-sm-6.col-md-12.col-lg-6.mb-3
                                     p.font-secondary First Name / Last Name
                                     p Nikolai Kuzmenko
-                                .col-6.mb-3
+                                .col-12.col-sm-6.col-md-12.col-lg-6.mb-3
                                     p.font-secondary E-mail
                                     p.d-flex.align-items-center
                                         a.me-3.text-decoration-underline(href="mailto:user.email@email.com") user.email@email.com
                                         span.status.status_minimal(data-type="true") verification 
-                                .col-6.mb-3
+                                .col-12.col-sm-6.col-md-12.col-lg-6.mb-3
                                     p.font-secondary Date of birth
                                     p 12.12.1990
-                                .col-6.mb-3
+                                .col-12.col-sm-6.col-md-12.col-lg-6.mb-3
                                     p.font-secondary Mobile Phone
                                     p.d-flex.align-items-center
                                         a.me-3.text-decoration-underline(href="tel:(310) 645-8340") (310) 645-8340
                                         span.status.status_minimal(data-type="false") is not verification 
                             p.h6.text-bold.my-4 Address
                             .row
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     p.font-secondary Country
                                     p USA
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     p.font-secondary City
                                     p Los Angeles
-                                .col-6.mb-3
+                                .col-12.col-md-6.mb-3
                                     p.font-secondary Address
                                     p 5960 W 85th Pl
                                         <br/> Los Angeles, California(CA), 90045
                             p.h6.text-bold.my-4 Networks
                             .row
-                                .col-3.mb-3
+                                .col-12.col-sm-4.col-xl-3.mb-3
                                     a.network(href="#")
                                         img.network__icon(src="../icon/tt.png")
                                         .network__title TikTok
-                                .col-3.mb-3
+                                .col-12.col-sm-4.col-xl-3.mb-3
                                     a.network(href="#")
                                         img.network__icon(src="../icon/inst.png")
                                         .network__title Instagram
-                                .col-3.mb-3
+                                .col-12.col-sm-4.col-xl-3.mb-3
                                     a.network(href="#")
                                         img.network__icon(src="../icon/fb.png")
                                         .network__title Facebook
-
+            .content__inside-footer
+                .row.align-items-center.mt-5
+                    .col-12.col-md-7.col-lg-8
+                    .col-12.col-md-5.col-lg-4
+                        a.logs(href="#" data-toggle="modal" data-target="#logsModal")
+                            span.logs__heading Show logs
+                            span.logs__intro Last Update: 10/04/2022 15:40
         .content__footer 
             p.content__footer-intro Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1
     //- Modal Edit
