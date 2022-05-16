@@ -14,6 +14,7 @@
     <link href="./css/main.css" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./js/jquery-ui.js"></script>
   </head>
   <body>      
     <main>
@@ -85,7 +86,7 @@
           <div class="content__inside-container">
             <div class="container-fluid">
               <div class="row align-items-center content__heading">
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                   <div class="content__heading-left">
                     <h1 class="h5 content__title">Display DT - DIsplay2</h1>
                     <ul class="breadcrumb">
@@ -98,13 +99,11 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-5">
-                  <div class="content__heading-right">
-                    <div class="content__heading-btn"><a class="btn btn-secondary btn_with-icon" href="#">Add request
-                        <svg class="btn__icon btn-secondary__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11.0835 6.41668H7.5835V2.91668C7.5835 2.76197 7.52204 2.61359 7.41264 2.5042C7.30324 2.3948 7.15487 2.33334 7.00016 2.33334C6.84545 2.33334 6.69708 2.3948 6.58768 2.5042C6.47829 2.61359 6.41683 2.76197 6.41683 2.91668V6.41668H2.91683C2.76212 6.41668 2.61375 6.47813 2.50435 6.58753C2.39495 6.69693 2.3335 6.8453 2.3335 7.00001C2.3335 7.15472 2.39495 7.30309 2.50435 7.41249C2.61375 7.52188 2.76212 7.58334 2.91683 7.58334H6.41683V11.0833C6.41683 11.2381 6.47829 11.3864 6.58768 11.4958C6.69708 11.6052 6.84545 11.6667 7.00016 11.6667C7.15487 11.6667 7.30324 11.6052 7.41264 11.4958C7.52204 11.3864 7.5835 11.2381 7.5835 11.0833V7.58334H11.0835C11.2382 7.58334 11.3866 7.52188 11.496 7.41249C11.6054 7.30309 11.6668 7.15472 11.6668 7.00001C11.6668 6.8453 11.6054 6.69693 11.496 6.58753C11.3866 6.47813 11.2382 6.41668 11.0835 6.41668Z"></path>
-                        </svg></a></div>
-                  </div>
+                <div class="col-12 col-lg-5">
+                  <div class="content__heading-right"><a class="btn btn-secondary btn_with-icon" href="#">Add request
+                      <svg class="btn__icon btn-secondary__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0835 6.41668H7.5835V2.91668C7.5835 2.76197 7.52204 2.61359 7.41264 2.5042C7.30324 2.3948 7.15487 2.33334 7.00016 2.33334C6.84545 2.33334 6.69708 2.3948 6.58768 2.5042C6.47829 2.61359 6.41683 2.76197 6.41683 2.91668V6.41668H2.91683C2.76212 6.41668 2.61375 6.47813 2.50435 6.58753C2.39495 6.69693 2.3335 6.8453 2.3335 7.00001C2.3335 7.15472 2.39495 7.30309 2.50435 7.41249C2.61375 7.52188 2.76212 7.58334 2.91683 7.58334H6.41683V11.0833C6.41683 11.2381 6.47829 11.3864 6.58768 11.4958C6.69708 11.6052 6.84545 11.6667 7.00016 11.6667C7.15487 11.6667 7.30324 11.6052 7.41264 11.4958C7.52204 11.3864 7.5835 11.2381 7.5835 11.0833V7.58334H11.0835C11.2382 7.58334 11.3866 7.52188 11.496 7.41249C11.6054 7.30309 11.6668 7.15472 11.6668 7.00001C11.6668 6.8453 11.6054 6.69693 11.496 6.58753C11.3866 6.47813 11.2382 6.41668 11.0835 6.41668Z"></path>
+                      </svg></a></div>
                 </div>
               </div>
               <div class="toggle">
@@ -238,9 +237,9 @@
             </div>
           </div>
           <div class="content__inside-footer">
-            <div class="row mt-5">
-              <div class="col-8"></div>
-              <div class="col-4"><a class="logs" href="#" data-toggle="modal" data-target="#logsModal"><span class="logs__heading">Show logs</span><span class="logs__intro">Last Update: 10/04/2022 15:40</span></a></div>
+            <div class="row align-items-center mt-5">
+              <div class="col-12 col-md-7 col-lg-8"></div>
+              <div class="col-12 col-md-5 col-lg-4 mt-4 mt-md-0"><a class="logs" href="#" data-toggle="modal" data-target="#logsModal"><span class="logs__heading">Show logs</span><span class="logs__intro">Last Update: 10/04/2022 15:40</span></a></div>
             </div>
           </div>
         </div>
@@ -313,5 +312,6 @@
     <script src="./js/jquery.inputmask.min.js"></script>
     <script src="./js/app.min.js"></script>
     <script src="./js/select2-custom.js"></script>
+    <script src="./js/ui-slider-custom.js"></script>
   </body>
 </html>

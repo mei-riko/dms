@@ -1172,7 +1172,9 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 12px;
   margin-right: 12px;
+  margin-bottom: 12px;
 }
 
 .option__name {
@@ -1193,6 +1195,12 @@
 
 .option__close:hover, .option__close:focus {
   fill: #a5abda;
+}
+
+@media all and (min-width: 768px) {
+  .option {
+    font-size: 14px;
+  }
 }
 
 .status {

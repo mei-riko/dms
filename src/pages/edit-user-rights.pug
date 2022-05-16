@@ -8,7 +8,7 @@ block content
             .content__inside-container
                 .container-fluid
                     .row.align-items-center.content__heading
-                        .col-6
+                        .col-12.col-lg-7
                             .content__heading-left
                                 h1.h5.content__title @alice.manager  
                                 ul.breadcrumb
@@ -19,18 +19,17 @@ block content
                                     li.breadcrumb-item
                                         a.breadcrumb__link(href="dms-users.html") Users
                                     li.breadcrumb-item.active Edit User Rights
-                        .col-6
+                        .col-12.col-lg-5
                             .content__heading-right
+                                a.btn.btn-danger(href="#") Delete
                                 .content__heading-btn
                                     a.btn.btn-secondary(href="#") Cancel
                                 .content__heading-btn
-                                    a.btn.btn-danger(href="#") Delete user
-                                .content__heading-btn
-                                    a.btn.btn-success(href="#") Save change
+                                    a.btn.btn-success(href="#") Save
                 .content__sep
                 .container-fluid
                     .row
-                        .col-6
+                        .col-12.col-md-8.col-lg-6
                             p.h6.text-bold.mb-4 Role
                             .row.mb-5 
                                 .col-6.mb-3
@@ -54,7 +53,7 @@ block content
                                         span.radio__label 
                                             span.radio__label-inside Superadmin
                             .row 
-                                .col-6.mb-5
+                                .col-12.col-sm-6.mb-5
                                     p.h6.text-bold.mb-4 Rights
                                     .mb-3
                                         label.checkbox
@@ -71,7 +70,7 @@ block content
                                             input.checkbox__input(type="checkbox")
                                             span.checkbox__label 
                                                 span.checkbox__label-inside can edit
-                                .col-6.mb-5
+                                .col-12.col-sm-6.mb-5
                                     p.h6.text-bold.mb-4 Status
                                     .mb-3
                                         label.radio(for="active")
@@ -83,45 +82,45 @@ block content
                                             input.radio__input(type="radio" name="status" id="disabled")
                                             span.radio__label 
                                                 span.radio__label-inside Blocked User
-                        .col-6.mb-5
+                        .col-12.col-md-8.col-lg-6.mb-5
                             p.h6.text-bold.mb-4 Availible Devices
                             .row 
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     label.checkbox
                                         input.checkbox__input(type="checkbox")
                                         span.checkbox__label 
                                             span.checkbox__label-inside Controllers
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     label.checkbox
                                         input.checkbox__input(type="checkbox" checked)
                                         span.checkbox__label 
                                             span.checkbox__label-inside Remote Controls
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     label.checkbox
                                         input.checkbox__input(type="checkbox" checked)
                                         span.checkbox__label 
                                             span.checkbox__label-inside Displays
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     label.checkbox
                                         input.checkbox__input(type="checkbox")
                                         span.checkbox__label 
                                             span.checkbox__label-inside GPS Modules
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     label.checkbox
                                         input.checkbox__input(type="checkbox")
                                         span.checkbox__label 
                                             span.checkbox__label-inside Distribution Boards
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     label.checkbox
                                         input.checkbox__input(type="checkbox" checked)
                                         span.checkbox__label 
                                             span.checkbox__label-inside Batterys
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     label.checkbox
                                         input.checkbox__input(type="checkbox")
                                         span.checkbox__label 
                                             span.checkbox__label-inside Unit Boards
-                                .col-6.mb-3
+                                .col-12.col-sm-6.mb-3
                                     label.checkbox
                                         input.checkbox__input(type="checkbox")
                                         span.checkbox__label 
@@ -192,9 +191,9 @@ block content
                                 option(value="19") X2712345696
                                 option(value="20") X2712345697
             .content__inside-footer
-                .row.mt-5
-                    .col-8
-                    .col-4
+                .row.align-items-center.mt-5
+                    .col-12.col-md-7.col-lg-8
+                    .col-12.col-md-5.col-lg-4.mt-4.mt-md-0
                         a.logs(href="#" data-toggle="modal" data-target="#logsModal")
                             span.logs__heading Show logs
                             span.logs__intro Last Update: 10/04/2022 15:40

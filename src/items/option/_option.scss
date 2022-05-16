@@ -8,7 +8,10 @@
     align-items: center;
     justify-content: center;
 
+    font-size: map-get($map: $font-size, $key: sm);
+
     margin-right: map-get($map: $spacers, $key: 2);
+    margin-bottom: map-get($map: $spacers, $key: 2);
 
     &__name{
         margin-right: map-get($map: $spacers, $key: 1);
@@ -25,5 +28,11 @@
         &:hover, &:focus{
             fill: $secondary;
         }
+    }
+}
+
+@media all and (min-width: map-get($grid-breakpoints, 'md')){
+    .option{
+        font-size: map-get($map: $font-size, $key: md);
     }
 }

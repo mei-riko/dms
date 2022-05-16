@@ -23,7 +23,7 @@ block content
             .content__inside-container
                 .container-fluid
                     .row.align-items-center.content__heading
-                        .col-6
+                        .col-12.col-lg-7
                             .content__heading-left
                                 h1.h5.content__title Devices Settings 
                                 ul.breadcrumb
@@ -32,12 +32,8 @@ block content
                                             svg.breadcrumb__home-icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
                                                 path(d="M1.05938 6.90431L6.69082 1.27697C6.73137 1.23634 6.77953 1.20411 6.83255 1.18212C6.88557 1.16012 6.94241 1.1488 6.99981 1.1488C7.05721 1.1488 7.11404 1.16012 7.16706 1.18212C7.22008 1.20411 7.26824 1.23634 7.30879 1.27697L12.9402 6.90431C13.1043 7.06837 13.1973 7.29122 13.1973 7.52365C13.1973 8.00626 12.8049 8.39865 12.3223 8.39865H11.7289V12.4141C11.7289 12.6561 11.5334 12.8516 11.2914 12.8516H7.87481V9.78908H6.34356V12.8516H2.70821C2.46621 12.8516 2.27071 12.6561 2.27071 12.4141V8.39865H1.67735C1.44493 8.39865 1.22207 8.30704 1.05801 8.14161C0.717583 7.79982 0.717583 7.24611 1.05938 6.90431Z")
                                     li.breadcrumb-item.active Devices Settings
-                        .col-6
+                        .col-12.col-lg-5
                             .content__heading-right
-                                //- .content__heading-logs
-                                //-     a.logs(href="#" data-toggle="modal" data-target="#logsModal")
-                                //-         span.logs__heading Show logs
-                                //-         span.logs__intro Last Update: 10/04/2022 15:40
                                 .content__heading-search
                                     form.form.form_search
                                         span.form_search__icon
@@ -94,17 +90,15 @@ block content
                                     +tableLine("#","Distribution Board", "DTDB-2", "V11.3.001")
             .content__inside-footer
                 .row.align-items-center.mt-5
-                    .col-8
+                    .col-12.col-md-7.col-lg-8
                         ul.pagination
-                            li.page-item.active
+                            li.page-item
                                 a.page-link(href="#") 1
                             li.page-item
                                 a.page-link(href="#") 2
-                            li.page-item
+                            li.page-item.active
                                 a.page-link(href="#") 3
-                            li.page-item
-                                a.page-link(href="#") 4
-                    .col-4
+                    .col-12.col-md-5.col-lg-4.mt-4.mt-md-0
                         a.logs(href="#" data-toggle="modal" data-target="#logsModal")
                             span.logs__heading Show logs
                             span.logs__intro Last Update: 10/04/2022 15:40
