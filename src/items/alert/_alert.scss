@@ -1,0 +1,43 @@
+.alert{
+    font-size: map-get($map: $font-size, $key: sm);
+    border-left-width: 4px;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+
+    &-primary{
+        border-color: $primary-dark-100;
+        background-color: rgba($primary-dark-100, 0.05);
+        color: $primary-dark-100;
+    }
+    &-secondary{
+        border-color: $secondary;
+        background-color: rgba($secondary, 0.05);
+        color: $secondary;
+    }
+    &-success{
+        border-color: $green-dark-100;
+        background-color: rgba($green-dark-100, 0.05);
+        color: $green-dark-100;
+    }
+    &-danger{
+        border-color: $red-dark-100;
+        background-color: rgba($red-dark-100, 0.05);
+        color: $red-dark-100;
+    }
+    &-warning{
+        border-color: $yellow-dark-100;
+        background-color: rgba($yellow-dark-100, 0.05);
+        color: $yellow-dark-100;
+    }
+    &-light{
+        border-color: $white;
+        background-color: rgba($white, 0.05);
+        color: $white;
+    }
+    &-dark{
+        border-color: $secondary-dark;
+        background-color: rgba($secondary-dark, 0.5);
+        color: $secondary;
+    }
+}

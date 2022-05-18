@@ -13,7 +13,9 @@ block content
                         .col-10.col-lg-8.col-xl-6.px-0
                             p.h5.text-uppercase Sign In
                             p.font-secondary.text-bolder Enter your email address and password to access admin panel
-                            form.form(action="") 
+                            form.form(action="")
+                                .form__alert
+                                    .alert.alert-danger These credentials do not match our records.
                                 .form__group
                                     .form__label Login / email address:
                                     input.input.input_success.input--full(type="text" placeholder="Enter your email" value="manager@dms.ru")

@@ -271,6 +271,56 @@
   border-color: #ff8a6f;
 }
 
+.alert {
+  font-size: 12px;
+  border-left-width: 4px;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+
+.alert-primary {
+  border-color: #00FFFF;
+  background-color: rgba(0, 255, 255, 0.05);
+  color: #00FFFF;
+}
+
+.alert-secondary {
+  border-color: #a5abda;
+  background-color: rgba(165, 171, 218, 0.05);
+  color: #a5abda;
+}
+
+.alert-success {
+  border-color: #ADFC04;
+  background-color: rgba(173, 252, 4, 0.05);
+  color: #ADFC04;
+}
+
+.alert-danger {
+  border-color: #F25634;
+  background-color: rgba(242, 86, 52, 0.05);
+  color: #F25634;
+}
+
+.alert-warning {
+  border-color: #F2C834;
+  background-color: rgba(242, 200, 52, 0.05);
+  color: #F2C834;
+}
+
+.alert-light {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.alert-dark {
+  border-color: #231F54;
+  background-color: rgba(35, 31, 84, 0.5);
+  color: #a5abda;
+}
+
 .input {
   line-height: 1.4;
   padding: 12px 18px;
