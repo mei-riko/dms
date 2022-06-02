@@ -7,9 +7,10 @@ $(function() {
             var obj = $(state.element);
             var objType = obj.data("type");
 		    var objAction = obj.data("action");
+			var objHref = obj.data("href");
             
             var $state = $(
-            '<span data-type="' + objType + '" data-action="' + objAction + '">' + state.text + '</span>'
+            '<span data-type="' + objType + '" data-href="' + objHref + '" data-action="' + objAction + '">' + state.text + '</span>'
             );
             return $state;
         };
@@ -19,27 +20,37 @@ $(function() {
             templateResult: actionFormateState,
             dropdownPosition: 'auto',
         });
-        $('.select_table').on("change", function (e) { 
-            // console.log( $(this).select2('data') );]
+        $('.select_table').on("select2:select", function (e) {
             let $selectChanged = $(this);
             let $option = $($(this).select2('data')[0]["element"]);
             let type =  $option.data("type") ;
             let action =  $option.data("action") ;
+			let href =  '' ;
+			if(($option.data("href"))&&($option.data("href")!=''))
+				 href = $option.data("href") ;
 
             switch(type) {
                 case 'link':
                     window.location.href = action;
                     break;
                 case 'modal':
+					if(href!=''){
+					$.ajax({
+					url: href,
+					method: 'GET',
+					dataType: 'html',
+						success: function(data){
+							$(action+' .modal-body').html(data);
+						}
+					});
+					}
                     $(action).modal('show');
-                    $selectChanged.select2('close');
                     break;
                 default:
                 // code to be executed if n is different from case 1 and 2
                     break;
             }
-            // $selectChanged.val(null).trigger("change");
-            $selectChanged.val(0).trigger("change");
+             $selectChanged.val(null).trigger("change");
         });
     }
     if( $('.select_right').length > 0 ){
