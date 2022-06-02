@@ -17,10 +17,10 @@ block variables
             td.table__item.table__item_body.table__item_action-body
                 select.select.select_table(data-placeholder="Action")
                     option 
-                    option(value="1" data-action="" data-type="") Change
-                    option(value="2" data-action="" data-type="") Add request
+                    option(value="1" data-action="#changeParamModal" data-type="modal") Change
+                    option(value="2" data-action="#requestParamModal" data-type="modal") Add request
                     if request
-                        option(value="3" data-action="" data-type="") View request
+                        option(value="3" data-action="#requestViewModal" data-type="modal") View request
     mixin tableLineBasicSmall(parametr, value, status)
         tr.table__line
             td.table__item.table__item_body= parametr
@@ -79,16 +79,20 @@ block content
                                         span.form_search__icon
                                         input.input.form_search__input(type="text" placeholder="Search")
                                 .content__heading-action
-                                    a.btn.btn-secondary(href="#") Edit Info
+                                    //- a.btn.btn-secondary(href="#") Edit Info
+                                    a.btn.btn-secondary.open-all-toggles(href="#") Open all
                     .content__tabs
                         a.content__tabs-item.content__tabs-item--parent(href="vehicle.html") Vehicle
-                    .toggle.toggle--open
-                        .toggle__title.toggle__title_has-btn.toggle__title--active
-                            .toggle__icon.toggle__icon--active
+                        a.content__tabs-item(href="vehicle-display.html") Display
+                            svg.content__tabs-close(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                    .toggle
+                        .toggle__title.toggle__title_has-btn
+                            .toggle__icon
                                 svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
                                     path(fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z" fill="white" stroke="white")
                             .toggle__title-text Basic info
-                        .toggle__content.toggle__content--open(style="display: block;")
+                        .toggle__content
                             .table-responsive
                                 table.table
                                     thead.table__head
@@ -154,10 +158,15 @@ block content
                                 svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
                                     path(fill-rule="evenodd" clip-rule="evenodd" d="M13.887 8.1049C13.9228 8.13806 13.9512 8.17747 13.9706 8.22084C13.99 8.26422 14 8.31073 14 8.35769C14 8.40465 13.99 8.45116 13.9706 8.49454C13.9512 8.53791 13.9228 8.57732 13.887 8.61048L9.27217 12.8951C9.23645 12.9284 9.19401 12.9547 9.14729 12.9727C9.10057 12.9907 9.05048 13 8.9999 13C8.94931 13 8.89923 12.9907 8.85251 12.9727C8.80578 12.9547 8.76335 12.9284 8.72762 12.8951L4.11278 8.61048C4.04057 8.54344 4 8.45251 4 8.35769C4 8.26287 4.04057 8.17194 4.11278 8.1049C4.18499 8.03785 4.28293 8.00019 4.38506 8.00019C4.48718 8.00019 4.58512 8.03785 4.65733 8.1049L8.9999 12.1374L13.3425 8.1049C13.3782 8.07165 13.4206 8.04527 13.4673 8.02727C13.5141 8.00927 13.5642 8 13.6147 8C13.6653 8 13.7154 8.00927 13.7621 8.02727C13.8089 8.04527 13.8513 8.07165 13.887 8.1049Z" fill="white" stroke="white")
                             .toggle__title-text On-board devices
-                            .toggle__title-btns
-                                a.btn.btn-secondary.btn--small(href="#") Identify all devices
-                                a.btn.btn-secondary.btn--small(href="#") Update all devices
+                            //- .toggle__title-btns
+                            //-     a.btn.btn-secondary.btn--small(href="#") Identify all devices
+                            //-     a.btn.btn-secondary.btn--small(href="#") Update all devices
                         .toggle__content
+                            .d-flex.flex-wrap.mb-3
+                                .me-3.mb-3
+                                    a.btn.btn-secondary.btn--small(href="#") Identify all devices
+                                .me-0.mb-3
+                                    a.btn.btn-secondary.btn--small(href="#") Update all devices
                             .table-responsive
                                 table.table
                                     thead.table__head
@@ -281,3 +290,57 @@ block content
                             span.logs__intro Last Update: 10/04/2022 15:40
         .content__footer 
             p.content__footer-intro Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1    
+    //- Modal View Request Param
+    .modal.fade(id="requestViewModal" tabindex="-1" aria-labelledby="requestViewModalLabel" aria-hidden="true")
+        .modal-dialog.modal-sm
+            .modal-content
+                .modal-header
+                    p.modal-title(id="requestViewModalLabel") Request to Change Parametr
+                    svg.modal__close(data-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                .modal-body
+                    p 
+                        span.font-secondary Parametr: 
+                        span.text-bold Serial Number
+                    p 
+                        span.font-secondary Value: 
+                        span.text-bold DTDSPL2203
+                    p 
+                        span.font-secondary Old Value: 
+                        span.text-bold DTDSPL220
+                    .modal__confirmation.mt-3
+                            a.btn.btn-danger.btn--full(href="#") Cancel
+                            a.btn.btn-success.btn--full(href="#") Approve
+    //- Modal Request Param
+    .modal.fade(id="requestParamModal" tabindex="-1" aria-labelledby="requestParamModalLabel" aria-hidden="true")
+        .modal-dialog.modal-sm
+            .modal-content
+                .modal-header
+                    p.modal-title(id="requestParamModalLabel") Request to Change Parametr
+                    svg.modal__close(data-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                .modal-body
+                    form.form(action="")
+                        .mb-4
+                            .form__label.form__label_secondary Serial Number
+                            input.input.input--full(type="text" placeholder="Enter Serial Number" value="DTDSPL2203")
+                        .modal__confirmation.mt-3
+                            a.btn.btn-danger.btn--full(href="#") Cancel
+                            a.btn.btn-primary.btn--full(href="#") Send Request
+    //- Modal Change Param
+    .modal.fade(id="changeParamModal" tabindex="-1" aria-labelledby="changeParamModalLabel" aria-hidden="true")
+        .modal-dialog.modal-sm
+            .modal-content
+                .modal-header
+                    p.modal-title(id="changeParamModalLabel") Change Parametr
+                    svg.modal__close(data-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z")
+                .modal-body
+                    form.form(action="")
+                        .mb-4
+                            .form__label.form__label_secondary Serial Number
+                            input.input.input--full(type="text" placeholder="Enter Serial Number" value="DTDSPL2203")
+                        .modal__confirmation.mt-3
+                            a.btn.btn-danger.btn--full(href="#") Cancel
+                            a.btn.btn-success.btn--full(href="#") Save
+    

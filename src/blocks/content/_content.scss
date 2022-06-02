@@ -81,9 +81,14 @@
 
         padding-bottom: map-get($map: $spacers, $key: 2);
 
-        &-additional{
-            margin-top: map-get($map: $spacers, $key: 2);
-        }
+        // &-additional{
+        //     margin-top: map-get($map: $spacers, $key: 2);
+        // }
+        // &_additional{
+        //     display: flex;
+        //     min-height: 32px;
+        //     margin: map-get($map: $spacers, $key: 1) 0;
+        // }
     }
     // Sep Line
     &__sep{
@@ -96,20 +101,23 @@
     }
     // Tabs
     &__tabs{
-        margin-bottom: map-get($map: $spacers, $key: 3);
+        margin-bottom: map-get($map: $spacers, $key: 2);
         
         &-item{
             padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+            border: 1px solid $black-40;
             border-radius: $border-radius;
             color: $secondary;
-            // background-color: $black-100;
+            // background-color: $black-80;
 
             display: inline-flex;
             flex-wrap: nowrap;
             align-items: center;
             justify-content: center;
 
+            line-height: $line-height-heading;
             margin-right: map-get($map: $spacers, $key: 2);
+            margin-bottom: map-get($map: $spacers, $key: 2);
 
             transition: $transition-base;
 
@@ -117,26 +125,31 @@
                 text-decoration: none;
                 color: $secondary;
                 background-color: $black-60;
+                border-color: $black-60;
             }
 
             &--active{
                 color: $white;
                 background-color: $black-100;
-
-                &:hover{
-                    text-decoration: none;
-                    color: $secondary;
-                    background-color: $black-60;
-                }
-            }
-            &--parent{
-                color: $white;
-                background-color: $black-100;
+                border-color: $black-100;
 
                 &:hover{
                     text-decoration: none;
                     color: $white;
                     background-color: $black-100;
+                    border-color: $black-100;
+                }
+            }
+            &--parent{
+                color: $white;
+                background-color: $black-100;
+                border-color: $black-100;
+
+                &:hover{
+                    text-decoration: none;
+                    color: $white;
+                    background-color: $black-100;
+                    border-color: $black-100;
 
                     cursor: default;
                 }
@@ -145,13 +158,13 @@
         &-close{
             margin-left: map-get($map: $spacers, $key: 1);
             
-            fill: $white;
+            fill: $secondary;
 
             transition: $transition-base;
             cursor: pointer;
 
             &:hover, &:focus{
-                fill: $secondary;
+                fill: $white;
             }
         }
     }
@@ -195,9 +208,9 @@
             flex-wrap: nowrap;
             padding-bottom: map-get($map: $spacers, $key: 3);
 
-            &-additional{
-                margin-top: map-get($map: $spacers, $key: 0);
-            }
+            // &-additional{
+            //     margin-top: map-get($map: $spacers, $key: 0);
+            // }
         }
         // Tabs
         &__tabs{

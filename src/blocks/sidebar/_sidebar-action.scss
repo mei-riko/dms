@@ -27,9 +27,13 @@
         stroke: $secondary;
         box-shadow: $shadow-dark;
     }
+    
+    path{
+        transform: rotate(180deg) translateX(-1px);
+        transform-origin: center;
+    }
 
     &--small{
-        // left: 72px;
         left: 14px;
         transform: translateX(0px);
 

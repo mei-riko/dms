@@ -30,7 +30,8 @@ $border-radius-select: 14px;
         }
 
         .select2-selection__rendered {
-            color: $white;
+            color: $secondary;
+            // color: $white;
             line-height: 27px;
             // line-height: 28px;
 
@@ -39,11 +40,13 @@ $border-radius-select: 14px;
         }
         .select2-selection__placeholder {
             font-weight: $font-weight-bolder;
-            color: $white;
+            color: $secondary;
+            // color: $white;
             transition: $transition-base;
             
             &:hover{
-                color: $secondary;
+                color: $white;
+                // color: $secondary;
             }
         }
         .select2-selection__arrow {
@@ -92,12 +95,26 @@ $border-radius-select: 14px;
 }
 // Select2 Open Position
 .select2-container--table.select2-container--open.select2-container--above .select2-selection--single {
-    border-color: $white;
+    border-color: $secondary;
+    
+    &:hover{
+        border-color: $white;
+        .select2-selection__placeholder{
+            color: $white;
+        }
+    }
     // border-top-left-radius: 0;
     // border-top-right-radius: 0;
 }
 .select2-container--table.select2-container--open.select2-container--below .select2-selection--single {
-    border-color: $white;
+    border-color: $secondary;
+
+    &:hover{
+        border-color: $white;
+        .select2-selection__placeholder{
+            color: $white;
+        }
+    }
     // border-bottom-left-radius: 0;
     // border-bottom-right-radius: 0;
 }

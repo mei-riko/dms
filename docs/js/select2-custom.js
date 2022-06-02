@@ -32,6 +32,7 @@ $(function() {
                     break;
                 case 'modal':
                     $(action).modal('show');
+                    $selectChanged.select2('close');
                     break;
                 default:
                 // code to be executed if n is different from case 1 and 2

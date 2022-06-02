@@ -1,12 +1,15 @@
 import $ from 'jquery';
 
-const closeSidebar = () => {
+const openSidebar = () => {
     $(".sidebar").addClass("sidebar--small");
     $(".sidebar__header").addClass("sidebar__header--small");
     $(".sidebar__body").addClass("sidebar__body--small");
     $(".sidebar__footer").addClass("sidebar__footer--small");
     $(".sidebar__logo").addClass("sidebar__logo--small");
 
+    $(".sidebar .sidebar__title").each(function(){
+        $(this).addClass("d-none");
+    });
     $(".sidebar .sidebar__item").each(function(){
         $(this).addClass("sidebar__item--small");
         $(this).find(".sidebar__item-title").addClass("d-none");
@@ -28,13 +31,16 @@ const closeSidebar = () => {
         $(".sidebar .sidebar__children" + children).removeClass("sidebar__children--open");
     });
 }
-const openSidebar = () => {
+const closeSidebar = () => {
     $(".sidebar").removeClass("sidebar--small");
     $(".sidebar__header").removeClass("sidebar__header--small");
     $(".sidebar__body").removeClass("sidebar__body--small");
     $(".sidebar__footer").removeClass("sidebar__footer--small");
     $(".sidebar__logo").removeClass("sidebar__logo--small");
 
+    $(".sidebar .sidebar__title").each(function(){
+        $(this).removeClass("d-none");
+    });
     $(".sidebar .sidebar__item").each(function(){
         $(this).removeClass("sidebar__item--small");
         $(this).find(".sidebar__item-title").removeClass("d-none");
@@ -51,11 +57,14 @@ const openSidebar = () => {
 }
 
 $(function() {
+    // Sidebar Scroll
+    $('.sidebar .sidebar__container').each((index, element) => new SimpleBar(element));
+
     if ( $(window).width() <= 1200 || !window.matchMedia('screen and (min-width: 1200px)').matches ){
         let $toggle = $(".sidebar-action");
         if( !$toggle.hasClass("sidebar-action--small") ){
             $toggle.addClass("sidebar-action--small");
-            closeSidebar();
+            openSidebar();
         };
     }
 });
@@ -66,16 +75,17 @@ $(".sidebar-action").on("click", function(){
         $toggle.addClass("sidebar-action--small");
         $toggle.addClass("sidebar-action--opened");
 
-        closeSidebar();
+        openSidebar();
     }else{
         $toggle.removeClass("sidebar-action--small");
 
-        openSidebar();
+        closeSidebar();
     }
 });
 
 $(".sidebar .sidebar__item.sidebar__item_parent").on("click", function(){
     let $parent = $(this);
+    let $parentIcon = $(this).find(".sidebar__item-arrow");
     let children = $parent.data("nav");
 
     if( !$parent.hasClass("sidebar__item_parent--open") ){
@@ -83,10 +93,12 @@ $(".sidebar .sidebar__item.sidebar__item_parent").on("click", function(){
             $(".sidebar-action").removeClass("sidebar-action--small");
             openSidebar();
         }
-        $parent.addClass("sidebar__item_parent--open")
+        $parent.addClass("sidebar__item_parent--open");
+        $parentIcon.addClass("sidebar__item-arrow--open");
         $(".sidebar .sidebar__children" + children).addClass("sidebar__children--open");
     }else{
         $parent.removeClass("sidebar__item_parent--open")
+        $parentIcon.removeClass("sidebar__item-arrow--open");
         $(".sidebar .sidebar__children" + children).removeClass("sidebar__children--open");
     }
 });
@@ -98,12 +110,12 @@ $(window).on("resize", function(){
     if ( $(window).width() <= 1200 || !window.matchMedia('screen and (min-width: 1200px)').matches ){
         if( !$toggle.hasClass("sidebar-action--small") ){
             $toggle.addClass("sidebar-action--small");
-            closeSidebar();
+            openSidebar();
         };
     }else{
         if( !$toggle.hasClass("sidebar-action--opened") ){
             $toggle.removeClass("sidebar-action--small");
-            openSidebar();
+            closeSidebar();
         };
     }
 });

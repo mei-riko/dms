@@ -28,6 +28,8 @@
 }
 
 .modal-body{
+    overflow: hidden;
+    
     &_w-link{
         padding: 0;
     }
