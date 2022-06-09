@@ -17,10 +17,8 @@ var gulp = require("gulp"),
   gulp.task('browser-sync', function () {
     browserSync.init({
       server: {
-        baseDir: './docs',
-      },
-      // host: "192.168.100.7",
-      port: 3000,
+        baseDir: './public',
+      }
     })
   });
 
@@ -71,12 +69,12 @@ var gulp = require("gulp"),
         }
       }).on('error', notify.onError()))
       .pipe(gulp.dest('./docs/js/'))
-      .pipe(uglify())
-      .pipe(rename({ suffix: '.min' }))
-      .pipe(gulp.dest('./docs/js/'))
+      // .pipe(uglify())
+      // .pipe(rename({ suffix: '.min' }))
+      // .pipe(gulp.dest('./docs/js/'))
       .on('end', browserSync.reload);
   });
-  
+
   gulp.task('watch', function () {
     
     gulp.watch(['./src/pages/*.pug'], gulp.parallel('html'));
