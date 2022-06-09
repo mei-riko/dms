@@ -50,7 +50,7 @@ var gulp = require("gulp"),
       .pipe(plumber())
       .pipe(webpackStream({
         output: {
-          filename: 'app.js',
+          filename: 'app.min.js',
         },
         module: {
           rules: [
