@@ -5,8 +5,8 @@
 
     // padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
     // margin-left: $sidebar-width;
-    max-width: calc(100% - 260px);
-    transform: translateX(260px);
+    max-width: calc(100% - 280px);
+    transform: translateX(280px);
 
     transition: $transition-base;
 

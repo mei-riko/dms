@@ -189,7 +189,7 @@
         transition: $transition-base;
 
         &-image{
-            background: no-repeat center / cover;
+            background: $black-60 no-repeat center / cover;
             border-radius: 50%;
 
             width: 100%;
