@@ -17,8 +17,10 @@ var gulp = require("gulp"),
   gulp.task('browser-sync', function () {
     browserSync.init({
       server: {
-        baseDir: './public',
-      }
+        baseDir: './docs',
+      },
+      // host: "192.168.100.7",
+      port: 3000,
     })
   });
 
@@ -57,10 +59,7 @@ var gulp = require("gulp"),
             {
               test: /\.(js)$/,
               exclude: /(node_modules)/,
-              loader: 'babel-loader',
-              query: {
-                presets: ['env']
-              }
+              loader: 'babel-loader'
             }
           ]
         },
@@ -69,9 +68,6 @@ var gulp = require("gulp"),
         }
       }).on('error', notify.onError()))
       .pipe(gulp.dest('./docs/js/'))
-      // .pipe(uglify())
-      // .pipe(rename({ suffix: '.min' }))
-      // .pipe(gulp.dest('./docs/js/'))
       .on('end', browserSync.reload);
   });
 
