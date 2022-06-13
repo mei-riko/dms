@@ -91,6 +91,7 @@
 
         &-icon{
             fill: $secondary;
+            transition: $transition-base;
         }
         &-title{
             line-height: 16px;
@@ -100,6 +101,7 @@
             stroke: $secondary;
             width: 16px;
             height: 16px;
+            transition: $transition-base;
 
             &--open{
                 transform: rotate(90deg);
@@ -124,12 +126,18 @@
             &--open{
                 background-color: $black-60;
                 color: $white;
+
+                .sidebar__item-icon{fill:$white;}
+                .sidebar__item-arrow{fill:$white;stroke:$white;}
             }
         }
 
         &--small{
             background-color: inherit;
             grid-template-columns: 16px;
+        }
+        &--here{
+            background-color: $black-60;
         }
     }
     &__parent-secondary{
@@ -143,10 +151,15 @@
     }
     &__item-child{
         color: $secondary;
+        transition: $transition-base;
 
         &:hover{
             color: $white;
             text-decoration: none;
+        }
+
+        &--here{
+            color: $primary-dark-100;
         }
     }
     &__children{
@@ -168,7 +181,7 @@
     // Footer
     &__footer{
         display: grid;
-        grid-gap: map-get($map: $spacers, $key: 2);
+        grid-gap: 10px;
         grid-template-columns: 1fr;
 
         padding: map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3);

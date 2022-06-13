@@ -2078,6 +2078,9 @@
 
 .sidebar__item-icon {
   fill: #a5abda;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sidebar__item-title {
@@ -2089,6 +2092,9 @@
   stroke: #a5abda;
   width: 16px;
   height: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sidebar__item-arrow--open {
@@ -2125,9 +2131,22 @@
   color: #ffffff;
 }
 
+.sidebar__item_parent--open .sidebar__item-icon {
+  fill: #ffffff;
+}
+
+.sidebar__item_parent--open .sidebar__item-arrow {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
 .sidebar__item--small {
   background-color: inherit;
   grid-template-columns: 16px;
+}
+
+.sidebar__item--here {
+  background-color: #2a2a3d;
 }
 
 .sidebar__parent-secondary {
@@ -2144,11 +2163,18 @@
 
 .sidebar__item-child {
   color: #a5abda;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sidebar__item-child:hover {
   color: #ffffff;
   text-decoration: none;
+}
+
+.sidebar__item-child--here {
+  color: #00E0FF;
 }
 
 .sidebar__children {
@@ -2169,7 +2195,7 @@
 
 .sidebar__footer {
   display: grid;
-  grid-gap: 12px;
+  grid-gap: 10px;
   grid-template-columns: 1fr;
   padding: 12px 24px 24px;
 }
