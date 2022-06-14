@@ -59,7 +59,12 @@ $(function() {
             minimumResultsForSearch: Infinity,
         });
     }
-
+    if( $('.select_dashboard').length > 0 ){
+        let selectDashboard = $('.select_dashboard').select2({
+            theme: "dashboard",
+            minimumResultsForSearch: Infinity,
+        });
+    }
     if( $('.select_options').length > 0 ){
         let selectOptions = $('.select_options').select2();
     }

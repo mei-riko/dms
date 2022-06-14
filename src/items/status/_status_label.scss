@@ -16,4 +16,7 @@
     &[data-type=false]{
         background-color: $red-dark-100;
     }
+    &[data-type=default]{
+        background-color: $white;
+    }
 }

@@ -28,4 +28,9 @@
             background-color: $red-dark-100;
         }
     }
+    &[data-type=default]{
+        &:before{
+            background-color: $white;
+        }
+    }
 }

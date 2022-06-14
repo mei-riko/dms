@@ -17,5 +17,8 @@
         &[data-type=false]{
             fill: $red-dark-100;
         }
+        &[data-type=default]{
+            fill: $white;
+        }
     }
 }
