@@ -1878,6 +1878,16 @@
   background-color: #2e2e45;
 }
 
+.dragTableContainer tr {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dragTableContainer tr.tDnD_whileDrag {
+  background-color: #12111d;
+}
+
 .network {
   display: grid;
   -webkit-box-align: center;

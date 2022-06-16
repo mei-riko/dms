@@ -192,3 +192,13 @@
         }
     }
 }
+
+// Draggable TR
+.dragTableContainer{
+    tr{
+        transition: $transition-base;
+        &.tDnD_whileDrag{
+            background-color: $black-100;
+        }
+    }
+}
