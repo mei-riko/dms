@@ -421,9 +421,9 @@
 }
 
 .checkbox__input + .checkbox__label {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 12px auto;
+  grid-gap: 12px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -431,6 +431,9 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .checkbox__input + .checkbox__label::before {
@@ -451,17 +454,17 @@
   transition: 0.3s;
 }
 
+.checkbox__input:hover + .checkbox__label {
+  color: #a5abda;
+}
+
 .checkbox__input:hover + .checkbox__label:before {
-  border-color: #00E0FF;
+  border-color: #a5abda;
 }
 
 .checkbox__input:checked + .checkbox__label:before {
   background-color: #00E0FF;
   border-color: #00E0FF;
-}
-
-.checkbox__label-inside {
-  margin-left: 12px;
 }
 
 .radio {
@@ -475,9 +478,9 @@
 }
 
 .radio__input + .radio__label {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 12px auto;
+  grid-gap: 12px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -485,6 +488,9 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .radio__input + .radio__label::before {
@@ -505,17 +511,17 @@
   transition: 0.3s;
 }
 
+.radio__input:hover + .radio__label {
+  color: #a5abda;
+}
+
 .radio__input:hover + .radio__label:before {
-  border-color: #00E0FF;
+  border-color: #a5abda;
 }
 
 .radio__input:checked + .radio__label:before {
   background-color: #00E0FF;
   border-color: #00E0FF;
-}
-
-.radio__label-inside {
-  margin-left: 12px;
 }
 
 .select2-container.select2-container--open {
@@ -1495,6 +1501,10 @@
   background-color: #ffffff;
 }
 
+.status_minimal[data-type=custom]:before {
+  background-color: var(--custom-color-var);
+}
+
 .status_label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1520,6 +1530,7 @@
 
 .status_label[data-type=default] {
   background-color: #ffffff;
+  color: #12111d;
 }
 
 .tooltip.true .tooltip-inner {
@@ -1886,6 +1897,14 @@
 
 .dragTableContainer tr.tDnD_whileDrag {
   background-color: #12111d;
+}
+
+.table-responsive .simplebar-wrapper {
+  padding-bottom: 12px;
+}
+
+.table-responsive .simplebar-content {
+  min-height: 110px;
 }
 
 .network {

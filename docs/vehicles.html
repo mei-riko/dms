@@ -108,7 +108,7 @@
                         <input class="input form_search__input" type="text" placeholder="Search"/>
                       </form>
                     </div>
-                    <div class="content__heading-action"><a class="btn btn-secondary btn_with-icon" href="#">Add field
+                    <div class="content__heading-action"><a class="btn btn-secondary btn_with-icon" href="#" data-toggle="modal" data-target="#addFieldModal">Add field
                         <svg class="btn__icon btn-secondary__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M11.0835 6.41668H7.5835V2.91668C7.5835 2.76197 7.52204 2.61359 7.41264 2.5042C7.30324 2.3948 7.15487 2.33334 7.00016 2.33334C6.84545 2.33334 6.69708 2.3948 6.58768 2.5042C6.47829 2.61359 6.41683 2.76197 6.41683 2.91668V6.41668H2.91683C2.76212 6.41668 2.61375 6.47813 2.50435 6.58753C2.39495 6.69693 2.3335 6.8453 2.3335 7.00001C2.3335 7.15472 2.39495 7.30309 2.50435 7.41249C2.61375 7.52188 2.76212 7.58334 2.91683 7.58334H6.41683V11.0833C6.41683 11.2381 6.47829 11.3864 6.58768 11.4958C6.69708 11.6052 6.84545 11.6667 7.00016 11.6667C7.15487 11.6667 7.30324 11.6052 7.41264 11.4958C7.52204 11.3864 7.5835 11.2381 7.5835 11.0833V7.58334H11.0835C11.2382 7.58334 11.3866 7.52188 11.496 7.41249C11.6054 7.30309 11.6668 7.15472 11.6668 7.00001C11.6668 6.8453 11.6054 6.69693 11.496 6.58753C11.3866 6.47813 11.2382 6.41668 11.0835 6.41668Z"></path>
                         </svg></a></div>
@@ -603,6 +603,53 @@
           <p class="content__footer-intro">Carbogatto LLC © 2022 All Rights Reserved. Version 1.0.0.1</p>
         </div>
       </div>
+      <div class="modal fade" id="addFieldModal" tabindex="-1" aria-labelledby="addFieldModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title" id="addFieldModalLabel">Add field</p>
+              <svg class="modal__close" data-dismiss="modal" aria-label="Close" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.19691 5.19691C5.32299 5.07083 5.49399 5 5.6723 5C5.8506 5 6.0216 5.07083 6.14768 5.19691L9 8.04923L11.8523 5.19691C11.9784 5.07083 12.1494 5 12.3277 5C12.506 5 12.677 5.07083 12.8031 5.19691C12.9292 5.32299 13 5.49399 13 5.6723C13 5.8506 12.9292 6.0216 12.8031 6.14768L9.95077 9L12.8031 11.8523C12.9292 11.9784 13 12.1494 13 12.3277C13 12.506 12.9292 12.677 12.8031 12.8031C12.677 12.9292 12.506 13 12.3277 13C12.1494 13 11.9784 12.9292 11.8523 12.8031L9 9.95077L6.14768 12.8031C6.0216 12.9292 5.8506 13 5.6723 13C5.49399 13 5.32299 12.9292 5.19691 12.8031C5.07083 12.677 5 12.506 5 12.3277C5 12.1494 5.07083 11.9784 5.19691 11.8523L8.04923 9L5.19691 6.14768C5.07083 6.0216 5 5.8506 5 5.6723C5 5.49399 5.07083 5.32299 5.19691 5.19691Z"></path>
+              </svg>
+            </div>
+            <div class="modal-body">
+              <form class="form" action="">
+                <div class="mb-2">
+                  <label class="checkbox" for="number">
+                    <input class="checkbox__input" type="checkbox" name="field" id="number" checked="checked"/><span class="checkbox__label"> <span class="checkbox__label-inside">Serial number</span></span>
+                  </label>
+                </div>
+                <div class="mb-2">
+                  <label class="checkbox" for="model">
+                    <input class="checkbox__input" type="checkbox" name="field" id="model"/><span class="checkbox__label"> <span class="checkbox__label-inside">Model</span></span>
+                  </label>
+                </div>
+                <div class="mb-2">
+                  <label class="checkbox" for="generation">
+                    <input class="checkbox__input" type="checkbox" name="field" id="generation" checked="checked"/><span class="checkbox__label"> <span class="checkbox__label-inside">Generation</span></span>
+                  </label>
+                </div>
+                <div class="mb-2">
+                  <label class="checkbox" for="color">
+                    <input class="checkbox__input" type="checkbox" name="field" id="color" checked="checked"/><span class="checkbox__label"> <span class="checkbox__label-inside">Color</span></span>
+                  </label>
+                </div>
+                <div class="mb-2">
+                  <label class="checkbox" for="status">
+                    <input class="checkbox__input" type="checkbox" name="field" id="status"/><span class="checkbox__label"> <span class="checkbox__label-inside">Activation status</span></span>
+                  </label>
+                </div>
+                <div class="mb-0">
+                  <label class="checkbox" for="owner">
+                    <input class="checkbox__input" type="checkbox" name="field" id="owner"/><span class="checkbox__label"> <span class="checkbox__label-inside">Owner</span></span>
+                  </label>
+                </div>
+              </form>
+              <div class="modal__confirmation mt-3"><a class="btn btn-danger btn--full" href="#">Cancel</a><a class="btn btn-success btn--full" href="#">Confirm</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
           <div class="modal-content">
@@ -725,13 +772,13 @@
                 <div class="col-12 col-lg-3">
                   <div class="form__label form__label_secondary">Status</div>
                   <div class="d-block mb-2">
-                    <label class="radio" for="statusActive">
-                      <input class="radio__input" type="radio" name="status" id="statusActive" checked="checked"/><span class="radio__label"> <span class="radio__label-inside">Active</span></span>
+                    <label class="checkbox" for="statusActive">
+                      <input class="checkbox__input" type="checkbox" name="status" id="statusActive" checked="checked"/><span class="checkbox__label"> <span class="checkbox__label-inside">Active</span></span>
                     </label>
                   </div>
                   <div class="d-block">
-                    <label class="radio" for="statusStolen">
-                      <input class="radio__input" type="radio" name="status" id="statusStolen"/><span class="radio__label"> <span class="radio__label-inside">Stolen</span></span>
+                    <label class="checkbox" for="statusStolen">
+                      <input class="checkbox__input" type="checkbox" name="status" id="statusStolen"/><span class="checkbox__label"> <span class="checkbox__label-inside">Stolen</span></span>
                     </label>
                   </div>
                   <div class="form__label form__label_secondary mt-4">Status</div>
@@ -822,6 +869,7 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/jquery.inputmask.min.js"></script>
     <script src="./js/app.min.js"></script>
+    <script src="./js/dashboard.js"></script>
     <script src="./js/select2-custom.js"></script>
     <script src="./js/ui-slider-custom.js"></script>
   </body>

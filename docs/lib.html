@@ -112,6 +112,21 @@
               <option value="1">Activated</option>
               <option value="2">Not activated</option>
             </select>
+            <p class="h5 text-bold my-4">Checkbox </p>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox"/><span class="checkbox__label"> <span class="checkbox__label-inside">Checkbox Example</span></span>
+            </label>
+            <p class="h5 text-bold my-4">Radio</p>
+            <div class="mb-2">
+              <label class="radio" for="guest">
+                <input class="radio__input" type="radio" name="role" id="guest" checked="checked"/><span class="radio__label"> <span class="radio__label-inside">Radio Example</span></span>
+              </label>
+            </div>
+            <div class="mb-0">
+              <label class="radio" for="manager">
+                <input class="radio__input" type="radio" name="role" id="manager"/><span class="radio__label"> <span class="radio__label-inside">Radio Example</span></span>
+              </label>
+            </div>
           </div>
           <div class="col-4 mb-4">
             <p class="h5 text-bold mb-4">Filters Block</p>
@@ -188,6 +203,12 @@
                 <div class="status status_minimal" data-type="false">Problem Status</div>
               </div>
               <div class="col-4 mb-3">
+                <div class="status status_minimal" data-type="default">Default Status</div>
+              </div>
+              <div class="col-4 mb-3">
+                <div class="status status_minimal" data-type="custom" style="color: #f62dff; --custom-color-var: #f62dff;">Custom Status</div>
+              </div>
+              <div class="col-4 mb-3">
                 <div class="status status_label" data-type="true">Success Status</div>
               </div>
               <div class="col-4 mb-3">
@@ -195,6 +216,12 @@
               </div>
               <div class="col-4 mb-3">
                 <div class="status status_label" data-type="false">Problem Status</div>
+              </div>
+              <div class="col-4 mb-3">
+                <div class="status status_label" data-type="default">Default Status</div>
+              </div>
+              <div class="col-4 mb-3">
+                <div class="status status_label" data-type="custom" style="color: #fafafa; background-color: #5e0062;">Custom Status</div>
               </div>
             </div>
             <div class="mt-5">

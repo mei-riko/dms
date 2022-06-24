@@ -33,4 +33,9 @@
             background-color: $white;
         }
     }
+    &[data-type=custom]{
+        &:before{
+            background-color: var(--custom-color-var);
+        }
+    }
 }

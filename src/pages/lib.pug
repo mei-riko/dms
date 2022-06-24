@@ -96,6 +96,22 @@ block content
                     //- option 
                     option(value="1") Activated
                     option(value="2") Not activated
+                p.h5.text-bold.my-4 Checkbox 
+                label.checkbox
+                    input.checkbox__input(type="checkbox")
+                    span.checkbox__label 
+                        span.checkbox__label-inside Checkbox Example
+                p.h5.text-bold.my-4 Radio
+                .mb-2
+                    label.radio(for="guest")
+                        input.radio__input(type="radio" name="role" id="guest" checked)
+                        span.radio__label 
+                            span.radio__label-inside Radio Example
+                .mb-0
+                    label.radio(for="manager")
+                        input.radio__input(type="radio" name="role" id="manager")
+                        span.radio__label 
+                            span.radio__label-inside Radio Example
             .col-4.mb-4
                 p.h5.text-bold.mb-4 Filters Block
                 .filters
@@ -154,11 +170,19 @@ block content
                     .col-4.mb-3
                         .status.status_minimal(data-type="false") Problem Status
                     .col-4.mb-3
+                        .status.status_minimal(data-type="default") Default Status
+                    .col-4.mb-3
+                        .status.status_minimal(data-type="custom" style="color: #f62dff; --custom-color-var: #f62dff;") Custom Status
+                    .col-4.mb-3
                         .status.status_label(data-type="true") Success Status
                     .col-4.mb-3
                         .status.status_label(data-type="warning") Warning Status
                     .col-4.mb-3
                         .status.status_label(data-type="false") Problem Status
+                    .col-4.mb-3
+                        .status.status_label(data-type="default") Default Status
+                    .col-4.mb-3
+                        .status.status_label(data-type="custom" style="color: #fafafa; background-color: #5e0062;") Custom Status
                 .mt-5
                     .form__label.form__label_secondary Price
                     .slider-ui-container

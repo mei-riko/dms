@@ -195,6 +195,9 @@ $(function() {
             }
         });
     });
+
+    // Table Scroll
+    $('.table-responsive').each((index, element) => new SimpleBar(element));
 });
 
 $(document).on('mouseup', function (e){

@@ -7,9 +7,14 @@
         opacity: 0;
 
         & + .radio__label{
-            display: inline-flex;
+            display: grid;
+            grid-template-columns: 12px auto;
+            grid-gap: map-get($map: $spacers, $key: 2);
+
             align-items: center;
             user-select: none;
+
+            transition: $transition-base;
 
             &::before{
                 content: '';
@@ -28,15 +33,19 @@
                 transition: $transition-base;
             }
         }
-        &:hover + .radio__label:before{
-            border-color: $primary-dark-100;
+        &:hover + .radio__label{
+            color: $secondary;
+
+            &:before{
+                border-color: $secondary;
+            }
         }
         &:checked + .radio__label:before{
             background-color: $primary-dark-100;
             border-color: $primary-dark-100;
         }
     }
-    &__label-inside{
-        margin-left: map-get($map: $spacers, $key: 2);
-    }
+    // &__label-inside{
+    //     margin-left: map-get($map: $spacers, $key: 2);
+    // }
 }
