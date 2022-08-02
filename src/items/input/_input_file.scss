@@ -9,7 +9,9 @@
 
     color: $white;
 
-    &::file-selector-button {
+    &::file-selector-button,
+    &::-ms-browse,
+    &::-webkit-file-upload-button {
         font-family: $font-family-base;
         font-size: map-get($font-size, 'md');
         font-weight: $font-weight-base;

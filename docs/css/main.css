@@ -421,7 +421,7 @@
   color: #ffffff;
 }
 
-.input_file::file-selector-button {
+.input_file::file-selector-button, .input_file::-ms-browse, .input_file::-webkit-file-upload-button {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
   font-weight: 400;
@@ -434,15 +434,14 @@
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
   transition: 0.3s;
 }
 
-.input_file::file-selector-button:hover {
+.input_file::file-selector-button:hover, .input_file::-ms-browse:hover, .input_file::-webkit-file-upload-button:hover {
   color: #ffffff;
   background-color: #2e2e45;
   border-color: #2e2e45;
-  -webkit-box-shadow: 4px 4px 10px #1F1C29;
   box-shadow: 4px 4px 10px #1F1C29;
   text-decoration: none;
 }
