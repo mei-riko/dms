@@ -9,13 +9,7 @@
 
     color: $white;
 
-    &::file-selector-button,
-    &::-ms-browse,
-    &::-webkit-file-upload-button {
-        font-family: $font-family-base;
-        font-size: map-get($font-size, 'md');
-        font-weight: $font-weight-base;
-        
+    &::file-selector-button{
         background-color: $black-60;
         border-color: $black-60;
         outline: none;
@@ -32,10 +26,44 @@
             color: $white;
             background-color: $black-40;
             border-color: $black-40;
+        }
+    }
+    &::-ms-browse{
+        background-color: $black-60;
+        border-color: $black-60;
+        outline: none;
+        color: $secondary;
 
-            box-shadow: $shadow-dark;
+        padding: 12px 18px;
+        margin-right: 12px;
+        border-radius: $border-radius;
 
-            text-decoration: none;
+        cursor: pointer;
+        transition: $transition-base;
+
+        &:hover{
+            color: $white;
+            background-color: $black-40;
+            border-color: $black-40;
+        }
+    }
+    &::-webkit-file-upload-button{
+        background-color: $black-60;
+        border-color: $black-60;
+        outline: none;
+        color: $secondary;
+
+        padding: 12px 18px;
+        margin-right: 12px;
+        border-radius: $border-radius;
+
+        cursor: pointer;
+        transition: $transition-base;
+
+        &:hover{
+            color: $white;
+            background-color: $black-40;
+            border-color: $black-40;
         }
     }
 }
