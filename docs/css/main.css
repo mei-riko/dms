@@ -410,6 +410,43 @@
   height: 46px;
 }
 
+.input_file {
+  background: #12111d;
+  border-color: inherit;
+  border-radius: 0;
+  border-width: 0;
+  font-size: unset;
+  line-height: inherit;
+  padding: 0;
+  color: #ffffff;
+}
+
+.input_file::file-selector-button {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #2a2a3d;
+  border-color: #2a2a3d;
+  outline: none;
+  color: #a5abda;
+  padding: 12px 18px;
+  margin-right: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input_file::file-selector-button:hover {
+  color: #ffffff;
+  background-color: #2e2e45;
+  border-color: #2e2e45;
+  -webkit-box-shadow: 4px 4px 10px #1F1C29;
+  box-shadow: 4px 4px 10px #1F1C29;
+  text-decoration: none;
+}
+
 .checkbox {
   cursor: pointer;
 }
@@ -579,6 +616,101 @@
   margin: 0;
 }
 
+.select2-container.select2-container--default .select2-selection--multiple {
+  background-color: #12111d;
+  border: 1px solid #2a2a3d;
+  border-radius: 4px;
+  min-width: 240px;
+  min-height: 44px;
+  padding: 6px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.select2-container.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 12px;
+  margin: 0;
+}
+
+.select2-container.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #2a2a3d;
+  border: none;
+  border-radius: 40px;
+  margin: 0 6px 6px 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.select2-container.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  border: none;
+  background: #2e2e45;
+  color: #ffffff;
+  width: 20px;
+  height: 100%;
+}
+
+.select2-container.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+  color: #00E0FF;
+}
+
+.select2-container.select2-container--default .select2-search--inline .select2-search__field {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  height: 20px;
+}
+
+.select2-container.select2-container--default .select2-search--inline .select2-search__field::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5abda;
+}
+
+.select2-container.select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5abda;
+}
+
+.select2-container.select2-container--default .select2-search--inline .select2-search__field:-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5abda;
+}
+
+.select2-container.select2-container--default .select2-search--inline .select2-search__field::-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5abda;
+}
+
+.select2-container.select2-container--default .select2-search--inline .select2-search__field::placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5abda;
+}
+
 .select2-container.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   -webkit-filter: opacity(0.5);
   filter: opacity(0.5);
@@ -599,34 +731,34 @@
   border-color: #2a2a3d;
 }
 
-.select2-container--default .select2-search .select2-search__field {
+.select2-container--default .select2-search.select2-search--dropdown .select2-search__field {
   background-color: #2e2e45;
   color: #ffffff;
   border: unset;
   border-radius: 4px;
 }
 
-.select2-container--default .select2-search .select2-search__field:focus {
+.select2-container--default .select2-search.select2-search--dropdown .select2-search__field:focus {
   outline: unset;
 }
 
-.select2-container--default .select2-search .select2-search__field::-webkit-input-placeholder {
+.select2-container--default .select2-search.select2-search--dropdown .select2-search__field::-webkit-input-placeholder {
   color: #a5abda;
 }
 
-.select2-container--default .select2-search .select2-search__field::-moz-placeholder {
+.select2-container--default .select2-search.select2-search--dropdown .select2-search__field::-moz-placeholder {
   color: #a5abda;
 }
 
-.select2-container--default .select2-search .select2-search__field:-ms-input-placeholder {
+.select2-container--default .select2-search.select2-search--dropdown .select2-search__field:-ms-input-placeholder {
   color: #a5abda;
 }
 
-.select2-container--default .select2-search .select2-search__field::-ms-input-placeholder {
+.select2-container--default .select2-search.select2-search--dropdown .select2-search__field::-ms-input-placeholder {
   color: #a5abda;
 }
 
-.select2-container--default .select2-search .select2-search__field::placeholder {
+.select2-container--default .select2-search.select2-search--dropdown .select2-search__field::placeholder {
   color: #a5abda;
 }
 
@@ -641,22 +773,24 @@
 }
 
 .select2-container--default .select2-results .select2-results__option--disabled {
-  color: #2e2e45;
+  color: #ffffff;
+  opacity: .3;
+  cursor: not-allowed;
 }
 
 .select2-container--default .select2-results .select2-results__option--selectable.select2-results__option--highlighted {
-  color: #ffffff;
-  background-color: #2e2e45;
+  background-color: #00E0FF;
+  color: #12111d;
 }
 
 .select2-container--default .select2-results .select2-results__option--selected {
   background-color: #12111d;
-  color: #ffffff;
+  color: #a5abda;
 }
 
 .select2-container--default .select2-results .select2-results__option--selected.select2-results__option--highlighted {
   background-color: #12111d;
-  color: #ffffff;
+  color: #a5abda;
 }
 
 .table .table__item_action-body .select2-container {
@@ -1029,6 +1163,20 @@
 .select2-container--dashboard .select2-results > .select2-results__options .select2-results__option--selected.select2-results__option--highlighted {
   background-color: #12111d;
   color: #ffffff;
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap__btn {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9999;
 }
 
 .form {

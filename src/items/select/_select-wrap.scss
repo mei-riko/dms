@@ -1,0 +1,11 @@
+.select-wrap{
+    position: relative;
+
+    &__btn{
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        transform: translateY(-50%);
+        z-index: 9999;
+    }
+}

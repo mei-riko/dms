@@ -1,0 +1,40 @@
+.input_file{
+    background: $black-100;
+    border-color: inherit;
+    border-radius: 0;
+    border-width: 0;
+    font-size: unset;
+    line-height: inherit;
+    padding: 0;
+
+    color: $white;
+
+    &::file-selector-button {
+        font-family: $font-family-base;
+        font-size: map-get($font-size, 'md');
+        font-weight: $font-weight-base;
+        
+        background-color: $black-60;
+        border-color: $black-60;
+        outline: none;
+        color: $secondary;
+
+        padding: 12px 18px;
+        margin-right: 12px;
+        border-radius: $border-radius;
+
+        cursor: pointer;
+        transition: $transition-base;
+
+        &:hover{
+            color: $white;
+            background-color: $black-40;
+            border-color: $black-40;
+
+            box-shadow: $shadow-dark;
+
+            text-decoration: none;
+        }
+    }
+}
+
