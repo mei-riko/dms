@@ -1,7 +1,7 @@
 .btn-success {
     color: $black-100;
-    background-color: $green-dark-100;
-    border-color: $green-dark-100;
+    background-color: $green-normal;
+    border-color: $green-normal;
 
     &__icon{
         fill: $black-100;
@@ -9,8 +9,8 @@
 
     &:hover{
         color: $black-100;
-        background-color: $green-dark-80;
-        border-color: $green-dark-80;
+        background-color: $green-hover;
+        border-color: $green-hover;
 
         box-shadow: $shadow-dark;
 
@@ -18,7 +18,7 @@
     }
     &:focus{
         color: $black-100;
-        background-color: $green-dark-60;
-        border-color: $green-dark-60;
+        background-color: $green-active;
+        border-color: $green-active;
     }
 }

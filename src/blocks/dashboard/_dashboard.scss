@@ -22,10 +22,10 @@
         
 
         &_danger{
-            border-color: $red-dark-100;
+            border-color: $red-normal;
         }
         &_success{
-            border-color: $green-dark-100;
+            border-color: $green-normal;
         }
     }
     &__card-header{
@@ -50,10 +50,10 @@
         flex-grow: 1;
 
         &_danger{
-            color: $red-dark-100;
+            color: $red-normal;
         }
         &_success{
-            color: $green-dark-100;
+            color: $green-normal;
         }
     }
     &__card-body{

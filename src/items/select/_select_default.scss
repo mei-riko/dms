@@ -92,7 +92,7 @@
                 height: 100%;
 
                 &:hover{
-                    color: $primary-dark-100;
+                    color: $primary-normal;
                 }
             }
         }
@@ -180,7 +180,7 @@
         }
         &--selectable{
             &.select2-results__option--highlighted{
-                background-color: $primary-dark-100;
+                background-color: $primary-normal;
                 color: $black-100;
             }
         }

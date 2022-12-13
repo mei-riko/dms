@@ -8,14 +8,14 @@
         justify-content: center;
 
         &-icon{
-            fill: $primary-dark-100;
+            fill: $primary-normal;
             transition: $transition-base;
 
             &:hover{
-                fill: $primary-dark-80;
+                fill: $primary-hover;
             }
             &:focus{
-                fill: $primary-dark-60;
+                fill: $primary-active;
             }
         }
     }

@@ -42,17 +42,17 @@
         text-align: center;
 
         &[data-type=primary]{
-            color: $primary-dark-100;
+            color: $primary-normal;
 
             &:hover{
-                color: $primary-dark-60;
+                color: $primary-hover;
             }
         }
         &[data-type=danger]{
-            color: $red-dark-100;
+            color: $red-normal;
 
             &:hover{
-                color: $red-dark-60;
+                color: $red-hover;
             }
         }
         &[data-type=secondary]{

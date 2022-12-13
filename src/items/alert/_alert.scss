@@ -6,9 +6,9 @@
     border-bottom-width: 0;
 
     &-primary{
-        border-color: $primary-dark-100;
-        background-color: rgba($primary-dark-100, 0.05);
-        color: $primary-dark-100;
+        border-color: $primary-normal;
+        background-color: rgba($primary-normal, 0.05);
+        color: $primary-normal;
     }
     &-secondary{
         border-color: $secondary;
@@ -16,19 +16,19 @@
         color: $secondary;
     }
     &-success{
-        border-color: $green-dark-100;
-        background-color: rgba($green-dark-100, 0.05);
-        color: $green-dark-100;
+        border-color: $green-normal;
+        background-color: rgba($green-normal, 0.05);
+        color: $green-normal;
     }
     &-danger{
-        border-color: $red-dark-100;
-        background-color: rgba($red-dark-100, 0.05);
-        color: $red-dark-100;
+        border-color: $red-normal;
+        background-color: rgba($red-normal, 0.05);
+        color: $red-normal;
     }
     &-warning{
-        border-color: $yellow-dark-100;
-        background-color: rgba($yellow-dark-100, 0.05);
-        color: $yellow-dark-100;
+        border-color: $yellow-normal;
+        background-color: rgba($yellow-normal, 0.05);
+        color: $yellow-normal;
     }
     &-light{
         border-color: $white;

@@ -1,7 +1,7 @@
 .btn-danger {
     color: $white;
-    background-color: $red-dark-100;
-    border-color: $red-dark-100;
+    background-color: $red-normal;
+    border-color: $red-normal;
 
     &__icon{
         fill: $white;
@@ -9,8 +9,8 @@
 
     &:hover{
         color: $white;
-        background-color: $red-dark-80;
-        border-color: $red-dark-80;
+        background-color: $red-hover;
+        border-color: $red-hover;
 
         box-shadow: $shadow-dark;
 
@@ -18,7 +18,7 @@
     }
     &:focus{
         color: $white;
-        background-color: $red-dark-60;
-        border-color: $red-dark-60;
+        background-color: $red-active;
+        border-color: $red-active;
     }
 }

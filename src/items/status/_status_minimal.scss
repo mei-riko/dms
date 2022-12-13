@@ -15,17 +15,17 @@
     
     &[data-type=true]{
         &:before{
-            background-color: $green-dark-100;
+            background-color: $green-normal;
         }
     }
     &[data-type=warning]{
         &:before{
-            background-color: $yellow-dark-100;
+            background-color: $yellow-normal;
         }
     }
     &[data-type=false]{
         &:before{
-            background-color: $red-dark-100;
+            background-color: $red-normal;
         }
     }
     &[data-type=default]{

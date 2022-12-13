@@ -1,10 +1,5 @@
-// $black-100            : #14121D;
-// $black-80             : #221E2D;
-// $black-60             : #2F2A3D;
-// $black-40             : #403A51;
-
 $black-100            : #12111d;
-$black-80             : #1f1e2d;
+$black-80             : #1F1E2D;
 $black-60             : #2a2a3d;
 $black-40             : #2e2e45;
 
@@ -13,24 +8,25 @@ $overflow             : rgba(20,18,29,0.7);
 $white                : #ffffff;
 $black                : $black-100;
 
-// $secondary            : #CBCEFF;
-$secondary            : #a5abda;
-$secondary-dark       : #231F54;
+$secondary            : #D9D2F8;
+$secondary-dark       : #323250;
 
+$primary-text         : #6296F1;
+$primary-normal       : #4573D2;
+$primary-hover        : #5688E5;
+$primary-active       : #4573D2;
 
-$primary-dark-100     : #00E0FF;
-$primary-dark-80      : #99FFFF;
-$primary-dark-60      : #CBFFFF;
+$green-text           : #66A88B;
+$green-normal         : #5DA283;
+$green-hover          : #74AF93;
+$green-active         : #4B8A73;
 
-$green-dark-100       : #ADFC04;
-$green-dark-80        : #C6FF4D;
-$green-dark-60        : #D6FF7E;
+$red-text             : #E26D7E;
+$red-normal           : #D1395A;
+$red-hover            : #E26D7E;
+$red-active           : #B12D4B;
 
-$red-dark-100         : #F25634;
-$red-dark-80          : #FF6B4B;
-$red-dark-60          : #ff8a6f;
-
-$yellow-dark-100      : #FCBD1E;
+$yellow-normal        : #F1BD6C;
 
 $shadow-dark          : 4px 4px 10px #1F1C29;
 $border-radius        : 4px;
@@ -38,7 +34,7 @@ $border-radius        : 4px;
 $sidebar-width        : 280px;
 
 $link-color           : $white !default;
-$link-hover-color     : $primary-dark-100 !default;
+$link-hover-color     : $primary-normal !default;
 $link-decoration      : none !default;
 $link-hover-decoration: underline !default;
 
@@ -63,14 +59,14 @@ $font-weight          : 400;
 $font-weight-bolder   : 500;
 $font-weight-bold     : 600;
 
-$font-family-heading  : "Montserrat", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-heading  : "Poppins", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,   "Liberation Mono",   "Courier New",    monospace !default;
 
 $line-height-smaller  : 1.4;
 $line-height          : 1.6;
 $line-height-heading  : 1.2;
 
-$font-family-base     : "Montserrat", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base     : "Poppins", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-size-base       : 1rem;
 $line-height-base     : $line-height;
 $font-weight-base     : $font-weight;
@@ -88,7 +84,7 @@ $heading: (
   h3: 28px,
   h4: 24px,
   h5: 20px,
-  h6: 18px,
+  h6: 17px,
 ) !default;
 
 $spacer : 24px!default;

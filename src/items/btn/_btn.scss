@@ -13,13 +13,13 @@
         transition: $transition-base;
 
         &_success{
-            fill: $green-dark-100;
+            fill: $green-normal;
         }
         &_warning{
-            fill: $yellow-dark-100;
+            fill: $yellow-normal;
         }
         &_failed{
-            fill: $red-dark-100;
+            fill: $red-normal;
         }
     }
     &__loading-animation{

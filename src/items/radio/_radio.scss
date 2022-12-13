@@ -41,8 +41,8 @@
             }
         }
         &:checked + .radio__label:before{
-            background-color: $primary-dark-100;
-            border-color: $primary-dark-100;
+            background-color: $primary-normal;
+            border-color: $primary-normal;
         }
     }
     // &__label-inside{

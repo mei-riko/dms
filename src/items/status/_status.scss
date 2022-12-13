@@ -9,13 +9,13 @@
         margin-left: map-get($map: $spacers, $key: 1);
 
         &[data-type=true]{
-            fill: $green-dark-100;
+            fill: $green-normal;
         }
         &[data-type=warning]{
-            fill: $yellow-dark-100;
+            fill: $yellow-normal;
         }
         &[data-type=false]{
-            fill: $red-dark-100;
+            fill: $red-normal;
         }
         &[data-type=default]{
             fill: $white;

@@ -132,7 +132,7 @@ $border-radius-select: 14px;
         padding-right: map-get($map: $spacers, $key: 2);
 
         span[data-type=delete]{
-            color: $red-dark-100;
+            color: $red-normal;
         }
 
         &--disabled{

@@ -1,8 +1,8 @@
 .input_error{
-    border: 1px solid $red-dark-100;
-    color: $red-dark-100;
+    border: 1px solid $red-normal;
+    color: $red-normal;
 
     &:focus{
-        outline-color: $red-dark-100;
+        outline-color: $red-normal;
     }
 }

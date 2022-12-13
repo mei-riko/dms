@@ -18,7 +18,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -122,7 +122,7 @@ a {
 }
 
 a:hover {
-  color: #00E0FF;
+  color: #4573D2;
   text-decoration: underline;
 }
 
@@ -328,8 +328,8 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 500;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 12px;
 }
@@ -360,11 +360,11 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 .h6, h6 {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 html, body {
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
@@ -402,7 +402,7 @@ main {
 }
 
 .font-secondary {
-  color: #a5abda;
+  color: #D9D2F8;
 }
 
 .bg-black-60 {
@@ -410,7 +410,7 @@ main {
 }
 
 .bg-black-80 {
-  background-color: #1f1e2d;
+  background-color: #1F1E2D;
 }
 
 .bg-black-100 {

@@ -6,15 +6,15 @@
     padding: 4px 8px;
 
     &[data-type=true]{
-        background-color: $green-dark-100;
+        background-color: $green-normal;
         color: $black-100;
     }
     &[data-type=warning]{
-        background-color: $yellow-dark-100;
+        background-color: $yellow-normal;
         color: $black-100;
     }
     &[data-type=false]{
-        background-color: $red-dark-100;
+        background-color: $red-normal;
     }
     &[data-type=default]{
         background-color: $white;

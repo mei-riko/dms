@@ -1,8 +1,8 @@
 .input_success{
-    border: 1px solid $green-dark-100;
-    color: $green-dark-100;
+    border: 1px solid $green-normal;
+    color: $green-normal;
 
     &:focus{
-        outline-color: $green-dark-100;
+        outline-color: $green-normal;
     }
 }
