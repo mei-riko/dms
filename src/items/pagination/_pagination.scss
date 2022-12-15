@@ -6,7 +6,7 @@
     
     &__on-page{
         font-size: map-get($map: $font-size, $key: sm);
-        color: $secondary;
+        color: $secondary-dark;
 
         padding-right: map-get($map: $spacers, $key: 3);
     }

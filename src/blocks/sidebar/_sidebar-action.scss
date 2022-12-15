@@ -1,9 +1,10 @@
 .sidebar-action{
-    fill: $white;
-    stroke: $white;
-    background-color: $black-60;
+    fill: $light-100;
+    stroke: $light-100;
+    background-color: $light-20;
 
     border-radius: $border-radius;
+    border: 1px solid $light-60;
     width: 44px;
     height: 44px;
     padding: map-get($map: $spacers, $key: 2);
@@ -20,12 +21,11 @@
     z-index: 111;
 
     cursor: pointer;
-    // transition: $transition-base;
+    transition: $transition-base;
 
     &:hover{
-        fill: $secondary;
-        stroke: $secondary;
-        box-shadow: $shadow-dark;
+        // background-color: $light-40;
+        box-shadow: $shadow-light;
     }
     
     path{

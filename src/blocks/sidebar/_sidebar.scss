@@ -6,11 +6,11 @@
 
     width: $sidebar-width;
 
-    background-color: $black-80;
+    background-color: $light-20;
     height: 100vh;
     max-height: -webkit-fill-available;
 
-    border-right: 1px solid $black-100;
+    border-right: 1px solid $light-40;
 
     display: flex;
     flex-direction: column;
@@ -64,12 +64,12 @@
     &__sep{
         width: 100%;
         height: 1px;
-        background-color: $black-100;
+        background-color: $light-40;
 
         margin: map-get($map: $spacers, $key: 1) 0;
     }
     &__title{
-        color: $secondary;
+        color: rgba($black-60, 0.5);
         text-transform: uppercase;
         font-size: map-get($map: $font-size, $key: sm);
         font-weight: $font-weight-bold;
@@ -85,20 +85,20 @@
         padding: 12px 16px;
         border-radius: $border-radius;
 
-        color: $white;
+        color: $black-100;
         transition: $transition-base;
         cursor: pointer;
 
         &-icon{
-            fill: $white;
+            fill: $black-100;
             transition: $transition-base;
         }
         &-title{
             line-height: 16px;
         }
         &-arrow{
-            fill: $secondary;
-            stroke: $secondary;
+            fill: $black-100;
+            stroke: $black-100;
             width: 16px;
             height: 16px;
             transition: $transition-base;
@@ -109,20 +109,24 @@
         }
 
         &:hover{
-            background-color: $black-60;
-            color: $white;
+            background-color: $light-40;
+            color: $black-100;
             text-decoration: none;
         }
 
         &_secondary{
-            background-color: $black-60;
+            color: $secondary-dark;
+            // background-color: $white;
+            .sidebar__item-icon{
+                fill: $secondary-dark;
+            }
         }
         &_parent{
             grid-template-columns: 20px auto 20px;
             
             &--open{
-                background-color: $black-60;
-                color: $white;
+                background-color: $light-40;
+                color: $black-100;
             }
         }
 
@@ -131,7 +135,7 @@
             grid-template-columns: 16px;
         }
         &--here{
-            background-color: $black-60;
+            background-color: $light-40;
         }
     }
     &__parent-secondary{
@@ -144,11 +148,11 @@
         }
     }
     &__item-child{
-        color: $secondary;
+        color: $black-100;
         transition: $transition-base;
 
         &:hover{
-            color: $white;
+            color: rgba($black-100, 0.5);
             text-decoration: none;
         }
 
@@ -199,7 +203,7 @@
         transition: $transition-base;
 
         &-image{
-            background: $black-60 no-repeat center / cover;
+            background: $light-40 no-repeat center / cover;
             border-radius: 50%;
 
             width: 100%;
@@ -213,11 +217,12 @@
         &-role{
             font-size: map-get($map: $font-size, $key: sm);
             color: $secondary;
+            // color: rgba($black-60, 0.5);
         }
 
         &:hover{
             text-decoration: none;
-            color: $white;
+            color: $black-100;
 
             filter: opacity(0.7);
         }

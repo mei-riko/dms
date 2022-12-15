@@ -1,3 +1,9 @@
+$light-100            : #968DC0;
+$light-80             : #B7AEDE;
+$light-60             : #D9D2F8;
+$light-40             : #eeedf8;
+$light-20             : #F4F5FB;
+
 $black-100            : #12111d;
 $black-80             : #1F1E2D;
 $black-60             : #2a2a3d;
@@ -8,8 +14,9 @@ $overflow             : rgba(20,18,29,0.7);
 $white                : #ffffff;
 $black                : $black-100;
 
-$secondary            : #D9D2F8;
-$secondary-dark       : #323250;
+$secondary            : #988EC0;
+// $secondary            : #D9D2F8;
+$secondary-dark       : #6D6490;
 
 $primary-text         : #6296F1;
 $primary-normal       : #4573D2;
@@ -29,19 +36,20 @@ $red-active           : #B12D4B;
 $yellow-normal        : #F1BD6C;
 
 $shadow-dark          : 4px 4px 10px #1F1C29;
+$shadow-light         : 4px 4px 10px #e9e4ff;
 $border-radius        : 4px;
 
 $sidebar-width        : 280px;
 
-$link-color           : $white !default;
+$link-color           : $black-100 !default;
 $link-hover-color     : $primary-normal !default;
 $link-decoration      : none !default;
 $link-hover-decoration: underline !default;
 
-$input-color          : $white;
-$input-placeholder    : $secondary;
-$input-border         : $black-100;
-$input-background     : $black-100;
+$input-color          : $black-80;
+$input-placeholder    : $light-100;
+$input-border         : $light-40;
+$input-background     : $light-40;
 
 $transition-base      : 0.3s;
 
@@ -69,7 +77,7 @@ $line-height-heading  : 1.2;
 $font-family-base     : "Poppins", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-size-base       : 1rem;
 $line-height-base     : $line-height;
-$font-weight-base     : $font-weight-bolder;
+$font-weight-base     : $font-weight;
 
 $font-size: (
   xs: 10px,

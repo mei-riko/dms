@@ -21,7 +21,7 @@
         flex-direction: column;
 
         padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
-        background-color: $black-80;
+        background-color: $light-20;
         // border-radius: 6px;
         min-width: 280px;
 
@@ -108,9 +108,9 @@
         
         &-item{
             padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
-            border: 1px solid $black-40;
+            border: 1px solid $light-60;
             border-radius: $border-radius;
-            color: $secondary;
+            color: $light-100;
             // background-color: $black-80;
 
             display: inline-flex;
@@ -126,21 +126,21 @@
 
             &:hover{
                 text-decoration: none;
-                color: $secondary;
-                background-color: $black-60;
-                border-color: $black-60;
+                color: $secondary-dark;
+                background-color: $light-40;
+                border-color: $light-40;
             }
 
             &--active{
-                color: $white;
-                background-color: $black-100;
-                border-color: $black-100;
+                color: $secondary-dark;
+                background-color: $light-60;
+                border-color: $light-60;
 
                 &:hover{
                     text-decoration: none;
-                    color: $white;
-                    background-color: $black-100;
-                    border-color: $black-100;
+                    color: $secondary-dark;
+                    background-color: $light-60;
+                    border-color: $light-60;
                 }
             }
             &--parent{
