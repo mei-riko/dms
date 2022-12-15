@@ -1,0 +1,18 @@
+.profile{
+    &__label{
+        font-size: map-get($map: $font-size, $key: sm);
+        margin-bottom: 10px;
+        color: $secondary;
+    }
+    &__item{
+        margin-bottom: 30px;
+    }
+    &__heading{
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+}

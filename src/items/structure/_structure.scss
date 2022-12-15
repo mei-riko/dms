@@ -1,0 +1,53 @@
+.structure{
+    &__toggle-icon{
+        padding-right: map-get($map: $spacers, $key: 2);
+    }
+    &__icon{
+        padding-right: map-get($map: $spacers, $key: 2);
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding: map-get($map: $spacers, $key: 1) 0;
+        min-height: 40px;
+
+        border-bottom: 1px solid $black-40;
+
+        cursor: pointer;
+        transition: $transition-base;
+
+        &:hover{
+            background-color: rgba($black-60, 0.5);
+        }
+    }
+    &__title-text{
+        padding-right: map-get($map: $spacers, $key: 2);
+    }
+    &__child{
+        display: grid;
+        grid-template-columns: auto 12px;
+        grid-gap: 4px;
+        align-items: center;
+
+        padding-right: map-get($map: $spacers, $key: 2);
+
+        font-size: map-get($map: $font-size, $key: sm);
+        color: $secondary;
+    }
+    &__btn{
+        transition: $transition-base;
+        display: none;
+
+        &--hover,
+        &--active{
+            display: block;
+        }
+    }
+
+    // Content
+    &__content{
+        padding: 0px 0px 0px 32px;
+    }
+}

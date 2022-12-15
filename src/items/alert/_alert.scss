@@ -1,14 +1,14 @@
 .alert{
-    font-size: map-get($map: $font-size, $key: sm);
+    font-size: map-get($map: $font-size, $key: md);
     border-left-width: 4px;
     border-right-width: 0;
     border-top-width: 0;
     border-bottom-width: 0;
 
     &-primary{
-        border-color: $primary-normal;
-        background-color: rgba($primary-normal, 0.05);
-        color: $primary-normal;
+        border-color: $primary-active;
+        background-color: rgba($primary-normal, 0.25);
+        color: rgba($secondary, 0.75);
     }
     &-secondary{
         border-color: $secondary;
@@ -22,8 +22,8 @@
     }
     &-danger{
         border-color: $red-normal;
-        background-color: rgba($red-normal, 0.05);
-        color: $red-normal;
+        background-color: rgba($red-normal, 0.25);
+        color: rgba($secondary, 0.75);
     }
     &-warning{
         border-color: $yellow-normal;

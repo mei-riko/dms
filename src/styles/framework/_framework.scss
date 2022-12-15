@@ -49,5 +49,8 @@ p{
     }
 }
 
+a{
+    transition: $transition-base;
+}
 // @media all and (min-width: map-get($grid-breakpoints, 'sm')){
 // }

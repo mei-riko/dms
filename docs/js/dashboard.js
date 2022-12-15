@@ -82,19 +82,19 @@ function createPie(container, chartData, config = {}) {
   const data = [
     {
       value: 30,
-      color: '#F25634'
+      color: '#D1395A'
     },
     {
       value: 20,
-      color: '#F2C834'
+      color: '#F1BD6C'
     },
     {
       value: 15,
-      color: '#A5ABDA'
+      color: '#D9D2F8'
     },
     {
       value: 35,
-      color: '#ADFC04'
+      color: '#5DA283'
     }
   ];
   

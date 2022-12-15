@@ -1,35 +1,21 @@
 .toggle{
-    &__icon{
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background: $black-40;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        transition: $transition-base;
-
-        &--active{
-            // background-color: $black-40;
-            transform: rotate(180deg);
-        }
-    }
     &__title{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
 
+        padding: map-get($map: $spacers, $key: 1) 0;
+        min-height: 40px;
+
         cursor: pointer;
+        transition: $transition-base;
 
         &-text{
-            font-weight: $font-weight-bold;
-            // font-size: map-get($map: $heading, $key: h6);
-            font-size: map-get($map: $font-size, $key: lg);
+            font-weight: $font-weight-bolder;
+            font-size: map-get($map: $font-size, $key: md);
             
-            padding-left: map-get($map: $spacers, $key: 3);
-            // padding: 0 map-get($map: $spacers, $key: 3);
+            flex-grow: 1;
+            padding-left: map-get($map: $spacers, $key: 2);
         }
         &-btns{
             flex: 0 0 100%;
@@ -50,10 +36,41 @@
                 }
             }
         }
+
+        &:hover{
+            background-color: rgba($black-60, 0.5);
+        }
     }
+    &__icon{
+        width: 20px;
+        height: 20px;
+        border-radius: $border-radius;
+        border: 1px solid $black-40;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: $transition-base;
+
+        &-plus{
+            fill: $white;
+            &--hide{
+                display: none;
+            }
+        }
+        &-minus{
+            fill: $white;
+            display: none;
+            &--active{
+                display: block;
+            }
+        }
+    }
+
     &__content{
         display: none;
-        padding: map-get($map: $spacers, $key: 3) 0;
+        padding: map-get($map: $spacers, $key: 2) 0;
     }
 }
 
@@ -76,8 +93,8 @@
     .toggle{
         &__title{
             &-text{
-                font-size: map-get($map: $heading, $key: h6);
-                padding: 0 map-get($map: $spacers, $key: 3);
+                // font-size: map-get($map: $heading, $key: h6);
+                padding: 0 map-get($map: $spacers, $key: 2);
             }
             &-btns{
                 flex: unset;

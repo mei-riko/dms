@@ -16,6 +16,10 @@
 
             transition: $transition-base;
 
+            &_empty{
+                grid-template-columns: 12px;
+            }
+
             &::before{
                 content: '';
 

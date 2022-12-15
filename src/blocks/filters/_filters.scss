@@ -36,26 +36,28 @@
         transition: $transition-base;
     }
     &__open-count{
-        border-radius: 50%;
         background-color: $primary-normal;
-        color: $black-100;
+        color: $white;
 
-        width: 18px;
-        flex: 0 0 18px;
-        height: 18px;
+        width: auto;
+        // flex: 0 0 20px;
+        // height: 20px;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
-        font-size: 10px;
+        font-size: map-get($map: $font-size, $key: sm);
+        line-height: map-get($map: $font-size, $key: sm);
         font-weight: $font-weight-bold;
-
+        
+        padding: 4px 6px 3px;
         margin-left: map-get($map: $spacers, $key: 1);
+        border-radius: $border-radius;
     }
 
     &__item{
-        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+        // padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
         border-radius: 16px;
         background-color: $black-60;
 
@@ -64,25 +66,37 @@
         align-items: center;
         justify-content: center;
 
+        overflow: hidden;
+
         margin-right: map-get($map: $spacers, $key: 2);
         margin-top: map-get($map: $spacers, $key: 1);
         margin-bottom: map-get($map: $spacers, $key: 1);
 
         &-name{
-            margin-right: map-get($map: $spacers, $key: 1);
+            color: $secondary;
+            
+            padding-top: map-get($map: $spacers, $key: 1);
+            padding-bottom: map-get($map: $spacers, $key: 1);
+            padding-left: map-get($map: $spacers, $key: 2);
+            padding-right: map-get($map: $spacers, $key: 0);
         }
         &-value{
-            margin-right: map-get($map: $spacers, $key: 1);
+            padding: map-get($map: $spacers, $key: 1);
         }
         &-close{
-            fill: $white;
+            padding: map-get($map: $spacers, $key: 1);
+            padding-right: map-get($map: $spacers, $key: 2);
 
             transition: $transition-base;
             cursor: pointer;
 
             &:hover, &:focus{
-                fill: $secondary;
+                background-color: $black-40;
+                // filter: opacity(.5);
             }
+        }
+        &-close-icon{
+            fill: $white;
         }
     }
 }

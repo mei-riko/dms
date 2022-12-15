@@ -20,7 +20,7 @@ body {
   margin: 0;
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.6;
   text-align: left;
 }
@@ -366,7 +366,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 html, body {
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.6;
   background-color: #12111d;
   color: #ffffff;
@@ -423,4 +423,10 @@ p {
 
 p:last-child {
   margin-bottom: 0;
+}
+
+a {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }

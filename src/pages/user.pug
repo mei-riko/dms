@@ -23,44 +23,44 @@ block content
                             .content__heading-right
                                 a.btn.btn-primary(href="edit-user.html") Edit profile
                 .content__sep
-                .container-fluid
+                .container-fluid.profile
                     .row
                         .col-12.col-md-4.col-lg-3.mb-4.mb-md-0
                             .avatar(data-toggle="modal" data-target="#changeAvatarModal")
                                 .avatar__hover Change photo
                                 .avatar__image(style="background-image: url('../img/@img.png');")
                         .col-12.col-md-8.col-lg-9
-                            p.h6.text-bold.mb-4 Account information
+                            p.h6.text-bold.profile__heading Account information
                             .row 
-                                .col-12.col-sm-6.col-md-12.col-lg-6.mb-3
-                                    p.font-secondary First Name / Last Name
+                                .col-12.col-sm-6.col-md-12.col-lg-6.profile__item
+                                    p.profile__label First Name / Last Name
                                     p Nikolai Kuzmenko
-                                .col-12.col-sm-6.col-md-12.col-lg-6.mb-3
-                                    p.font-secondary E-mail
+                                .col-12.col-sm-6.col-md-12.col-lg-6.profile__item
+                                    p.profile__label E-mail
                                     p.d-flex.align-items-center
                                         a.me-3.text-decoration-underline(href="mailto:user.email@email.com") user.email@email.com
                                         span.status.status_minimal(data-type="true") verification 
-                                .col-12.col-sm-6.col-md-12.col-lg-6.mb-3
-                                    p.font-secondary Date of birth
+                                .col-12.col-sm-6.col-md-12.col-lg-6.profile__item
+                                    p.profile__label Date of birth
                                     p 12.12.1990
-                                .col-12.col-sm-6.col-md-12.col-lg-6.mb-3
-                                    p.font-secondary Mobile Phone
+                                .col-12.col-sm-6.col-md-12.col-lg-6.profile__item
+                                    p.profile__label Mobile Phone
                                     p.d-flex.align-items-center
                                         a.me-3.text-decoration-underline(href="tel:(310) 645-8340") (310) 645-8340
                                         span.status.status_minimal(data-type="false") is not verification 
-                            p.h6.text-bold.my-4 Address
+                            p.h6.text-bold.profile__heading Address
                             .row
                                 .col-12.col-sm-6.mb-3
-                                    p.font-secondary Country
+                                    p.profile__label Country
                                     p USA
                                 .col-12.col-sm-6.mb-3
-                                    p.font-secondary City
+                                    p.profile__label City
                                     p Los Angeles
                                 .col-12.col-md-6.mb-3
-                                    p.font-secondary Address
+                                    p.profile__label Address
                                     p 5960 W 85th Pl
                                         <br/> Los Angeles, California(CA), 90045
-                            p.h6.text-bold.my-4 Networks
+                            p.h6.text-bold.profile__heading Networks
                             .row
                                 .col-12.col-sm-4.col-xl-3.mb-3
                                     a.network(href="#")

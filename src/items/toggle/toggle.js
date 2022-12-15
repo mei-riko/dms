@@ -5,18 +5,29 @@ $(function() {
         let $toggleTitle = $(this);
         let $toggle = $(this).parent(".toggle");
         let $toggleContent = $toggle.find(".toggle__content").eq(0);
-        let $toggleIcon = $toggle.find(".toggle__icon").eq(0);
+        let $toggleIconPlus = $toggle.find(".toggle__icon-plus").eq(0);
+        let $toggleIconMinus = $toggle.find(".toggle__icon-minus").eq(0);
+
+        if( $toggleTitle.data("toggle") === false){
+            return null;
+        }
 
         if( !$toggleContent.hasClass("toggle__content--open") ){
             $toggleTitle.addClass("toggle__title--active");
             $toggle.addClass("toggle--open");
-            $toggleIcon.addClass("toggle__icon--active");
+
+            $toggleIconPlus.addClass("toggle__icon-plus--hide");
+            $toggleIconMinus.addClass("toggle__icon-minus--active");
+
             $toggleContent.addClass("toggle__content--open");
             $toggleContent.slideDown();
         }else{
             $toggleTitle.removeClass("toggle__title--active");
             $toggle.removeClass("toggle--open");
-            $toggleIcon.removeClass("toggle__icon--active");
+
+            $toggleIconPlus.removeClass("toggle__icon-plus--hide");
+            $toggleIconMinus.removeClass("toggle__icon-minus--active");
+
             $toggleContent.removeClass("toggle__content--open");
             $toggleContent.slideUp();
         }
@@ -24,6 +35,7 @@ $(function() {
     $(".toggle .toggle__title-btns .btn").on("click", function(event){
         event.stopPropagation();
     });
+
     $(document).on("click", ".open-all-toggles", function(){
         let $action = $(this);
         $action.removeClass("open-all-toggles");
@@ -34,12 +46,17 @@ $(function() {
             let $toggle = $(this);
             let $toggleTitle = $toggle.find(".toggle__title").eq(0);
             let $toggleContent = $toggle.find(".toggle__content").eq(0);
-            let $toggleIcon = $toggle.find(".toggle__icon").eq(0);
+            let $toggleIconPlus = $toggle.find(".toggle__icon-plus").eq(0);
+            let $toggleIconMinus = $toggle.find(".toggle__icon-minus").eq(0);
+
 
             if( !$toggle.hasClass("toggle--open") ){
                 $toggle.addClass("toggle--open");
                 $toggleTitle.addClass("toggle__title--active");
-                $toggleIcon.addClass("toggle__icon--active");
+
+                $toggleIconPlus.addClass("toggle__icon-plus--hide");
+                $toggleIconMinus.addClass("toggle__icon-minus--active");
+
                 $toggleContent.addClass("toggle__content--open");
                 $toggleContent.slideDown();
             }
@@ -55,12 +72,16 @@ $(function() {
             let $toggle = $(this);
             let $toggleTitle = $toggle.find(".toggle__title").eq(0);
             let $toggleContent = $toggle.find(".toggle__content").eq(0);
-            let $toggleIcon = $toggle.find(".toggle__icon").eq(0);
+            let $toggleIconPlus = $toggle.find(".toggle__icon-plus").eq(0);
+            let $toggleIconMinus = $toggle.find(".toggle__icon-minus").eq(0);
 
             if( $toggle.hasClass("toggle--open") ){
                 $toggle.removeClass("toggle--open");
                 $toggleTitle.removeClass("toggle__title--active");
-                $toggleIcon.removeClass("toggle__icon--active");
+
+                $toggleIconPlus.removeClass("toggle__icon-plus--hide");
+                $toggleIconMinus.removeClass("toggle__icon-minus--active");
+        
                 $toggleContent.removeClass("toggle__content--open");
                 $toggleContent.slideUp();
             }

@@ -20,23 +20,24 @@
             font-weight: $font-weight-bolder;
             color: $secondary;
     
-            border-color: $black-100;
+            border-color: $black-40;
 
             vertical-align: middle;
         }
         &_body{
-            padding: 8px 16px;
+            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
 
             font-size: map-get($map: $font-size, $key: sm);
             font-weight: $font-weight-base;
             color: $white;
 
-            border-color: $black-100;
+            border-color: $black-40;
 
             vertical-align: middle;
         }
         &_inner{
-            padding: 8px 16px;
+            // padding: 8px 16px;
+            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
 
             font-size: map-get($map: $font-size, $key: sm);
             font-weight: $font-weight-base;
@@ -67,7 +68,7 @@
         justify-content: space-between;
 
         border-radius: $border-radius;
-        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+        padding: map-get($map: $spacers, $key: 1) 8px;
 
         transition: $transition-base;
         cursor: pointer;
@@ -85,7 +86,7 @@
         }
     }
     &__item-no-sortable{
-        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+        padding: map-get($map: $spacers, $key: 1) 8px;
     }
     &__item-sort{
         fill: $secondary;
@@ -111,6 +112,13 @@
         }
     }
     // Body
+    &__line{
+        transition: $transition-base;
+
+        &:hover{
+            background: rgba($black-40, 0.25);
+        }
+    }
     &__body{
         border: unset!important;
     }

@@ -1,14 +1,14 @@
 .btn-success {
-    color: $black-100;
+    color: rgba($white, 0.85);
     background-color: $green-normal;
     border-color: $green-normal;
 
     &__icon{
-        fill: $black-100;
+        fill: $black-80;
     }
 
     &:hover{
-        color: $black-100;
+        color: rgba($white, 0.85);
         background-color: $green-hover;
         border-color: $green-hover;
 
@@ -17,7 +17,7 @@
         text-decoration: $link-decoration;
     }
     &:focus{
-        color: $black-100;
+        color: rgba($white, 0.85);
         background-color: $green-active;
         border-color: $green-active;
     }

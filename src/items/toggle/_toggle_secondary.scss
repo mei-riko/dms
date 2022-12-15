@@ -1,45 +1,8 @@
 .toggle_secondary{
-    border-radius: $border-radius;
-    border: 1px solid $black-40;
-
-    &__title{
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        padding: map-get($map: $spacers, $key: 2);
-
-        &-btns{
-            flex: unset;
-            padding: 0 map-get($map: $spacers, $key: 2);
-            flex-grow: 1;
-        }
-    }
-    &__icon{
-        background: inherit;
-        width: 24px;
-        height: 24px;
-    }
+    margin-left: 32px;
+    border-bottom: 1px solid $black-40;
 
     &__content{
-        padding: 0 map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 3);
-    }
-}
-
-@media all and (min-width: map-get($grid-breakpoints, 'sm')){
-    .toggle_secondary{
-        &__title{
-            padding: map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 3);
-        }
-        &__content{
-            padding: 0 map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 3);
-        }
-    }
-}
-@media all and (min-width: map-get($grid-breakpoints, 'md')){
-    .toggle_secondary{
-        &__title{
-            &-btns{
-                padding: 0 map-get($map: $spacers, $key: 3);
-            }
-        }
+        padding-left: 32px;
     }
 }
