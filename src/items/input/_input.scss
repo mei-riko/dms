@@ -20,6 +20,7 @@
     }
 
     &::placeholder{
+        font-weight: $font-weight-light;
         color: $input-placeholder;
         opacity: 0.5;
         transition: $transition-base;

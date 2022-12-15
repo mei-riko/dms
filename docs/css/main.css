@@ -340,6 +340,7 @@
 }
 
 .input::-webkit-input-placeholder {
+  font-weight: 300;
   color: #D9D2F8;
   opacity: 0.5;
   -webkit-transition: 0.3s;
@@ -347,6 +348,7 @@
 }
 
 .input::-moz-placeholder {
+  font-weight: 300;
   color: #D9D2F8;
   opacity: 0.5;
   -moz-transition: 0.3s;
@@ -354,6 +356,7 @@
 }
 
 .input:-ms-input-placeholder {
+  font-weight: 300;
   color: #D9D2F8;
   opacity: 0.5;
   -ms-transition: 0.3s;
@@ -361,6 +364,7 @@
 }
 
 .input::-ms-input-placeholder {
+  font-weight: 300;
   color: #D9D2F8;
   opacity: 0.5;
   -ms-transition: 0.3s;
@@ -368,6 +372,7 @@
 }
 
 .input::placeholder {
+  font-weight: 300;
   color: #D9D2F8;
   opacity: 0.5;
   -webkit-transition: 0.3s;
@@ -720,7 +725,7 @@
 .select2-container.select2-container--default .select2-search--inline .select2-search__field {
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -731,35 +736,35 @@
 .select2-container.select2-container--default .select2-search--inline .select2-search__field::-webkit-input-placeholder {
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #D9D2F8;
 }
 
 .select2-container.select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #D9D2F8;
 }
 
 .select2-container.select2-container--default .select2-search--inline .select2-search__field:-ms-input-placeholder {
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #D9D2F8;
 }
 
 .select2-container.select2-container--default .select2-search--inline .select2-search__field::-ms-input-placeholder {
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #D9D2F8;
 }
 
 .select2-container.select2-container--default .select2-search--inline .select2-search__field::placeholder {
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #D9D2F8;
 }
 
@@ -1954,7 +1959,7 @@
 .table .table__item_body {
   padding: 6px 12px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
   border-color: #2e2e45;
   vertical-align: middle;
@@ -1963,7 +1968,7 @@
 .table .table__item_inner {
   padding: 6px 12px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
   border: unset;
   vertical-align: middle;
