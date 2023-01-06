@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
-const openSidebar = () => {
+const sidebarIsClose = () => {
+    console.log("sidebar is close");
     $(".sidebar").addClass("sidebar--small");
     $(".sidebar__header").addClass("sidebar__header--small");
     $(".sidebar__site-name").addClass("d-none");
@@ -33,7 +34,9 @@ const openSidebar = () => {
         $(".sidebar .sidebar__children" + children).removeClass("sidebar__children--open");
     });
 }
-const closeSidebar = () => {
+const sidebarIsOpen = () => {
+    console.log("sidebar is open");
+
     $(".sidebar").removeClass("sidebar--small");
     $(".sidebar__header").removeClass("sidebar__header--small");
     $(".sidebar__site-name").removeClass("d-none");
@@ -67,7 +70,7 @@ $(function() {
         let $toggle = $(".sidebar-action");
         if( !$toggle.hasClass("sidebar-action--small") ){
             $toggle.addClass("sidebar-action--small");
-            openSidebar();
+            sidebarIsClose();
         };
     }
 });
@@ -77,12 +80,10 @@ $(".sidebar-action").on("click", function(){
     if( !$toggle.hasClass("sidebar-action--small") ){
         $toggle.addClass("sidebar-action--small");
         $toggle.addClass("sidebar-action--opened");
-
-        openSidebar();
+        sidebarIsClose();
     }else{
         $toggle.removeClass("sidebar-action--small");
-
-        closeSidebar();
+        sidebarIsOpen();
     }
 });
 
@@ -94,7 +95,8 @@ $(".sidebar .sidebar__item.sidebar__item_parent").on("click", function(){
     if( !$parent.hasClass("sidebar__item_parent--open") ){
         if( $parent.hasClass("sidebar__item--small") ){
             $(".sidebar-action").removeClass("sidebar-action--small");
-            openSidebar();
+            console.log($parent.hasClass("sidebar__item--small"));
+            sidebarIsOpen();
         }
         $parent.addClass("sidebar__item_parent--open");
         $parentIcon.addClass("sidebar__item-arrow--open");
@@ -113,12 +115,12 @@ $(window).on("resize", function(){
     if ( $(window).width() <= 1200 || !window.matchMedia('screen and (min-width: 1200px)').matches ){
         if( !$toggle.hasClass("sidebar-action--small") ){
             $toggle.addClass("sidebar-action--small");
-            openSidebar();
+            sidebarIsClose();
         };
     }else{
         if( !$toggle.hasClass("sidebar-action--opened") ){
             $toggle.removeClass("sidebar-action--small");
-            closeSidebar();
+            sidebarIsOpen();
         };
     }
 });
