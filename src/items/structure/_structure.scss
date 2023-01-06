@@ -1,19 +1,29 @@
 .structure{
-    &__toggle-icon{
-        padding-right: map-get($map: $spacers, $key: 2);
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 1px;
+        height: calc(100% - 62px);
+
+        background-color: $black-40;
+
+        position: absolute;
+        left: 16px;
+        top: 42px;
     }
-    &__icon{
-        padding-right: map-get($map: $spacers, $key: 2);
-    }
+
     &__title{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
 
-        padding: map-get($map: $spacers, $key: 1) 0;
-        min-height: 40px;
+        padding: map-get($map: $spacers, $key: 1);
+        min-height: 42px;
 
         border-bottom: 1px solid $black-40;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
 
         cursor: pointer;
         transition: $transition-base;
@@ -21,6 +31,16 @@
         &:hover{
             background-color: rgba($black-60, 0.5);
         }
+        &--pressed{
+            cursor: grab;
+        }
+    }
+    // Inside Title
+    &__toggle-icon{
+        padding-right: map-get($map: $spacers, $key: 2);
+    }
+    &__icon{
+        padding-right: map-get($map: $spacers, $key: 2);
     }
     &__title-text{
         padding-right: map-get($map: $spacers, $key: 2);
@@ -45,9 +65,8 @@
             display: block;
         }
     }
-
     // Content
     &__content{
-        padding: 0px 0px 0px 32px;
+        padding: 0px 0px 0px 64px;
     }
 }

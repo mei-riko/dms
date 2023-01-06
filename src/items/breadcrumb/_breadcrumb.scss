@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     
-    padding-right: 1rem;
+    padding-right: map-get($map: $spacers, $key: 1);
 
     &.active{
         color: $secondary;
@@ -37,18 +37,19 @@
     padding-left: 0rem;
 }
 .breadcrumb-item+.breadcrumb-item::before{
+    content: '';
+
     float: unset;
     color: $secondary;
-    padding-right: 0;
-    margin-right: 0.75rem;
 
+    padding-right: 0;
+    margin-right: map-get($map: $spacers, $key: 1);
+
+    display: block;
     width: 10px;
     height: 10px;
 
     background: url('../icon/breadcrumb-sep.svg') no-repeat center / contain;
-
-    display: block;
-    content: '';
 }
 
 @media all and (min-width: map-get($grid-breakpoints, 'md')){

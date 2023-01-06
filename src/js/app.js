@@ -45,3 +45,4 @@ import '../blocks/sidebar/sidebar';
 import '../items/toggle/toggle';
 import '../items/table/table';
 import '../items/structure/structure';
+import '../items/files-upload/files-upload';

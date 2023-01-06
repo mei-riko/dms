@@ -7,7 +7,7 @@
     <title>Library v2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
     <link href="./css/framework.css" rel="stylesheet"/>
@@ -47,19 +47,22 @@
                 <div class="form__label">Choose file</div>
                 <input class="input input--full input_file" type="file" value="" id="uploadfile"/>
               </div>
+              <div class="form__group">
+                <div class="form__label">Multiple files</div>
+                <div class="files-upload">
+                  <label class="files-upload__label" for="attachment"><a class="btn btn-primary btn_with-icon" role="button" aria-disabled="false">Add files
+                      <svg class="btn__icon btn-primary__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0835 6.41668H7.5835V2.91668C7.5835 2.76197 7.52204 2.61359 7.41264 2.5042C7.30324 2.3948 7.15487 2.33334 7.00016 2.33334C6.84545 2.33334 6.69708 2.3948 6.58768 2.5042C6.47829 2.61359 6.41683 2.76197 6.41683 2.91668V6.41668H2.91683C2.76212 6.41668 2.61375 6.47813 2.50435 6.58753C2.39495 6.69693 2.3335 6.8453 2.3335 7.00001C2.3335 7.15472 2.39495 7.30309 2.50435 7.41249C2.61375 7.52188 2.76212 7.58334 2.91683 7.58334H6.41683V11.0833C6.41683 11.2381 6.47829 11.3864 6.58768 11.4958C6.69708 11.6052 6.84545 11.6667 7.00016 11.6667C7.15487 11.6667 7.30324 11.6052 7.41264 11.4958C7.52204 11.3864 7.5835 11.2381 7.5835 11.0833V7.58334H11.0835C11.2382 7.58334 11.3866 7.52188 11.496 7.41249C11.6054 7.30309 11.6668 7.15472 11.6668 7.00001C11.6668 6.8453 11.6054 6.69693 11.496 6.58753C11.3866 6.47813 11.2382 6.41668 11.0835 6.41668Z"></path>
+                      </svg></a></label>
+                  <input type="file" name="file[]" id="attachment" style="visibility: hidden; position: absolute;" multiple="multiple"/>
+                  <div class="files-upload__area" id="files-area"><span id="filesList"><span id="filesNames"></span></span></div>
+                </div>
+              </div>
             </form>
             <p class="h5 text-bold my-4">Search </p>
             <form class="form form_search mt-4"><span class="form_search__icon"></span>
               <input class="input form_search__input" type="text" placeholder="Search"/>
             </form>
-            <p class="h5 text-bold my-4">Alert </p>
-            <p class="alert alert-primary">These credentials do not match our records.</p>
-            <p class="alert alert-secondary">These credentials do not match our records.</p>
-            <p class="alert alert-success">These credentials do not match our records.</p>
-            <p class="alert alert-danger">These credentials do not match our records.</p>
-            <p class="alert alert-warning">These credentials do not match our records.</p>
-            <p class="alert alert-light">These credentials do not match our records.</p>
-            <p class="alert alert-dark">These credentials do not match our records.</p>
           </div>
           <div class="col-4 mb-4">
             <p class="h5 text-bold mb-4">Buttons</p>
@@ -258,6 +261,14 @@
                 </div>
               </div>
             </div>
+            <p class="h5 text-bold my-4">Alert </p>
+            <p class="alert alert-primary">These credentials do not match our records.</p>
+            <p class="alert alert-secondary">These credentials do not match our records.</p>
+            <p class="alert alert-success">These credentials do not match our records.</p>
+            <p class="alert alert-danger">These credentials do not match our records.</p>
+            <p class="alert alert-warning">These credentials do not match our records.</p>
+            <p class="alert alert-light">These credentials do not match our records.</p>
+            <p class="alert alert-dark">These credentials do not match our records.</p>
           </div>
         </div>
       </div>

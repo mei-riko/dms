@@ -28,18 +28,23 @@ block content
                     .form__group
                         .form__label Choose file
                         input.input.input--full.input_file(type="file" value="" id="uploadfile")
+                    .form__group
+                        .form__label Multiple files
+                        //- https://codepen.io/scarulli/pen/bGGXdEZ
+                        .files-upload
+                            label.files-upload__label(for="attachment")
+                                a.btn.btn-primary.btn_with-icon(role="button" aria-disabled="false") Add files
+                                    svg.btn__icon.btn-primary__icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M11.0835 6.41668H7.5835V2.91668C7.5835 2.76197 7.52204 2.61359 7.41264 2.5042C7.30324 2.3948 7.15487 2.33334 7.00016 2.33334C6.84545 2.33334 6.69708 2.3948 6.58768 2.5042C6.47829 2.61359 6.41683 2.76197 6.41683 2.91668V6.41668H2.91683C2.76212 6.41668 2.61375 6.47813 2.50435 6.58753C2.39495 6.69693 2.3335 6.8453 2.3335 7.00001C2.3335 7.15472 2.39495 7.30309 2.50435 7.41249C2.61375 7.52188 2.76212 7.58334 2.91683 7.58334H6.41683V11.0833C6.41683 11.2381 6.47829 11.3864 6.58768 11.4958C6.69708 11.6052 6.84545 11.6667 7.00016 11.6667C7.15487 11.6667 7.30324 11.6052 7.41264 11.4958C7.52204 11.3864 7.5835 11.2381 7.5835 11.0833V7.58334H11.0835C11.2382 7.58334 11.3866 7.52188 11.496 7.41249C11.6054 7.30309 11.6668 7.15472 11.6668 7.00001C11.6668 6.8453 11.6054 6.69693 11.496 6.58753C11.3866 6.47813 11.2382 6.41668 11.0835 6.41668Z")
+                            input(type="file" name="file[]" id="attachment" style="visibility: hidden; position: absolute;" multiple)
+                            .files-upload__area#files-area
+                                span#filesList
+                                    span#filesNames
                 p.h5.text-bold.my-4 Search 
                 form.form.form_search.mt-4
                     span.form_search__icon
                     input.input.form_search__input(type="text" placeholder="Search")
-                p.h5.text-bold.my-4 Alert 
-                p.alert.alert-primary These credentials do not match our records.
-                p.alert.alert-secondary These credentials do not match our records.
-                p.alert.alert-success These credentials do not match our records.
-                p.alert.alert-danger These credentials do not match our records.
-                p.alert.alert-warning These credentials do not match our records.
-                p.alert.alert-light These credentials do not match our records.
-                p.alert.alert-dark These credentials do not match our records.
+
             .col-4.mb-4
                 p.h5.text-bold.mb-4 Buttons
                 .row
@@ -211,5 +216,12 @@ block content
                             input#minAmount.input.input--full(type="number")
                         .col-6
                             input#maxAmount.input.input--full(type="number")    
-
+                p.h5.text-bold.my-4 Alert 
+                p.alert.alert-primary These credentials do not match our records.
+                p.alert.alert-secondary These credentials do not match our records.
+                p.alert.alert-success These credentials do not match our records.
+                p.alert.alert-danger These credentials do not match our records.
+                p.alert.alert-warning These credentials do not match our records.
+                p.alert.alert-light These credentials do not match our records.
+                p.alert.alert-dark These credentials do not match our records.
 

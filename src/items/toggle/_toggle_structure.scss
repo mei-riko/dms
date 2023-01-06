@@ -1,0 +1,33 @@
+.toggle_structure{
+    position: relative;
+    
+    &::before{
+        content: '';
+        display: block;
+        width: 1px;
+        height: calc(100% - 64px);
+
+        background-color: $black-40;
+
+        position: absolute;
+        left: 16px;
+        top: 30px;
+    }
+
+    &__child{
+        position: relative;
+    
+        &::before{
+            content: '';
+            display: block;
+            width: 22px;
+            height: 1px;
+
+            background-color: $black-40;
+
+            position: absolute;
+            left: -15px;
+            top: 20px;
+        }
+    }
+}

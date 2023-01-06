@@ -4,4 +4,16 @@
 
     grid-gap: map-get($map: $spacers, $key: 2);
     grid-template-columns: 32px 1fr;
+
+    &__icon{
+        transition: $transition-base;
+    }
+
+    &:hover{
+        color: $secondary;
+        text-decoration: none;
+        .network__icon{
+            transform: scale(0.9);
+        }
+    }
 }

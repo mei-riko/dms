@@ -3,6 +3,7 @@ import $ from 'jquery';
 const openSidebar = () => {
     $(".sidebar").addClass("sidebar--small");
     $(".sidebar__header").addClass("sidebar__header--small");
+    $(".sidebar__site-name").addClass("d-none");
     $(".sidebar__body").addClass("sidebar__body--small");
     $(".sidebar__footer").addClass("sidebar__footer--small");
     $(".sidebar__logo").addClass("sidebar__logo--small");
@@ -18,6 +19,7 @@ const openSidebar = () => {
     $(".sidebar .sidebar__parent-secondary").each(function(){
         $(this).addClass("sidebar__parent-secondary--small");
     });
+
     $(".sidebar .sidebar__profile").addClass("sidebar__profile--small");
     $(".sidebar .sidebar__profile-info").addClass("d-none");        
     $(".sidebar .sidebar__profile-image").addClass("sidebar__profile-image--small");
@@ -34,6 +36,7 @@ const openSidebar = () => {
 const closeSidebar = () => {
     $(".sidebar").removeClass("sidebar--small");
     $(".sidebar__header").removeClass("sidebar__header--small");
+    $(".sidebar__site-name").removeClass("d-none");
     $(".sidebar__body").removeClass("sidebar__body--small");
     $(".sidebar__footer").removeClass("sidebar__footer--small");
     $(".sidebar__logo").removeClass("sidebar__logo--small");

@@ -1,12 +1,8 @@
-.structure_child{
+.structure_child-has-children{
     // padding-left: 32px;
     position: relative;
     
-    &:active {
-        cursor: progress;
-    }
-
-    &::before{
+    &::after{
         content: '';
         display: block;
         width: 54px;

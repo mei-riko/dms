@@ -7,21 +7,21 @@
     }
 
     &:hover{
-        color: $white;
+        color: $primary-hover;
         text-decoration: none;
 
         .btn-link__icon{
-            fill: $white;
+            fill: $primary-hover;
         }
     }
     &:focus{
-        color: $secondary;
+        color: $primary-active;
         text-decoration: none;
         outline: none;
         box-shadow: none;
 
         .btn-link__icon{
-            fill: $secondary;
+            fill: $primary-active;
         }
     }
 }

@@ -17,8 +17,11 @@
 @import "../items/input/input_datetime";
 @import "../items/input/input_success";
 @import "../items/input/input_error";
+@import "../items/input/input_info";
 @import "../items/input/input_color";
 @import "../items/input/input_file";
+
+@import "../items/files-upload/files-upload";
 
 @import "../items/checkbox/checkbox";
 @import "../items/radio/radio";
@@ -52,9 +55,11 @@
 
 @import "../items/toggle/toggle";
 @import "../items/toggle/toggle_secondary";
+@import "../items/toggle/toggle_structure";
 
 @import "../items/structure/structure";
 @import "../items/structure/structure_child";
+@import "../items/structure/structure_child-has-children";
 
 @import "../items/table/table";
 

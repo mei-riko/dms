@@ -1,7 +1,7 @@
 extends ../blocks/enter.pug
 
 block variables
-    - var pageTitle = "Sign up (With Status)"
+    - var pageTitle = "Sign up - Notification"
 block content
     main.intro
         .container-fluid
@@ -14,15 +14,14 @@ block content
                             p.h5.text-uppercase Sign up
                             p.font-secondary.text-bolder Don't have an account? Create your account, it takes less than a minute
                             form.form(action="") 
+                                .form__alert
+                                    .alert.alert-primary This email has already used.
                                 .form__group
-                                    .form__label First Name:
+                                    .form__label Full Name:
                                     input.input.input_success.input--full(type="text" placeholder="Enter your first name" value="Jane")
                                 .form__group
-                                    .form__label Last Name:
-                                    input.input.input_success.input--full(type="text" placeholder="Enter your last name" value="Doe")
-                                .form__group
                                     .form__label E-mail:
-                                    input.input.input_success.input--full(type="email" placeholder="Enter your e-mail" value="manager@dms.ru")
+                                    input.input.input_info.input--full(type="email" placeholder="Enter your e-mail" value="manager@dms.ru")
                                 .form__group
                                     .form__label Password
                                     input.input.input_success.input--full(type="password" placeholder="Enter password" value="manager")

@@ -1,7 +1,7 @@
 extends ../blocks/main.pug
 
 block variables
-    - var pageTitle = "X2712345678 - Display DT - Monitor1"
+    - var pageTitle = "DTDSPL2203 - Display DT - Monitor1"
     mixin tableLineBasic(parametr, value, status, statusValue, request)
         tr.table__line
             td.table__item.table__item_body= parametr
@@ -30,7 +30,7 @@ block content
                     .row.align-items-center.content__heading
                         .col-12.col-lg-7
                             .content__heading-left
-                                h1.h5.content__title X2712345678
+                                h1.h5.content__title DTDSPL2203
                                 ul.breadcrumb
                                     li.breadcrumb-item
                                         a.breadcrumb__link.breadcrumb__home(href="dashboard.html") 
@@ -62,6 +62,8 @@ block content
                                 svg.toggle__icon-minus.toggle__icon-minus--active(width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
                                     path(d="M11.0834 6.41675C4.38139 6.41675 9.61869 6.41675 2.91671 6.41675C2.762 6.41675 2.61362 6.47821 2.50423 6.5876C2.39483 6.697 2.33337 6.84537 2.33337 7.00008C2.33337 7.15479 2.39483 7.30316 2.50423 7.41256C2.61362 7.52196 2.762 7.58341 2.91671 7.58341C9.55666 7.58341 4.44342 7.58341 11.0834 7.58341C11.2381 7.58341 11.3865 7.52196 11.4959 7.41256C11.6052 7.30316 11.6667 7.15479 11.6667 7.00008C11.6667 6.84537 11.6052 6.697 11.4959 6.5876C11.3865 6.47821 11.2381 6.41675 11.0834 6.41675Z")
                             .toggle__title-text Basic info
+                            .toggle__title-btns
+                                a.btn.btn-secondary.btn--small(href="edit-display-basic.html") Edit basic info
                         .toggle__content.toggle__content--open(style="display: block;")
                             .table-responsive
                                 table.table

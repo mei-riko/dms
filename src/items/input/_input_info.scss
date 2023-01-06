@@ -1,0 +1,8 @@
+.input_info{
+    border: 1px solid $primary-normal;
+    color: $primary-normal;
+
+    &:focus{
+        outline-color: $primary-normal;
+    }
+}

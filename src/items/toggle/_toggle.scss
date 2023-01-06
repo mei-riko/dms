@@ -4,8 +4,9 @@
         align-items: center;
         flex-wrap: wrap;
 
-        padding: map-get($map: $spacers, $key: 1) 0;
-        min-height: 40px;
+        padding: map-get($map: $spacers, $key: 1);
+        min-height: 42px;
+        border-radius: $border-radius;
 
         cursor: pointer;
         transition: $transition-base;

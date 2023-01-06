@@ -3,6 +3,7 @@
     align-items: center;
 
     font-size: map-get($map: $font-size, $key: sm);
+    line-height: map-get($map: $font-size, $key: md);
 
     &__icon{
         border-radius: 4px;

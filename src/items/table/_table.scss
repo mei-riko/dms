@@ -112,15 +112,19 @@
         }
     }
     // Body
-    &__line{
-        transition: $transition-base;
-
-        &:hover{
-            background: rgba($black-40, 0.25);
-        }
-    }
     &__body{
         border: unset!important;
+        .table__line{
+            &:hover{
+                background: rgba($black-40, 0.25);
+            }
+        }
+    }
+    &__line{
+        transition: $transition-base;
+    }
+    &__item-content-wrap{
+        white-space: normal;
     }
     &__user{
         &-avatar{

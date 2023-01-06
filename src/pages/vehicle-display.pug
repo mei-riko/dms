@@ -66,10 +66,8 @@ block content
                                 svg.toggle__icon-minus(width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
                                     path(d="M11.0834 6.41675C4.38139 6.41675 9.61869 6.41675 2.91671 6.41675C2.762 6.41675 2.61362 6.47821 2.50423 6.5876C2.39483 6.697 2.33337 6.84537 2.33337 7.00008C2.33337 7.15479 2.39483 7.30316 2.50423 7.41256C2.61362 7.52196 2.762 7.58341 2.91671 7.58341C9.55666 7.58341 4.44342 7.58341 11.0834 7.58341C11.2381 7.58341 11.3865 7.52196 11.4959 7.41256C11.6052 7.30316 11.6667 7.15479 11.6667 7.00008C11.6667 6.84537 11.6052 6.697 11.4959 6.5876C11.3865 6.47821 11.2381 6.41675 11.0834 6.41675Z")
                             .toggle__title-text Basic info
-                            //- .toggle__title-btns
-                            //-     a.btn.btn-secondary.btn_with-icon.btn--small(href="edit-display-basic.html") Edit
-                            //-         svg.btn__icon.btn-secondary__icon(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            //-             path(d="M3.00001 8.28005V10.7534C3.00001 10.9081 3.06147 11.0565 3.17086 11.1659C3.28026 11.2753 3.42863 11.3367 3.58334 11.3367H6.05668C6.13345 11.3372 6.20955 11.3224 6.28062 11.2934C6.35169 11.2644 6.41634 11.2216 6.47084 11.1675L10.5075 7.12505L12.1642 5.50338C12.2189 5.44915 12.2622 5.38464 12.2919 5.31355C12.3215 5.24247 12.3367 5.16622 12.3367 5.08922C12.3367 5.01221 12.3215 4.93596 12.2919 4.86488C12.2622 4.79379 12.2189 4.72928 12.1642 4.67505L9.69084 2.17255C9.63661 2.11787 9.5721 2.07448 9.50101 2.04486C9.42993 2.01525 9.35368 2 9.27668 2C9.19967 2 9.12342 2.01525 9.05234 2.04486C8.98126 2.07448 8.91674 2.11787 8.86251 2.17255L7.21751 3.82338L3.16918 7.86588C3.11511 7.92039 3.07234 7.98503 3.04331 8.0561C3.01428 8.12718 2.99957 8.20328 3.00001 8.28005ZM9.27668 3.40922L10.9275 5.06005L10.0992 5.88838L8.44834 4.23755L9.27668 3.40922ZM4.16668 8.51922L7.62584 5.06005L9.27668 6.71088L5.81751 10.17H4.16668V8.51922Z")
+                            .toggle__title-btns
+                                a.btn.btn-secondary.btn--small(href="edit-display-basic.html") Edit basic info
                         .toggle__content
                             .table-responsive
                                 table.table
@@ -87,7 +85,7 @@ block content
                                         +tableLineBasic('Model','DT - DIsplay1', 'true', 'Done')
                                         +tableLineBasic('Firmware','V11.3.001', 'warning', 'Done', true)
                                         tr.table__line
-                                            td.table__item.table__item_body Connection status
+                                            td.table__item.table__item_body Connection Status
                                             td.table__item.table__item_body= value
                                                 .status.status_minimal(data-type="true") Direct
                                             td.table__item.table__item_body
